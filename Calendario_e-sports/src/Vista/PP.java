@@ -10,7 +10,7 @@ package Vista;
  * @author 1GDAW01
  */
 public class PP extends javax.swing.JFrame {
-       jcombobox1.setBackground(new Color(255,180,50));
+       
     /**
      * Creates new form PP
      */
