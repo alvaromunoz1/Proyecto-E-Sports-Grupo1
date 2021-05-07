@@ -27,6 +27,8 @@ create table Partido(
 ID                  INT PRIMARY KEY,
 Nombre              varchar2(50),
 Hora                TIMESTAMP,
+Resultado_equipo1   int,           
+Resultado_equipo2   int,           
 ID_Jornada          INT,
 CONSTRAINT ID_Jornada_FK foreign key (ID_Jornada) 
 references Jornada (ID)
@@ -48,54 +50,36 @@ Nombre              varchar2(20),
 Nick                VARCHAR2(15),
 Sueldo              NUMBER(5,2),
 ID_Equipo           INT,
-tipo                CHAR(1),
-constraint tipo_ck check(tipo in('D','E','A','J')),
 CONSTRAINT ID_Equipo1_FK foreign key (ID_Equipo)
 references Equipo (ID)
 );
 
 create table Dueino(
-ID                  INT PRIMARY KEY,
-Nombre              varchar2(20),
-Nick                VARCHAR2(15),
-Sueldo              NUMBER(5,2),
-ID_Equipo           INT,
+IDD                  INT PRIMARY KEY,
 Anios_Dueino        INT,
-CONSTRAINT ID_Equipo2_FK foreign key (ID_Equipo)
-references Equipo (ID)
+CONSTRAINT ID_Persona1_FK foreign key (IDD)
+references Personas (ID)
 );
 
 create table Entrenador(
-ID                  INT PRIMARY KEY,
-Nombre              varchar2(20),
-Nick                VARCHAR2(15),
-Sueldo              NUMBER(5,2),
+IDE                  INT PRIMARY KEY,
 mail                VARCHAR2(25),
-ID_Equipo           INT,
-CONSTRAINT ID_Equipo3_FK foreign key (ID_Equipo)
-references Equipo (ID)
+CONSTRAINT ID_Persona2_FK foreign key (IDE)
+references Personas (ID)
 );
 
 create table Asistente(
-ID                  INT PRIMARY KEY,
-Nombre              varchar2(20),
-Nick                VARCHAR2(15),
-Sueldo              NUMBER(5,2),
+IDA                  INT PRIMARY KEY,
 Anios_Asistente     INT,
-ID_Equipo           int,
-CONSTRAINT ID_Equipo4_FK foreign key (ID_Equipo)
-references Equipo (ID)
+CONSTRAINT ID_Persona3_FK foreign key (IDA)
+references Personas (ID)
 );
 
 create table Jugador(
-ID                  INT PRIMARY KEY,
-Nombre              varchar2(20),
-Nick                VARCHAR2(15),
-Sueldo              NUMBER(5,2),
+IDJ                  INT PRIMARY KEY,
 Rol                 varchar2(10),
-ID_Equipo           INT,
-CONSTRAINT ID_Equipo5_FK foreign key (ID_Equipo)
-references Equipo (ID)
+CONSTRAINT ID_Persona4_FK foreign key (IDJ)
+references Personas (ID)
 );
 
 create table Usuarios(
@@ -103,6 +87,6 @@ ID                  INT PRIMARY KEY,
 Nombre              varchar2(20),
 Contraseina         varchar2(30),
 tipo                CHAR(1),
-constraint tipe_ck check(tipo in('A','U'))
+constraint tipe_ck check(tipo in('A','C'))
 );
 
