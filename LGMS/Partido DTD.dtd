@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Partidos
+    [<!ELEMENT Partido (ID,Nombre,ID_Local,ID_Visitante,Hora,Resultado_Local,Resultado_Visitante,ID_Jornada)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT ID_Visitante (#PCDATA)>
+    <!ELEMENT ID_Local (#PCDATA)>
+    <!ELEMENT Hora (#PCDATA)>
+    <!ELEMENT Resultado_Local (#PCDATA)>
+    <!ELEMENT Resultado_Visitante (#PCDATA)>
+    <!ELEMENT ID_Jornada (#PCDATA)>
+    ]>
+    
+<Partidos>
+  <Partido>
+    <ID>5484548</ID>
+    <Nombre>jnvgdsbd</Nombre>
+    <ID_Visitante>45784</ID_Visitante>
+    <ID_Local>7864684</ID_Local>
+    <Hora>15:00</Hora>
+    <Resultado_Local>5</Resultado_Local>
+    <Resultado_Visitante>13</Resultado_Visitante>
+    <ID_Jornada>445646</ID_Jornada>
+  </Partido>
+</Partidos>

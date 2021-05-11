@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Entrenadores
+    [<!ELEMENT Entrenador (IDE,Mail)>
+    <!ELEMENT IDE (#PCDATA)>
+    <!ELEMENT Mail (#PCDATA)>
+    ]>
+    
+<Entrenadores>
+  <Entrenador>
+    <IDE>5454584</IDE>  
+    <Mail>hdfausfjf</Mail>
+  </Entrenador>
+</Entrenadores>

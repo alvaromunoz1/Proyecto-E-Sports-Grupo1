@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Asistentes
+    [<!ELEMENT Asistente (IDA, Anios_Asistente)>
+    <!ELEMENT IDA (#PCDATA)>
+    <!ELEMENT Anios_Asistente (#PCDATA)>
+    ]>
+    
+<Asistentes>
+  <Asistente>
+    <IDA>5454584</IDA>  
+    <Anios_Asistente>5</Anios_Asistente>
+  </Asistente>
+</Asistentes>
