@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Usuarios
+    [<!ELEMENT Usuario (ID,Nombre,Contraseina,Tipo)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Contraseina (#PCDATA)>
+    <!ELEMENT Tipo (#PCDATA)>
+    ]>
+    
+<Usuarios>
+  <Usuario>
+    <ID>5454584</ID>  
+    <Nombre>hdfausfjf</Nombre>
+    <Contraseina>ffhfhj</Contraseina>
+    <Tipo>Admin</Tipo>
+  </Usuario>
+</Usuarios>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Equipos
+    [<!ELEMENT Equipo (ID,Nombre,Pagina_Web,Puntos,ID_Calendario)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Pagina_Web (#PCDATA)>
+    <!ELEMENT Puntos (#PCDATA)>
+    <!ELEMENT ID_Calendario (ID_Calendario)>
+    ]>
+    
+<Equipos>
+  <Equipo>
+    <ID>5454584</ID>  
+    <Nombre>hdfausfjf</Nombre>
+    <Pagina_Web>ffhfhj</Pagina_Web>
+    <Puntos>5454</Puntos>
+    <ID_Calendario>554</ID_Calendario>
+  </Equipo>
+</Equipos>
