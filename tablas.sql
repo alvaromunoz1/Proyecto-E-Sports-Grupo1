@@ -23,17 +23,6 @@ CONSTRAINT ID_Cal_FK foreign key (ID_Calendario)
 references Calendario (ID)
 );
 
-create table Partido(
-ID                  INT PRIMARY KEY,
-Nombre              varchar2(50),
-Hora                TIMESTAMP,
-Resultado_equipo1   int,           
-Resultado_equipo2   int,           
-ID_Jornada          INT,
-CONSTRAINT ID_Jornada_FK foreign key (ID_Jornada) 
-references Jornada (ID)
-);
-
 create table Equipo(
 ID                      INT PRIMARY KEY,
 Nombre                  varchar2(50),
@@ -44,11 +33,28 @@ CONSTRAINT ID_Calendario_FK foreign key (ID_Calendario)
 references Calendario (ID)
 );
 
+create table Partido(
+ID                      INT PRIMARY KEY,
+Nombre                  varchar2(50),
+ID_local                INT,
+ID_visitante            INT,
+Hora                    TIMESTAMP,
+Resultado_local         int,           
+Resultado_visitante     int,           
+ID_Jornada              INT,
+CONSTRAINT ID_Jornada_FK foreign key (ID_Jornada) 
+references Jornada (ID),
+CONSTRAINT local_equipo_FK foreign key (ID_local) 
+references Equipo (ID),
+CONSTRAINT visitante_equipo_FK foreign key (ID_visitante) 
+references Equipo (ID)
+);
+
 create table Personas(
 ID                  INT PRIMARY KEY,
 Nombre              varchar2(20),
 Nick                VARCHAR2(15),
-Sueldo              NUMBER(5,2),
+Sueldo              NUMBER,
 ID_Equipo           INT,
 CONSTRAINT ID_Equipo1_FK foreign key (ID_Equipo)
 references Equipo (ID)
