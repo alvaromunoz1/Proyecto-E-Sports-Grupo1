@@ -1,21 +1,20 @@
 CREATE OR REPLACE TRIGGER Block_Cal
 BEFORE INSERT OR UPDATE ON Equipo
 DECLARE
-    cal_nombre VARCHAR2(50);
-    cal_nom_eki VARCHAR2(50);
-    RAISE_APLICATION_ERROR
+    cal_id VARCHAR2(50);
+    cal_id_eki VARCHAR2(50);
 BEGIN
-    SELECT Nombre 
-    INTO cal_nombre 
+    SELECT ID
+    INTO cal_id
     FROM Calendario;
 
-    SELECT DISTINCT(Nombre_Calendario)
-    INTO cal_nom_eki
+    SELECT DISTINCT(ID_CALENDARIO)
+    INTO cal_id_eki
     FROM Equipo
-    WHERE Nombre_Calendario=cal_nombre;
+    WHERE ID_CALENDARIO=cal_id;
 
-    IF (cal_nom_eki)=(cal_nombre) THEN
-    RAISE_APLICATION_ERROR(-20001, 'No se pueden modificar los equipos con el 
+    IF (cal_id_eki)=(cal_id) THEN
+    RAISE_APPLICATION_ERROR(-20001, 'No se pueden modificar los equipos con el 
     calendario cerrado.');
     END IF;
 

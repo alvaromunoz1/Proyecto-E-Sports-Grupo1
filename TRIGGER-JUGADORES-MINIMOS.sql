@@ -4,25 +4,15 @@ BEFORE INSERT on Calendario
 FOR EACH ROW
 
 DECLARE
-    Cant_jug number(5);
-    Nombre_min varchar2(50);
+    Cant_jug number(10);
 BEGIN 
-    SELECT MIN(COUNT(Nombre_Equipo))
+    SELECT MIN(COUNT(ID_Equipo))
     INTO Cant_jug
-    FROM Jugador
-    GROUP BY Nombre_Equipo;
-    
-    SELECT Nombre_Equipo
-    INTO Nombre_min
-    FROM Jugador
-    GROUP BY Nombre_Equipo
-    HAVING COUNT(*)=(SELECT MIN(COUNT(Nombre_Equipo))
-                        FROM Jugador
-                        GROUP BY Nombre_Equipo);
+    FROM PERSONAS
+    GROUP BY ID_Equipo;
 
     IF (Cant_jug < 2) THEN
-      raise_application_error(-20500,('El equipo' || to_char(Nombre_min) ||
-      'tiene menos de 2 jugadores'));
+      raise_application_error(-20500,('El equipo tiene menos de 2 jugadores'));
     END IF;
 EXCEPTION
     WHEN NO_DATA_FOUND THEN

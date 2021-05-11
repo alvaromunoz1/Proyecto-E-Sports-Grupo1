@@ -1,18 +1,21 @@
 
 CREATE OR REPLACE TRIGGER Tamaño_equipo
-BEFORE INSERT OR UPDATE ON Jugador
+BEFORE INSERT OR UPDATE ON PERSONAS
+FOR EACH ROW
 DECLARE
-    cant_jug NUMBER(10);
-    raise_aplication_error;
+    JUG_MAX NUMBER(10);
+    ID_MAX NUMBER(10);
 BEGIN
-    SELECT MAX(COUNT(Nombre_Equipo))
-    INTO cant_jug
-    FROM Jugador
-    GROUP BY Nombre_Equipo;
-
-IF cant_jug==6 THEN 
-    raise_application_error(-20500,'No puede insertar mas de 6 jugadores en el equipo');
-END IF;
+                       
+    SELECT MAX(COUNT(*))
+    INTO JUG_MAX
+    FROM PERSONAS
+    WHERE :NEW.ID_EQUIPO=ID_EQUIPO
+    GROUP BY ID_EQUIPO;
+                        
+    IF JUG_MAX=6 THEN 
+        raise_application_error(-20500,'No puede insertar mas de 6 jugadores en el equipo');
+    END IF;
 EXCEPTION
     WHEN NO_DATA_FOUND THEN
       raise_application_error(-20500,'No existen jugadores');
