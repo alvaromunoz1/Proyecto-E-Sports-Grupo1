@@ -15,10 +15,17 @@ Nombre  varchar2(50)
 );
 
 create table Jornada(
-ID                  INT PRIMARY KEY,
+ID                  INT GENERATED ALWAYS AS IDENTITY 
+                        MINVALUE 1 
+                        MAXVALUE 40
+                        INCREMENT BY 1 
+                        START WITH 1  
+                        NOORDER  
+                        NOCYCLE,
 Nombre              varchar2(50),
 Fecha               date,
 ID_Calendario       INT,
+constraint ID_jor_pk primary key(ID),
 CONSTRAINT ID_Cal_FK foreign key (ID_Calendario)
 references Calendario (ID)
 );
