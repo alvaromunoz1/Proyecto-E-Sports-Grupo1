@@ -27,32 +27,32 @@ public class Equipos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        G2 = new javax.swing.JButton();
+        sentinels = new javax.swing.JButton();
+        liquid = new javax.swing.JButton();
+        A100thieves = new javax.swing.JButton();
+        fnatic = new javax.swing.JButton();
+        V1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Desktop\\proyecto\\imagenes equipos\\G2.png")); // NOI18N
-        jButton2.setBorder(null);
+        G2.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Desktop\\proyecto\\imagenes equipos\\G2.png")); // NOI18N
+        G2.setBorder(null);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/sentinels.png"))); // NOI18N
-        jButton3.setBorder(null);
+        sentinels.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/sentinels.png"))); // NOI18N
+        sentinels.setBorder(null);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/liquid.png"))); // NOI18N
-        jButton1.setBorder(null);
+        liquid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/liquid.png"))); // NOI18N
+        liquid.setBorder(null);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/100thieves.png"))); // NOI18N
-        jButton6.setBorder(null);
+        A100thieves.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/100thieves.png"))); // NOI18N
+        A100thieves.setBorder(null);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/fnatic.png"))); // NOI18N
-        jButton4.setBorder(null);
+        fnatic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/fnatic.png"))); // NOI18N
+        fnatic.setBorder(null);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/V1.png"))); // NOI18N
-        jButton5.setBorder(null);
+        V1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/V1.png"))); // NOI18N
+        V1.setBorder(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,16 +61,16 @@ public class Equipos extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(140, 140, 140)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(sentinels, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(A100thieves, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(153, 153, 153)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(G2, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fnatic, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(153, 153, 153)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(liquid, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap(134, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -78,14 +78,14 @@ public class Equipos extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(113, 113, 113)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(liquid, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sentinels, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(G2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addGap(153, 153, 153)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(A100thieves, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fnatic, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(V1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(146, Short.MAX_VALUE))
         );
 
@@ -128,11 +128,11 @@ public class Equipos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton A100thieves;
+    private javax.swing.JButton G2;
+    private javax.swing.JButton V1;
+    private javax.swing.JButton fnatic;
+    private javax.swing.JButton liquid;
+    private javax.swing.JButton sentinels;
     // End of variables declaration//GEN-END:variables
 }

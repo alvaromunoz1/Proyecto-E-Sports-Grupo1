@@ -26,18 +26,18 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton3" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
-                  <Component id="jButton6" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="sentinels" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="A100thieves" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton2" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
-                  <Component id="jButton4" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="G2" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="fnatic" alignment="0" min="-2" pref="167" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButton5" min="-2" pref="167" max="-2" attributes="0"/>
-                  <Component id="jButton1" pref="0" max="32767" attributes="0"/>
+                  <Component id="V1" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="liquid" pref="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="134" max="32767" attributes="0"/>
           </Group>
@@ -48,15 +48,15 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButton1" min="-2" pref="171" max="-2" attributes="0"/>
-                  <Component id="jButton3" min="-2" pref="171" max="-2" attributes="0"/>
-                  <Component id="jButton2" pref="0" max="32767" attributes="0"/>
+                  <Component id="liquid" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="sentinels" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="G2" pref="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButton6" min="-2" pref="171" max="-2" attributes="0"/>
-                  <Component id="jButton4" min="-2" pref="171" max="-2" attributes="0"/>
-                  <Component id="jButton5" max="32767" attributes="0"/>
+                  <Component id="A100thieves" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="fnatic" min="-2" pref="171" max="-2" attributes="0"/>
+                  <Component id="V1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="146" max="32767" attributes="0"/>
           </Group>
@@ -64,7 +64,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="G2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="2" name="C:\Users\1gdaw03\Desktop\proyecto\imagenes equipos\G2.png"/>
@@ -74,7 +74,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="sentinels">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Vistas/sentinels.png"/>
@@ -84,7 +84,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="liquid">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Vistas/liquid.png"/>
@@ -94,7 +94,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="A100thieves">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Vistas/100thieves.png"/>
@@ -104,7 +104,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="fnatic">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Vistas/fnatic.png"/>
@@ -114,7 +114,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="V1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Vistas/V1.png"/>
