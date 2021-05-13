@@ -36,7 +36,7 @@
                   <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
                   <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jScrollPane1" pref="329" max="32767" attributes="0"/>
                   <Component id="tfEntrenadorEquipo" max="32767" attributes="0"/>
@@ -48,7 +48,7 @@
                   <Component id="tfIDCal" alignment="0" max="32767" attributes="0"/>
                   <Component id="tfDueñoEquipo" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="273" max="32767" attributes="0"/>
+              <EmptySpace pref="274" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
