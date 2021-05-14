@@ -1,0 +1,105 @@
+drop table Calendario cascade constraints;
+drop table Jornada cascade constraints;
+drop table Partido cascade constraints;
+drop table Equipo cascade constraints;
+drop table Personas cascade constraints;
+drop table Dueino cascade constraints;
+drop table Entrenador cascade constraints;
+drop table Asistente cascade constraints;
+drop table Jugador cascade constraints;
+drop table Usuarios cascade constraints;
+
+create table Calendario(
+ID      INT PRIMARY KEY,
+Nombre  varchar2(50)
+);
+
+create table Jornada(
+ID                  INT GENERATED ALWAYS AS IDENTITY 
+                        MINVALUE 1 
+                        MAXVALUE 40
+                        INCREMENT BY 1 
+                        START WITH 1  
+                        NOORDER  
+                        NOCYCLE,
+Nombre              varchar2(50),
+Fecha               date,
+ID_Calendario       INT,
+constraint ID_jor_pk primary key(ID),
+CONSTRAINT ID_Cal_FK foreign key (ID_Calendario)
+references Calendario (ID)
+);
+
+create table Equipo(
+ID                      INT PRIMARY KEY,
+Nombre                  varchar2(50),
+Pagina_Web              varchar2(50),
+Puntos                  INT,
+ID_Calendario           INT,
+CONSTRAINT ID_Calendario_FK foreign key (ID_Calendario)
+references Calendario (ID)
+);
+
+create table Partido(
+ID                      INT PRIMARY KEY,
+Nombre                  varchar2(50),
+ID_local                INT,
+ID_visitante            INT,
+Hora                    timestamp,
+Resultado_local         int,           
+Resultado_visitante     int,           
+ID_Jornada              INT,
+CONSTRAINT ID_Jornada_FK foreign key (ID_Jornada) 
+references Jornada (ID),
+CONSTRAINT local_equipo_FK foreign key (ID_local) 
+references Equipo (ID),
+CONSTRAINT visitante_equipo_FK foreign key (ID_visitante) 
+references Equipo (ID)
+);
+
+create table Personas(
+ID                  INT PRIMARY KEY,
+Nombre              varchar2(20),
+Nick                VARCHAR2(15),
+Sueldo              NUMBER,
+ID_Equipo           INT,
+CONSTRAINT ID_Equipo1_FK foreign key (ID_Equipo)
+references Equipo (ID)
+);
+
+create table Dueino(
+IDD                  INT PRIMARY KEY,
+Anios_Dueino        INT,
+CONSTRAINT ID_Persona1_FK foreign key (IDD)
+references Personas (ID)
+);
+
+create table Entrenador(
+IDE                  INT PRIMARY KEY,
+mail                VARCHAR2(25),
+CONSTRAINT ID_Persona2_FK foreign key (IDE)
+references Personas (ID)
+);
+
+create table Asistente(
+IDA                  INT PRIMARY KEY,
+Anios_Asistente     INT,
+CONSTRAINT ID_Persona3_FK foreign key (IDA)
+references Personas (ID)
+);
+
+create table Jugador(
+IDJ                  INT PRIMARY KEY,
+Rol                 varchar2(10),
+CONSTRAINT ID_Persona4_FK foreign key (IDJ)
+references Personas (ID)
+);
+
+create table Usuarios(
+ID                  INT PRIMARY KEY,
+Nombre              varchar2(20),
+Contraseina         varchar2(30),
+tipo                CHAR(1),
+constraint tipe_ck check(tipo in('A','C'))
+);
+

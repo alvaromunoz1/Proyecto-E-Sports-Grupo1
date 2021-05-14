@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Jugadores
+    [<!ELEMENT Jugador (IDJ,Rol)>
+    <!ELEMENT IDJ (#PCDATA)>
+    <!ELEMENT Rol (#PCDATA)>
+    ]>
+    
+<Jugadores>
+  <Jugador>
+    <IDJ>5454584</IDJ>  
+    <Rol>hdfausfjf</Rol>
+  </Jugador>
+</Jugadores>

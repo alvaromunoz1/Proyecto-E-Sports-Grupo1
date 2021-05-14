@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Personas
+    [<!ELEMENT Persona (ID,Nombre,Nick,Sueldo,ID_Equipo)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Nick (#PCDATA)>
+    <!ELEMENT Sueldo (#PCDATA)>
+    <!ELEMENT ID_Equipo (ID_Calendario)>
+    ]>
+    
+<Personas>
+  <Persona>
+    <ID>5454584</ID>  
+    <Nombre>hdfausfjf</Nombre>
+    <Nick>ffhfhj</Nick>
+    <Sueldo>5454</Sueldo>
+    <ID_Equipo>554</ID_Equipo>
+  </Persona>
+</Personas>

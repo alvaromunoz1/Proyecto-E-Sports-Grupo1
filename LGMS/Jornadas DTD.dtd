@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Jornadas
+    [<!ELEMENT Jornada (ID,Nombre,Fecha,ID_Calendario)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Fecha (#PCDATA)>
+    <!ELEMENT ID_Calendario (ID_Calendario)>
+    ]>
+    
+<Jornadas>
+  <Jornada>
+    <ID>54846547</ID>
+    <Nombre>Imanol</Nombre>
+    <Fecha>25/05/2021</Fecha>
+    <ID_calendario>514678487</ID_calendario>
+  </Jornada>
+</Jornadas>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE Dueinos
+    [<!ELEMENT Dueino (IDD, Anios_Dueino)>
+    <!ELEMENT IDD (#PCDATA)>
+    <!ELEMENT Anios_Dueino (#PCDATA)>
+   
+    ]>
+    
+<Dueinos>
+  <Dueino>
+    <IDD>5454584</IDD>  
+    <Anios_Dueino>5</Anios_Dueino>
+  </Dueino>
+</Dueinos>
