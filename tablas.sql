@@ -83,7 +83,7 @@ references Personas (ID)
 
 create table Jugador(
 IDJ                  INT PRIMARY KEY,
-Rol                 varchar2(30),
+Rol                 varchar2(60),
 CONSTRAINT ID_Persona4_FK foreign key (IDJ)
 references Personas (ID)
 );

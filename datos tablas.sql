@@ -11,17 +11,17 @@ insert into equipo values (5, 'Version 1', 'version1.com', 0, 70);
 insert into equipo values (6, 'Liquid', 'liquid.com', 0, 70);
 
 insert into partido (ID, Nombre, ID_local, ID_visitante, Resultado_local, 
-Resultado_visitante, ID_Jornada) values (100, 'g2 vs sentinels', 1, 3, 13, 9, 1);
+Resultado_visitante, ID_Jornada) values (100, 'g2 vs sentinels', 1, 3, null, null, 1);
 insert into partido (ID, Nombre, ID_local, ID_visitante, Resultado_local, 
-Resultado_visitante, ID_Jornada) values (101, 'Fnatic vs 100thieves', 2, 4, 13, 15, 1);
+Resultado_visitante, ID_Jornada) values (101, 'Fnatic vs 100thieves', 2, 4, null, null, 1);
 insert into partido (ID, Nombre, ID_local, ID_visitante, Resultado_local, 
-Resultado_visitante, ID_Jornada) values (102, 'Version1 vs liquid', 5, 6, 17, 15, 1);
+Resultado_visitante, ID_Jornada) values (102, 'Version1 vs liquid', 5, 6, null, null, 1);
 insert into partido (ID, Nombre, ID_local, ID_visitante, Resultado_local, 
-Resultado_visitante, ID_Jornada) values (103, 'g2 vs Version1', 1, 5, 13, 7, 2);
+Resultado_visitante, ID_Jornada) values (103, 'g2 vs Version1', 1, 5, null, null, 2);
 insert into partido (ID, Nombre, ID_local, ID_visitante, Resultado_local, 
-Resultado_visitante, ID_Jornada) values (104, 'Fnatic vs sentinels', 2, 3, 5, 13, 2);
+Resultado_visitante, ID_Jornada) values (104, 'Fnatic vs sentinels', 2, 3, null, null, 2);
 insert into partido (ID, Nombre, ID_local, ID_visitante, Resultado_local, 
-Resultado_visitante, ID_Jornada) values (105, 'liquid vs 100thieves', 6, 4, 13, 15, 2);
+Resultado_visitante, ID_Jornada) values (105, 'liquid vs 100thieves', 6, 4, null, null, 2);
 
 insert into personas values(1, 'Oscar', 'Mixwell', 10000, 1);
 insert into personas values(2, 'Patryk', 'patitek', 9000, 1);
@@ -51,36 +51,36 @@ insert into personas values(25, 'Maxim', 'wippie', 5000, 5);
 insert into personas values(26, 'Dom', 'Soulcas', 10000, 6);
 insert into personas values(27, 'James', 'Kryptix', 7000, 6);
 insert into personas values(28, 'Travis', 'L1nk', 8000, 6);
-insert into personas values(29, 'Adil', 'ScreaM', 7000, 6);
+insert into personas values(29, 'Adil', 'ScreaM', 11000, 6);
 insert into personas values(30, 'Elias', 'Jamppi', 5000, 6);
 
-insert into Jugador values(1, 'awper');
-insert into Jugador values(2, 'IGL');
-insert into Jugador values(3, 'Lurker');
-insert into Jugador values(4, 'entry');
-insert into Jugador values(5, 'rifler');
-insert into Jugador values(6, 'rifler');
-insert into Jugador values(7, 'IGL');
-insert into Jugador values(8, 'entry');
-insert into Jugador values(9, 'lurker');
-insert into Jugador values(10, 'awper');
-insert into Jugador values(11, 'awper, rifler');
-insert into Jugador values(12, 'awper, rifler, IGL');
-insert into Jugador values(13, 'entry');
-insert into Jugador values(14, 'entry, lurker');
-insert into Jugador values(15, 'lurker');
-insert into Jugador values(16, 'IGL');
-insert into Jugador values(17, 'awper');
-insert into Jugador values(18, 'rifler');
-insert into Jugador values(19, 'entry');
-insert into Jugador values(20, 'Lurker');
-insert into Jugador values(21, 'awper');
-insert into Jugador values(22, 'entry');
-insert into Jugador values(23, 'rifler');
-insert into Jugador values(24, 'IGL');
-insert into Jugador values(25, 'lurker');
-insert into Jugador values(26, 'lurker');
-insert into Jugador values(27, 'entry');
-insert into Jugador values(28, 'IGL');
-insert into Jugador values(29, 'rifler');
-insert into Jugador values(30, 'awper');
+insert into Jugador values(1, 'Duelista, sniper, capitan');
+insert into Jugador values(2, 'Controlador, lurker');
+insert into Jugador values(3, 'Centinela, Reconocimiento');
+insert into Jugador values(4, 'Iniciador, Control de multitudes, Reconocimiento');
+insert into Jugador values(5, 'Duelista, Entry');
+insert into Jugador values(6, 'Duelista, Entry');
+insert into Jugador values(7, 'Iniciador, Control de multitudes, Reconocimiento, Capitan');
+insert into Jugador values(8, 'Controlador, Control de multitudes');
+insert into Jugador values(9, 'Duelista, Entry');
+insert into Jugador values(10, 'Centinela, Control de multitudes');
+insert into Jugador values(11, 'Duelista, Sniper');
+insert into Jugador values(12, 'Polivalente, Sniper, capitan');
+insert into Jugador values(13, 'Duelista, Entry');
+insert into Jugador values(14, 'Controlador, Control de multitudes');
+insert into Jugador values(15, 'Centinela, Reconocimiento');
+insert into Jugador values(16, 'Iniciador, Control de multitudes, Reconocimiento');
+insert into Jugador values(17, 'Controlador, Sniper, Lurker');
+insert into Jugador values(18, 'Centinela, Control de multitudes, Capitan');
+insert into Jugador values(19, 'Duelista, Entry');
+insert into Jugador values(20, 'Centinela, Apoyo');
+insert into Jugador values(21, 'Controlador, sniper, capitan');
+insert into Jugador values(22, 'Iniciador, Control de multitudes, Reconocimiento');
+insert into Jugador values(23, 'Duelista, Entry');
+insert into Jugador values(24, 'Duelista, Control de multitudes');
+insert into Jugador values(25, 'Controlador, Control de multitudes');
+insert into Jugador values(26, 'Iniciador, Control de multitudes, Reconocimiento');
+insert into Jugador values(27, 'Controladores, Entry');
+insert into Jugador values(28, 'Controlador, Control de multitudes, lurker');
+insert into Jugador values(29, 'Duelista, Control de multitudes');
+insert into Jugador values(30, 'Duelista, sniper');
