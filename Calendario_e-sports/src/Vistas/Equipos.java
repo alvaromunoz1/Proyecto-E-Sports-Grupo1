@@ -39,19 +39,19 @@ public class Equipos extends javax.swing.JFrame {
         G2.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Desktop\\proyecto\\imagenes equipos\\G2.png")); // NOI18N
         G2.setBorder(null);
 
-        sentinels.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/sentinels.png"))); // NOI18N
+        sentinels.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/sentinels.png"))); // NOI18N
         sentinels.setBorder(null);
 
-        liquid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/liquid.png"))); // NOI18N
+        liquid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/liquid.png"))); // NOI18N
         liquid.setBorder(null);
 
-        A100thieves.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/100thieves.png"))); // NOI18N
+        A100thieves.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/100thieves.png"))); // NOI18N
         A100thieves.setBorder(null);
 
-        fnatic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/fnatic.png"))); // NOI18N
+        fnatic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/fnatic.png"))); // NOI18N
         fnatic.setBorder(null);
 
-        V1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/V1.png"))); // NOI18N
+        V1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/V1.png"))); // NOI18N
         V1.setBorder(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -71,7 +71,7 @@ public class Equipos extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(liquid, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(134, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
