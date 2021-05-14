@@ -21,8 +21,12 @@ public class TablaDueño {
         private Connection con;
         private TablaPersona tp;
 
-    public TablaDueño(Connection con, TablaPersona tp) {
-        this.con = con;
+    public TablaDueño(Connection con) {
+        this.con = con;;
+    }
+    
+    public void setTablaPersona(TablaPersona tp)
+    {
         this.tp = tp;
     }
     

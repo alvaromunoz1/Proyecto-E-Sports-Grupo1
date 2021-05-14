@@ -24,8 +24,12 @@ public class TablaPersona {
         private TablaDueño td;
         private TablaJugador tj;
 
-    public TablaPersona(Connection con, TablaEntrenador te, TablaAsistente ta, TablaDueño td, TablaJugador tj) {
+    public TablaPersona(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablasExtra( TablaEntrenador te, TablaAsistente ta, TablaDueño td, TablaJugador tj)
+    {
         this.te = te;
         this.ta = ta;
         this.td = td;
@@ -153,6 +157,7 @@ public class TablaPersona {
         ArrayList<Persona> lista = new ArrayList();
         String plantilla = "SELECT * FROM Personas WHERE ID_Equipo=?;";
         PreparedStatement ps = con.prepareStatement(plantilla);
+        ps.setInt(1, id);
         ResultSet resultado = ps.executeQuery();
 
        while(resultado.next())
@@ -169,6 +174,26 @@ public class TablaPersona {
        }
        return lista;
     }   
+    
+        public int  seleccionarIDPorEquipos(int id) throws Exception
+    {
+        String plantilla = "SELECT ID FROM Personas WHERE ID_Equipo=?;";
+        PreparedStatement ps = con.prepareStatement(plantilla);
+        ps.setInt(1, id);
+        ResultSet resultado = ps.executeQuery();
+
+       if (resultado.next())
+       {
+           Persona p = new Persona();
+           
+           p.setId(resultado.getInt("ID"));
+           int resp = p.getId();
+           
+           return resp;
+       }
+       else
+           return null;
+    }     
         
     public Persona  seleccionarUnaPersona(int id) throws Exception
     {

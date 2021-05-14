@@ -21,8 +21,12 @@ public class TablaJornada {
         private Connection con;
         private TablaPartido tp;
 
-    public TablaJornada(Connection con, TablaPartido tp) {
+    public TablaJornada(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablaPartido(TablaPartido tp)
+    {
         this.tp = tp;
     }
     

@@ -23,25 +23,31 @@ public class TablaEquipo {
         private TablaAsistente ta;
         private TablaDueño td;
         private TablaJugador tj;
+        private TablaPersona tp;
 
-    public TablaEquipo(Connection con, TablaEntrenador te, TablaAsistente ta, TablaDueño td, TablaJugador tj) {
+    public TablaEquipo(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablasExtra(TablaEntrenador te, TablaAsistente ta, TablaDueño td, TablaJugador tj, TablaPersona tp)
+    {
         this.te = te;
         this.ta = ta;
         this.td = td;
         this.tj = tj;
+        this.tp = tp;
     }
     
      public void insertar(Equipo e) throws Exception
     {
         
-        String plantilla = "INSERT INTO Equipo VALUES (?,?,?,?);";
+        String plantilla = "INSERT INTO Equipo VALUES (?,?,?,?,?);";
         PreparedStatement ps = con.prepareStatement(plantilla);
         ps.setInt(1, e.getId());
         ps.setString(2,e.getNombre());
         ps.setString(3, e.getPaginaWeb());
         ps.setInt(4, e.getPuntos());
-        ps.setInt(4,e.getId_calendario());
+        ps.setInt(5,e.getId_calendario());
       
         int n = ps.executeUpdate();
         ps.close();
@@ -185,8 +191,8 @@ public class TablaEquipo {
            e.setPaginaWeb(resultado.getString("Pagina_Web"));
            e.setPuntos(resultado.getInt("Puntos"));
            e.setId_calendario(resultado.getInt("ID_Calendario"));
-           e.setDueño(funcion dueños por equipo);
-           e.setAsistente(funcion asis por equipo);
+           e.setDueño(td.seleccionarUnDueño(tp.seleccionarIDPorEquipos(id)));
+           e.setAsistente();
            e.setEntrenador(funcion entre por equipo);
            e.setJugadores(funcion jug por equipo);
            

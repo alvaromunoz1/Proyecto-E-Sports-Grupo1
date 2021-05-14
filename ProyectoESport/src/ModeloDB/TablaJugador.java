@@ -21,8 +21,12 @@ public class TablaJugador {
         private Connection con;
         private TablaPersona tp;
 
-    public TablaJugador(Connection con, TablaPersona tp) {
+    public TablaJugador(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablaPersona(TablaPersona tp)
+    {
         this.tp = tp;
     }
     

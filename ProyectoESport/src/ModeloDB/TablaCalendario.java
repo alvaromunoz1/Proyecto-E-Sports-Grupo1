@@ -20,8 +20,12 @@ public class TablaCalendario {
     private Connection con;
     private TablaJornada tj;
 
-    public TablaCalendario(Connection con, TablaJornada tj) {
+    public TablaCalendario(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablaJornada( TablaJornada tj)
+    {
         this.tj = tj;
     }
     

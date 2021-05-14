@@ -21,8 +21,12 @@ public class TablaEntrenador {
         private Connection con;
         private TablaPersona tp;
 
-    public TablaEntrenador(Connection con, TablaPersona tp) {
+    public TablaEntrenador(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablaPersona(TablaPersona tp)
+    {
         this.tp = tp;
     }
     

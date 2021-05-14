@@ -20,10 +20,15 @@ public class TablaAsistente {
         private Connection con;
         private TablaPersona tp;
 
-    public TablaAsistente(Connection con, TablaPersona tp) {
+    public TablaAsistente(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablaPersona(TablaPersona tp)
+    {
         this.tp = tp;
     }
+    
     
      public void insertar(Asistente a) throws Exception
     {

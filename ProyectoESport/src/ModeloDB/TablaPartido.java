@@ -21,8 +21,12 @@ public class TablaPartido {
         private Connection con;
         private TablaEquipo te;
 
-    public TablaPartido(Connection con, TablaPartido tp) {
+    public TablaPartido(Connection con) {
         this.con = con;
+    }
+    
+    public void setTablaEquipo(  TablaEquipo te)
+    {
         this.te = te;
     }
     
@@ -30,7 +34,8 @@ public class TablaPartido {
     {
     
         
-        String plantilla = "INSERT INTO Partido VALUES (?,?,?,?,?,NULL,NULL,?);";
+        String plantilla = "INSERT INTO(ID,Nombre,ID_Local,ID_Visitante,Hora"
+                + ",ID_Jornada) Partido VALUES (?,?,?,?,?,?);";
         PreparedStatement ps = con.prepareStatement(plantilla);
         ps.setInt(1, p.getId());
         ps.setString(2,p.getNombre());
@@ -71,7 +76,8 @@ public class TablaPartido {
      public void CambiarResultado(Partido p) throws Exception
     {
         
-        String plantilla = "UPDATE Partido SET Resultado_Local=?, Resultado_Visitante=?  WHERE ID =?";
+        String plantilla = "UPDATE Partido SET Resultado_Local=?, "
+                + "Resultado_Visitante=?  WHERE ID =?";
         PreparedStatement ps = con.prepareStatement(plantilla);
         
         ps.setInt(3, p.getId());
@@ -173,7 +179,8 @@ public class TablaPartido {
     }
     
     
-    public ArrayList<Partido>  seleccionarPartidosPorJornada(int id) throws Exception
+    public ArrayList<Partido>  seleccionarPartidosPorJornada(int id) 
+            throws Exception
     {
         ArrayList<Partido> lista = new ArrayList();
         String plantilla = "SELECT * FROM Partido WHERE ID_Jornada =?;";
@@ -199,7 +206,7 @@ public class TablaPartido {
        return lista;
     }
     
-    public Partido  seleccionarUnaPartido(int id) throws Exception
+    public Partido  seleccionarUnPartido(int id) throws Exception
     {
         
         String plantilla = "SELECT * FROM Partido WHERE ID=?;";
