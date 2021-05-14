@@ -15,17 +15,10 @@ Nombre  varchar2(50)
 );
 
 create table Jornada(
-ID                  INT GENERATED ALWAYS AS IDENTITY 
-                        MINVALUE 1 
-                        MAXVALUE 40
-                        INCREMENT BY 1 
-                        START WITH 1  
-                        NOORDER  
-                        NOCYCLE,
+ID                  INT PRIMARY KEY,
 Nombre              varchar2(50),
 Fecha               date,
 ID_Calendario       INT,
-constraint ID_jor_pk primary key(ID),
 CONSTRAINT ID_Cal_FK foreign key (ID_Calendario)
 references Calendario (ID)
 );
@@ -45,7 +38,7 @@ ID                      INT PRIMARY KEY,
 Nombre                  varchar2(50),
 ID_local                INT,
 ID_visitante            INT,
-Hora                    timestamp,
+Hora                    TIMESTAMP,
 Resultado_local         int,           
 Resultado_visitante     int,           
 ID_Jornada              INT,
@@ -90,7 +83,7 @@ references Personas (ID)
 
 create table Jugador(
 IDJ                  INT PRIMARY KEY,
-Rol                 varchar2(10),
+Rol                 varchar2(30),
 CONSTRAINT ID_Persona4_FK foreign key (IDJ)
 references Personas (ID)
 );
