@@ -39,7 +39,7 @@
                   <Component id="V1" min="-2" pref="167" max="-2" attributes="0"/>
                   <Component id="liquid" pref="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="134" max="32767" attributes="0"/>
+              <EmptySpace pref="76" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -77,7 +77,7 @@
     <Component class="javax.swing.JButton" name="sentinels">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Vistas/sentinels.png"/>
+          <Image iconType="3" name="/Fotos/sentinels.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -87,7 +87,7 @@
     <Component class="javax.swing.JButton" name="liquid">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Vistas/liquid.png"/>
+          <Image iconType="3" name="/Fotos/liquid.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -97,7 +97,7 @@
     <Component class="javax.swing.JButton" name="A100thieves">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Vistas/100thieves.png"/>
+          <Image iconType="3" name="/Fotos/100thieves.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -107,7 +107,7 @@
     <Component class="javax.swing.JButton" name="fnatic">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Vistas/fnatic.png"/>
+          <Image iconType="3" name="/Fotos/fnatic.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -117,7 +117,7 @@
     <Component class="javax.swing.JButton" name="V1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Vistas/V1.png"/>
+          <Image iconType="3" name="/Fotos/V1.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
