@@ -8,6 +8,7 @@ package Controlador;
 
 import ModeloDB.*;
 import ModeloUML.*;
+import Vista.*;
 import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDateTime;
@@ -34,6 +35,7 @@ public class ProyectoESport {
     private static TablaEntrenador tentre;
     private static TablaAsistente ta;
     private static TablaJugador tjug;
+    private static TablaUsuario tu;
     
     private static Calendario c;
     private static Jornada j;
@@ -44,12 +46,20 @@ public class ProyectoESport {
     private static Entrenador entre;
     private static Asistente a;
     private static Jugador jug;
+    private static Usuario u;
+    
+    private static Equipos ve;
+    private static PP vp;
+    private static Login vl;
+    private static DatosEquipos vde;
+    private static Clasificaciones vc;
     
     
     public static void main(String[] args) {
     
         CrearTablas();
-        CrearyIniciarVistas();
+        CrearVistas();
+        VistaLogin();
         
     }
     
@@ -73,6 +83,80 @@ public class ProyectoESport {
         {
             System.out.println(e.getMessage());
         }
+    }
+    
+    public static void CrearVistas() 
+    {
+        try{
+            
+            ve = new Equipos();
+            vp = new PP();
+            vl = new Login();
+            vde = new DatosEquipos();
+            vc = new Clasificaciones();
+        
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
+    
+    public static void CerrarPrograma()
+    {
+        vl.setVisible(false);
+        vl.dispose();
+    }
+    
+    public static void VistaLogin()
+    {
+        vl.setVisible(true);
+    }
+    
+    public static void VistaPrincipal(char a) 
+    {
+        vl.dispose();
+        
+        vp.setVisible(true);
+    }
+    
+    
+    public static void VistaEquipos() 
+    {
+        vp.setVisible(false);
+        vde.setVisible(false);
+      
+        ve.setVisible(true);
+    }
+    
+    public static void VistaDatosEquipos(int elec) 
+    {
+        ve.setVisible(false);
+      
+        vde.setVisible(true);
+    }
+    
+    public static void VistaClasificaciones() 
+    {
+        vp.setVisible(false);
+      
+        vc.setVisible(true);
+    }
+    
+    public static boolean identificar(String usuario,String contraseña) throws Exception{
+        boolean usuarioValido = false;
+        ArrayList<Usuario> lista = tu.seleccionarTodosLosUsuarios();
+        int x;
+        for(x=0; x < lista.size() && !usuarioValido; x++)
+            if (lista.get(x).getNombre() != null)
+                if (lista.get(x).getNombre().compareToIgnoreCase(usuario)== 0 && lista.get(x).getContraseña().compareTo(contraseña)== 0)
+                {
+                    usuarioValido = true;
+                    u = lista.get(x);
+                }
+      
+               
+        return usuarioValido;
     }
     
     public static void insertarCalendario(int id,String nombre) 
@@ -558,7 +642,7 @@ public class ProyectoESport {
         return per;
     } 
 
-    public static String datosTodosLosAsistentes(int id) throws Exception
+    public static String datosTodosLosAsistentes() throws Exception
     {
         String datos="";
         ArrayList<Asistente> lista = ta.seleccionarTodosLosAsistentes();
@@ -589,7 +673,7 @@ public class ProyectoESport {
         return a;
     }
 
-    public static String datosTodosLosDueños(int id) throws Exception
+    public static String datosTodosLosDueños() throws Exception
     {
         String datos="";
         ArrayList<Dueño> lista = td.seleccionarTodosLosDueños();
@@ -619,7 +703,7 @@ public class ProyectoESport {
         return d;
     }
     
-    public static String datosTodosLosEntrnadores(int id) throws Exception
+    public static String datosTodosLosEntrnadores() throws Exception
     {
         String datos="";
         ArrayList<Entrenador> lista = tentre.seleccionarTodosLosEntrenadores();
@@ -650,7 +734,7 @@ public class ProyectoESport {
         return entre;
     }    
     
-    public static String datosTodosLosJugadores(int id) throws Exception
+    public static String datosTodosLosJugadores() throws Exception
     {
         String datos="";
         ArrayList<Jugador> lista = tjug.seleccionarTodosLosJugadores();
@@ -680,11 +764,27 @@ public class ProyectoESport {
         return jug;
     }    
     
+    public static ArrayList<Usuario> seleccionarTodosLosUsuarios() throws Exception
+    {
+        String datos="";
+        ArrayList<Usuario> lista = tu.seleccionarTodosLosUsuarios();
+        
+        return lista;
+    }
     
+    public static Usuario seleccionarUnUsuario(int id) throws Exception
+    {
+        Usuario u = tu.seleccionarUnUsuario(id);
+
+        return u;
+    }    
     
-    
-    
-    
+    public static Usuario seleccionarTipoDeUsuario(String nom) throws Exception
+    {
+        Usuario u = tu.seleccionarTipoDeUsuario(nom);
+
+        return u;
+    }    
     
     
     

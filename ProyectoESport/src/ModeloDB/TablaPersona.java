@@ -139,7 +139,7 @@ public class TablaPersona {
         bd.desconectar();
     }  
       
-        public ArrayList<Persona>  seleccionarTodosLasPersonas() 
+    public ArrayList<Persona>  seleccionarTodosLasPersonas() 
                 throws Exception
     {
         bd.conectar();

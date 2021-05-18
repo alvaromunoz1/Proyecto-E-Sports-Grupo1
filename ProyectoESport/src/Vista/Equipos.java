@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import Controlador.ProyectoESport;
+
 /**
  *
  * @author 1gdaw03
@@ -14,9 +16,10 @@ public class Equipos extends javax.swing.JFrame {
     /**
      * Creates new form Equipos
      */
+    public int elec;
+    
     public Equipos() {
         initComponents();
-        int selec;
     }
 
     /**
@@ -123,14 +126,12 @@ public class Equipos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void seleccion()
-    {
-        
-        
-    }
-    
     private void sentinelsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sentinelsActionPerformed
-        // TODO add your handling code here:
+    
+        elec = 01;
+        ProyectoESport.VistaDatosEquipos(elec);
+        
+        
     }//GEN-LAST:event_sentinelsActionPerformed
 
     private void G2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G2ActionPerformed
