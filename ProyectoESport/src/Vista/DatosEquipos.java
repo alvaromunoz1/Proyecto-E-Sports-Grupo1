@@ -6,16 +6,22 @@
 
 package Vista;
 
+<<<<<<< HEAD
 import Controlador.ProyectoESport;
 import ModeloUML.Equipo;
 import ModeloUML.Persona;
 import java.util.ArrayList;
 
+=======
+>>>>>>> main
 /**
  *
  * @author 1gdaw03
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 public class DatosEquipos extends javax.swing.JFrame {
 
     /** Creates new form DatosEquipos */
@@ -37,9 +43,21 @@ public class DatosEquipos extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jLabel9 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         taJug = new javax.swing.JTextArea();
+=======
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        taJugadoresEquipo = new javax.swing.JTextArea();
+        tfEntrenadorEquipo = new javax.swing.JTextField();
+        tfAsistenteEquipo = new javax.swing.JTextField();
+        tfDueñoEquipo = new javax.swing.JTextField();
+>>>>>>> main
         tfIDCal = new javax.swing.JTextField();
         tfPuntosEquipo = new javax.swing.JTextField();
         tfPaginaWeb = new javax.swing.JTextField();
@@ -59,6 +77,7 @@ public class DatosEquipos extends javax.swing.JFrame {
 
         jLabel5.setText("ID_Calendario");
 
+<<<<<<< HEAD
         jLabel9.setText("Integrantes");
 
         taJug.setColumns(20);
@@ -70,6 +89,19 @@ public class DatosEquipos extends javax.swing.JFrame {
                 tfPaginaWebActionPerformed(evt);
             }
         });
+=======
+        jLabel6.setText("Dueño");
+
+        jLabel7.setText("Asistente");
+
+        jLabel8.setText("Entrenador");
+
+        jLabel9.setText("Jugadores");
+
+        taJugadoresEquipo.setColumns(20);
+        taJugadoresEquipo.setRows(5);
+        jScrollPane1.setViewportView(taJugadoresEquipo);
+>>>>>>> main
 
         tfIDE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,11 +110,14 @@ public class DatosEquipos extends javax.swing.JFrame {
         });
 
         jButton1.setText("Atras");
+<<<<<<< HEAD
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+=======
+>>>>>>> main
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,20 +126,39 @@ public class DatosEquipos extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(90, 90, 90)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+<<<<<<< HEAD
+=======
+                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> main
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
+=======
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> main
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(100, 100, 100)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE)
+<<<<<<< HEAD
+=======
+                    .addComponent(tfEntrenadorEquipo)
+                    .addComponent(tfAsistenteEquipo)
+>>>>>>> main
                     .addComponent(tfIDE)
                     .addComponent(tfNombreE)
                     .addComponent(tfPaginaWeb)
                     .addComponent(tfPuntosEquipo)
+<<<<<<< HEAD
                     .addComponent(tfIDCal))
+=======
+                    .addComponent(tfIDCal)
+                    .addComponent(tfDueñoEquipo))
+>>>>>>> main
                 .addGap(85, 85, 85)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(106, Short.MAX_VALUE))
@@ -132,6 +186,7 @@ public class DatosEquipos extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(tfIDCal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(268, 268, 268)
@@ -142,6 +197,25 @@ public class DatosEquipos extends javax.swing.JFrame {
                             .addComponent(jLabel9)
                             .addComponent(jScrollPane1))))
                 .addGap(140, 140, 140))
+=======
+                .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(tfDueñoEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(tfAsistenteEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(tfEntrenadorEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> main
         );
 
         pack();
@@ -151,6 +225,7 @@ public class DatosEquipos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tfIDEActionPerformed
 
+<<<<<<< HEAD
     private void tfPaginaWebActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfPaginaWebActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfPaginaWebActionPerformed
@@ -181,6 +256,8 @@ public class DatosEquipos extends javax.swing.JFrame {
     }
     
     
+=======
+>>>>>>> main
     /**
      * @param args the command line arguments
      */
@@ -223,9 +300,21 @@ public class DatosEquipos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea taJug;
+=======
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea taJugadoresEquipo;
+    private javax.swing.JTextField tfAsistenteEquipo;
+    private javax.swing.JTextField tfDueñoEquipo;
+    private javax.swing.JTextField tfEntrenadorEquipo;
+>>>>>>> main
     private javax.swing.JTextField tfIDCal;
     private javax.swing.JTextField tfIDE;
     private javax.swing.JTextField tfNombreE;

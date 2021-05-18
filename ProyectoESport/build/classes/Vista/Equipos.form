@@ -39,7 +39,11 @@
                   <Component id="V1" min="-2" pref="167" max="-2" attributes="0"/>
                   <Component id="liquid" pref="0" max="32767" attributes="0"/>
               </Group>
+<<<<<<< HEAD
               <EmptySpace pref="76" max="32767" attributes="0"/>
+=======
+              <EmptySpace pref="140" max="32767" attributes="0"/>
+>>>>>>> main
           </Group>
       </Group>
     </DimensionLayout>
@@ -58,7 +62,11 @@
                   <Component id="fnatic" min="-2" pref="171" max="-2" attributes="0"/>
                   <Component id="V1" max="32767" attributes="0"/>
               </Group>
+<<<<<<< HEAD
               <EmptySpace pref="92" max="32767" attributes="0"/>
+=======
+              <EmptySpace pref="113" max="32767" attributes="0"/>
+>>>>>>> main
           </Group>
       </Group>
     </DimensionLayout>

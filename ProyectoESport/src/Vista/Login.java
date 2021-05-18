@@ -5,10 +5,13 @@
  */
 package Vista;
 
+<<<<<<< HEAD
 import Controlador.ProyectoESport;
 import Excepciones.*;
 import javax.swing.JOptionPane;
 
+=======
+>>>>>>> main
 /**
  *
  * @author 1gdaw03
@@ -18,11 +21,14 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
+<<<<<<< HEAD
     private int intentos=0;
     private final int NUMEROINTENTOSVALIDOS = 3;
     private char A;
     private char U;
     
+=======
+>>>>>>> main
     public Login() {
         initComponents();
     }
@@ -62,7 +68,11 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
         bCancelar.setText("Salir");
+=======
+        bCancelar.setText("Cancelar");
+>>>>>>> main
         bCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bCancelarActionPerformed(evt);
@@ -85,9 +95,15 @@ public class Login extends javax.swing.JFrame {
                 .addGap(180, 180, 180))
             .addGroup(layout.createSequentialGroup()
                 .addGap(202, 202, 202)
+<<<<<<< HEAD
                 .addComponent(bAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(98, 98, 98)
                 .addComponent(bCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+                .addComponent(bAceptar)
+                .addGap(116, 116, 116)
+                .addComponent(bCancelar)
+>>>>>>> main
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -117,6 +133,7 @@ public class Login extends javax.swing.JFrame {
 
     private void bAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAceptarActionPerformed
         
+<<<<<<< HEAD
         try
        {
            if (tfUsuario.getText().isEmpty() || String.valueOf(pfUsuarios.getPassword()).isEmpty())
@@ -156,6 +173,12 @@ public class Login extends javax.swing.JFrame {
 
     private void bCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCancelarActionPerformed
         ProyectoESport.CerrarPrograma();
+=======
+    }//GEN-LAST:event_bAceptarActionPerformed
+
+    private void bCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCancelarActionPerformed
+        
+>>>>>>> main
     }//GEN-LAST:event_bCancelarActionPerformed
 
     /**
