@@ -27,16 +27,1261 @@ public class Clasificaciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        E1 = new javax.swing.JTextField();
+        E2 = new javax.swing.JTextField();
+        E3 = new javax.swing.JTextField();
+        E4 = new javax.swing.JTextField();
+        E5 = new javax.swing.JTextField();
+        E6 = new javax.swing.JTextField();
+        E7 = new javax.swing.JTextField();
+        E8 = new javax.swing.JTextField();
+        PT1 = new javax.swing.JTextField();
+        PT2 = new javax.swing.JTextField();
+        PT3 = new javax.swing.JTextField();
+        PT4 = new javax.swing.JTextField();
+        PT5 = new javax.swing.JTextField();
+        PT6 = new javax.swing.JTextField();
+        PT7 = new javax.swing.JTextField();
+        PT8 = new javax.swing.JTextField();
+        PJT1 = new javax.swing.JTextField();
+        PJT2 = new javax.swing.JTextField();
+        PJT3 = new javax.swing.JTextField();
+        PJT4 = new javax.swing.JTextField();
+        PJT5 = new javax.swing.JTextField();
+        PJT6 = new javax.swing.JTextField();
+        PJT7 = new javax.swing.JTextField();
+        PJT8 = new javax.swing.JTextField();
+        PGT1 = new javax.swing.JTextField();
+        PGT2 = new javax.swing.JTextField();
+        PGT3 = new javax.swing.JTextField();
+        PGT4 = new javax.swing.JTextField();
+        PGT5 = new javax.swing.JTextField();
+        PGT6 = new javax.swing.JTextField();
+        PGT7 = new javax.swing.JTextField();
+        PGT8 = new javax.swing.JTextField();
+        PPT1 = new javax.swing.JTextField();
+        PPT2 = new javax.swing.JTextField();
+        PPT3 = new javax.swing.JTextField();
+        PPT4 = new javax.swing.JTextField();
+        PPT5 = new javax.swing.JTextField();
+        PPT6 = new javax.swing.JTextField();
+        PPT7 = new javax.swing.JTextField();
+        PPT8 = new javax.swing.JTextField();
+        PL1 = new javax.swing.JTextField();
+        PL2 = new javax.swing.JTextField();
+        PL3 = new javax.swing.JTextField();
+        PL4 = new javax.swing.JTextField();
+        PL5 = new javax.swing.JTextField();
+        PL6 = new javax.swing.JTextField();
+        PL7 = new javax.swing.JTextField();
+        PL8 = new javax.swing.JTextField();
+        PJL1 = new javax.swing.JTextField();
+        PJL2 = new javax.swing.JTextField();
+        PJL3 = new javax.swing.JTextField();
+        PJL4 = new javax.swing.JTextField();
+        PJL5 = new javax.swing.JTextField();
+        PJL6 = new javax.swing.JTextField();
+        PJL7 = new javax.swing.JTextField();
+        PJL8 = new javax.swing.JTextField();
+        PGL1 = new javax.swing.JTextField();
+        PGL2 = new javax.swing.JTextField();
+        PGL3 = new javax.swing.JTextField();
+        PGL4 = new javax.swing.JTextField();
+        PGL5 = new javax.swing.JTextField();
+        PGL6 = new javax.swing.JTextField();
+        PGL7 = new javax.swing.JTextField();
+        PGL8 = new javax.swing.JTextField();
+        PPL1 = new javax.swing.JTextField();
+        PPL2 = new javax.swing.JTextField();
+        PPL3 = new javax.swing.JTextField();
+        PPL4 = new javax.swing.JTextField();
+        PPL5 = new javax.swing.JTextField();
+        PPL6 = new javax.swing.JTextField();
+        PPL7 = new javax.swing.JTextField();
+        PPL8 = new javax.swing.JTextField();
+        PV1 = new javax.swing.JTextField();
+        PV2 = new javax.swing.JTextField();
+        PV3 = new javax.swing.JTextField();
+        PV4 = new javax.swing.JTextField();
+        PV5 = new javax.swing.JTextField();
+        PV6 = new javax.swing.JTextField();
+        PV7 = new javax.swing.JTextField();
+        PV8 = new javax.swing.JTextField();
+        PJV1 = new javax.swing.JTextField();
+        PJV2 = new javax.swing.JTextField();
+        PJV3 = new javax.swing.JTextField();
+        PJV4 = new javax.swing.JTextField();
+        PJV5 = new javax.swing.JTextField();
+        PJV6 = new javax.swing.JTextField();
+        PJV7 = new javax.swing.JTextField();
+        PJV8 = new javax.swing.JTextField();
+        PGV1 = new javax.swing.JTextField();
+        PGV2 = new javax.swing.JTextField();
+        PGV3 = new javax.swing.JTextField();
+        PGV4 = new javax.swing.JTextField();
+        PGV5 = new javax.swing.JTextField();
+        PGV6 = new javax.swing.JTextField();
+        PGV7 = new javax.swing.JTextField();
+        PGV8 = new javax.swing.JTextField();
+        PPV1 = new javax.swing.JTextField();
+        PPV2 = new javax.swing.JTextField();
+        PPV3 = new javax.swing.JTextField();
+        PPV4 = new javax.swing.JTextField();
+        PPV5 = new javax.swing.JTextField();
+        PPV6 = new javax.swing.JTextField();
+        PPV7 = new javax.swing.JTextField();
+        PPV8 = new javax.swing.JTextField();
+        TablaClasi = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        E1.setBackground(new java.awt.Color(255, 255, 255));
+        E1.setBorder(null);
+        getContentPane().add(E1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 270, 60));
+
+        E2.setBackground(new java.awt.Color(255, 255, 255));
+        E2.setBorder(null);
+        getContentPane().add(E2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 270, 60));
+
+        E3.setBackground(new java.awt.Color(255, 255, 255));
+        E3.setBorder(null);
+        getContentPane().add(E3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 270, 50));
+
+        E4.setBackground(new java.awt.Color(255, 255, 255));
+        E4.setBorder(null);
+        getContentPane().add(E4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 270, 50));
+
+        E5.setBackground(new java.awt.Color(255, 255, 255));
+        E5.setBorder(null);
+        getContentPane().add(E5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, 270, 60));
+
+        E6.setBackground(new java.awt.Color(255, 255, 255));
+        E6.setBorder(null);
+        getContentPane().add(E6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 430, 270, 50));
+
+        E7.setBackground(new java.awt.Color(255, 255, 255));
+        E7.setBorder(null);
+        getContentPane().add(E7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 500, 270, 50));
+
+        E8.setBackground(new java.awt.Color(255, 255, 255));
+        E8.setBorder(null);
+        getContentPane().add(E8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 570, 270, 50));
+
+        PT1.setBackground(new java.awt.Color(173, 88, 255));
+        PT1.setBorder(null);
+        getContentPane().add(PT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, 60, 50));
+
+        PT2.setEditable(false);
+        PT2.setBackground(new java.awt.Color(173, 88, 255));
+        PT2.setBorder(null);
+        getContentPane().add(PT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 60, 50));
+
+        PT3.setBackground(new java.awt.Color(173, 88, 255));
+        PT3.setBorder(null);
+        getContentPane().add(PT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 230, 60, 50));
+
+        PT4.setBackground(new java.awt.Color(173, 88, 255));
+        PT4.setBorder(null);
+        getContentPane().add(PT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 300, 60, 50));
+
+        PT5.setBackground(new java.awt.Color(173, 88, 255));
+        PT5.setBorder(null);
+        getContentPane().add(PT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 370, 60, 50));
+
+        PT6.setBackground(new java.awt.Color(173, 88, 255));
+        PT6.setBorder(null);
+        getContentPane().add(PT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 430, 60, 50));
+
+        PT7.setBackground(new java.awt.Color(173, 88, 255));
+        PT7.setBorder(null);
+        getContentPane().add(PT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 500, 60, 50));
+
+        PT8.setBackground(new java.awt.Color(173, 88, 255));
+        PT8.setBorder(null);
+        getContentPane().add(PT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 570, 60, 50));
+
+        PJT1.setBackground(new java.awt.Color(255, 255, 255));
+        PJT1.setBorder(null);
+        getContentPane().add(PJT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 60, 50));
+
+        PJT2.setBackground(new java.awt.Color(255, 255, 255));
+        PJT2.setBorder(null);
+        getContentPane().add(PJT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 60, 50));
+
+        PJT3.setBackground(new java.awt.Color(255, 255, 255));
+        PJT3.setBorder(null);
+        getContentPane().add(PJT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, 60, 50));
+
+        PJT4.setBackground(new java.awt.Color(255, 255, 255));
+        PJT4.setBorder(null);
+        getContentPane().add(PJT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 300, 60, 50));
+
+        PJT5.setBackground(new java.awt.Color(255, 255, 255));
+        PJT5.setBorder(null);
+        getContentPane().add(PJT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, 60, 50));
+
+        PJT6.setBackground(new java.awt.Color(255, 255, 255));
+        PJT6.setBorder(null);
+        getContentPane().add(PJT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, 60, 50));
+
+        PJT7.setBackground(new java.awt.Color(255, 255, 255));
+        PJT7.setBorder(null);
+        getContentPane().add(PJT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, 60, 50));
+
+        PJT8.setBackground(new java.awt.Color(255, 255, 255));
+        PJT8.setBorder(null);
+        getContentPane().add(PJT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 570, 60, 50));
+
+        PGT1.setBackground(new java.awt.Color(255, 255, 255));
+        PGT1.setBorder(null);
+        PGT1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, 60, 50));
+
+        PGT2.setBackground(new java.awt.Color(255, 255, 255));
+        PGT2.setBorder(null);
+        PGT2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, 60, 50));
+
+        PGT3.setBackground(new java.awt.Color(255, 255, 255));
+        PGT3.setBorder(null);
+        PGT3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 60, 50));
+
+        PGT4.setBackground(new java.awt.Color(255, 255, 255));
+        PGT4.setBorder(null);
+        PGT4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, 60, 50));
+
+        PGT5.setBackground(new java.awt.Color(255, 255, 255));
+        PGT5.setBorder(null);
+        PGT5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 60, 50));
+
+        PGT6.setBackground(new java.awt.Color(255, 255, 255));
+        PGT6.setBorder(null);
+        PGT6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, 60, 50));
+
+        PGT7.setBackground(new java.awt.Color(255, 255, 255));
+        PGT7.setBorder(null);
+        PGT7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 500, 60, 50));
+
+        PGT8.setBackground(new java.awt.Color(255, 255, 255));
+        PGT8.setBorder(null);
+        PGT8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGT8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 570, 60, 50));
+
+        PPT1.setBackground(new java.awt.Color(255, 255, 255));
+        PPT1.setBorder(null);
+        PPT1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 60, 50));
+
+        PPT2.setBackground(new java.awt.Color(255, 255, 255));
+        PPT2.setBorder(null);
+        PPT2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, 60, 50));
+
+        PPT3.setBackground(new java.awt.Color(255, 255, 255));
+        PPT3.setBorder(null);
+        PPT3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 230, 60, 50));
+
+        PPT4.setBackground(new java.awt.Color(255, 255, 255));
+        PPT4.setBorder(null);
+        PPT4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 60, 50));
+
+        PPT5.setBackground(new java.awt.Color(255, 255, 255));
+        PPT5.setBorder(null);
+        PPT5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 370, 60, 50));
+
+        PPT6.setBackground(new java.awt.Color(255, 255, 255));
+        PPT6.setBorder(null);
+        PPT6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 430, 60, 50));
+
+        PPT7.setBackground(new java.awt.Color(255, 255, 255));
+        PPT7.setBorder(null);
+        PPT7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, 60, 50));
+
+        PPT8.setBackground(new java.awt.Color(255, 255, 255));
+        PPT8.setBorder(null);
+        PPT8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 570, 60, 50));
+
+        PL1.setBackground(new java.awt.Color(82, 90, 243));
+        PL1.setBorder(null);
+        PL1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 100, 50, 50));
+
+        PL2.setBackground(new java.awt.Color(82, 90, 243));
+        PL2.setBorder(null);
+        PL2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 160, 50, 50));
+
+        PL3.setBackground(new java.awt.Color(82, 90, 243));
+        PL3.setBorder(null);
+        PL3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 230, 50, 50));
+
+        PL4.setBackground(new java.awt.Color(82, 90, 243));
+        PL4.setBorder(null);
+        PL4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, 50, 50));
+
+        PL5.setBackground(new java.awt.Color(82, 90, 243));
+        PL5.setBorder(null);
+        PL5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 370, 50, 50));
+
+        PL6.setBackground(new java.awt.Color(82, 90, 243));
+        PL6.setBorder(null);
+        PL6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 430, 50, 50));
+
+        PL7.setBackground(new java.awt.Color(82, 90, 243));
+        PL7.setBorder(null);
+        PL7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 500, 50, 50));
+
+        PL8.setBackground(new java.awt.Color(82, 90, 243));
+        PL8.setBorder(null);
+        PL8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PL8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 570, 50, 50));
+
+        PJL1.setBackground(new java.awt.Color(255, 255, 255));
+        PJL1.setBorder(null);
+        PJL1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 100, 60, 50));
+
+        PJL2.setBackground(new java.awt.Color(255, 255, 255));
+        PJL2.setBorder(null);
+        PJL2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 170, 60, 50));
+
+        PJL3.setBackground(new java.awt.Color(255, 255, 255));
+        PJL3.setBorder(null);
+        PJL3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 230, 60, 50));
+
+        PJL4.setBackground(new java.awt.Color(255, 255, 255));
+        PJL4.setBorder(null);
+        PJL4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, 60, 50));
+
+        PJL5.setBackground(new java.awt.Color(255, 255, 255));
+        PJL5.setBorder(null);
+        PJL5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 370, 60, 50));
+
+        PJL6.setBackground(new java.awt.Color(255, 255, 255));
+        PJL6.setBorder(null);
+        PJL6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 430, 60, 50));
+
+        PJL7.setBackground(new java.awt.Color(255, 255, 255));
+        PJL7.setBorder(null);
+        PJL7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 500, 60, 50));
+
+        PJL8.setBackground(new java.awt.Color(255, 255, 255));
+        PJL8.setBorder(null);
+        PJL8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJL8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 570, 60, 50));
+
+        PGL1.setBackground(new java.awt.Color(255, 255, 255));
+        PGL1.setBorder(null);
+        PGL1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 100, 60, 50));
+
+        PGL2.setBackground(new java.awt.Color(255, 255, 255));
+        PGL2.setBorder(null);
+        PGL2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 160, 60, 50));
+
+        PGL3.setBackground(new java.awt.Color(255, 255, 255));
+        PGL3.setBorder(null);
+        PGL3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 230, 60, 50));
+
+        PGL4.setBackground(new java.awt.Color(255, 255, 255));
+        PGL4.setBorder(null);
+        PGL4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 300, 60, 50));
+
+        PGL5.setBackground(new java.awt.Color(255, 255, 255));
+        PGL5.setBorder(null);
+        PGL5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 370, 60, 50));
+
+        PGL6.setBackground(new java.awt.Color(255, 255, 255));
+        PGL6.setBorder(null);
+        PGL6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 430, 60, 50));
+
+        PGL7.setBackground(new java.awt.Color(255, 255, 255));
+        PGL7.setBorder(null);
+        PGL7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 500, 60, 50));
+
+        PGL8.setBackground(new java.awt.Color(255, 255, 255));
+        PGL8.setBorder(null);
+        PGL8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGL8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 570, 60, 50));
+
+        PPL1.setBackground(new java.awt.Color(255, 255, 255));
+        PPL1.setBorder(null);
+        PPL1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 100, 50, 50));
+
+        PPL2.setBackground(new java.awt.Color(255, 255, 255));
+        PPL2.setBorder(null);
+        PPL2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 160, 50, 50));
+
+        PPL3.setBackground(new java.awt.Color(255, 255, 255));
+        PPL3.setBorder(null);
+        PPL3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 50, 50));
+
+        PPL4.setBackground(new java.awt.Color(255, 255, 255));
+        PPL4.setBorder(null);
+        PPL4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 300, 50, 50));
+
+        PPL5.setBackground(new java.awt.Color(255, 255, 255));
+        PPL5.setBorder(null);
+        PPL5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 370, 50, 50));
+
+        PPL6.setBackground(new java.awt.Color(255, 255, 255));
+        PPL6.setBorder(null);
+        PPL6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 430, 50, 50));
+
+        PPL7.setBackground(new java.awt.Color(255, 255, 255));
+        PPL7.setBorder(null);
+        PPL7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 500, 50, 50));
+
+        PPL8.setBackground(new java.awt.Color(255, 255, 255));
+        PPL8.setBorder(null);
+        PPL8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPL8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, 50, 50));
+
+        PV1.setBackground(new java.awt.Color(202, 46, 46));
+        PV1.setBorder(null);
+        PV1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 100, 50, 50));
+
+        PV2.setBackground(new java.awt.Color(202, 46, 46));
+        PV2.setBorder(null);
+        PV2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 160, 50, 50));
+
+        PV3.setBackground(new java.awt.Color(202, 46, 46));
+        PV3.setBorder(null);
+        PV3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 230, 50, 50));
+
+        PV4.setBackground(new java.awt.Color(202, 46, 46));
+        PV4.setBorder(null);
+        PV4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 300, 50, 50));
+
+        PV5.setBackground(new java.awt.Color(202, 46, 46));
+        PV5.setBorder(null);
+        PV5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 370, 50, 50));
+
+        PV6.setBackground(new java.awt.Color(202, 46, 46));
+        PV6.setBorder(null);
+        PV6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 430, 50, 50));
+
+        PV7.setBackground(new java.awt.Color(202, 46, 46));
+        PV7.setBorder(null);
+        PV7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 500, 50, 50));
+
+        PV8.setBackground(new java.awt.Color(202, 46, 46));
+        PV8.setBorder(null);
+        PV8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PV8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 570, 50, 50));
+
+        PJV1.setBackground(new java.awt.Color(255, 255, 255));
+        PJV1.setBorder(null);
+        PJV1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 100, 50, 50));
+
+        PJV2.setBackground(new java.awt.Color(255, 255, 255));
+        PJV2.setBorder(null);
+        PJV2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 170, 50, 50));
+
+        PJV3.setBackground(new java.awt.Color(255, 255, 255));
+        PJV3.setBorder(null);
+        PJV3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 230, 50, 50));
+
+        PJV4.setBackground(new java.awt.Color(255, 255, 255));
+        PJV4.setBorder(null);
+        PJV4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 300, 50, 50));
+
+        PJV5.setBackground(new java.awt.Color(255, 255, 255));
+        PJV5.setBorder(null);
+        PJV5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 370, 50, 50));
+
+        PJV6.setBackground(new java.awt.Color(255, 255, 255));
+        PJV6.setBorder(null);
+        PJV6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 430, 50, 50));
+
+        PJV7.setBackground(new java.awt.Color(255, 255, 255));
+        PJV7.setBorder(null);
+        PJV7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 500, 50, 50));
+
+        PJV8.setBackground(new java.awt.Color(255, 255, 255));
+        PJV8.setBorder(null);
+        PJV8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PJV8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PJV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 570, 50, 50));
+
+        PGV1.setBackground(new java.awt.Color(255, 255, 255));
+        PGV1.setBorder(null);
+        PGV1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 100, 50, 50));
+
+        PGV2.setBackground(new java.awt.Color(255, 255, 255));
+        PGV2.setBorder(null);
+        PGV2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 170, 50, 50));
+
+        PGV3.setBackground(new java.awt.Color(255, 255, 255));
+        PGV3.setBorder(null);
+        PGV3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 230, 50, 50));
+
+        PGV4.setBackground(new java.awt.Color(255, 255, 255));
+        PGV4.setBorder(null);
+        PGV4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 300, 50, 50));
+
+        PGV5.setBackground(new java.awt.Color(255, 255, 255));
+        PGV5.setBorder(null);
+        PGV5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 370, 50, 50));
+
+        PGV6.setBackground(new java.awt.Color(255, 255, 255));
+        PGV6.setBorder(null);
+        PGV6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 430, 50, 50));
+
+        PGV7.setBackground(new java.awt.Color(255, 255, 255));
+        PGV7.setBorder(null);
+        PGV7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 500, 50, 50));
+
+        PGV8.setBackground(new java.awt.Color(255, 255, 255));
+        PGV8.setBorder(null);
+        PGV8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PGV8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PGV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 570, 50, 50));
+
+        PPV1.setBackground(new java.awt.Color(255, 255, 255));
+        PPV1.setBorder(null);
+        PPV1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 100, 50, 50));
+
+        PPV2.setBackground(new java.awt.Color(255, 255, 255));
+        PPV2.setBorder(null);
+        PPV2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 170, 50, 50));
+
+        PPV3.setBackground(new java.awt.Color(255, 255, 255));
+        PPV3.setBorder(null);
+        PPV3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 230, 50, 50));
+
+        PPV4.setBackground(new java.awt.Color(255, 255, 255));
+        PPV4.setBorder(null);
+        PPV4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 300, 50, 50));
+
+        PPV5.setBackground(new java.awt.Color(255, 255, 255));
+        PPV5.setBorder(null);
+        PPV5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 370, 50, 50));
+
+        PPV6.setBackground(new java.awt.Color(255, 255, 255));
+        PPV6.setBorder(null);
+        PPV6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 430, 50, 50));
+
+        PPV7.setBackground(new java.awt.Color(255, 255, 255));
+        PPV7.setBorder(null);
+        PPV7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 500, 50, 50));
+
+        PPV8.setBackground(new java.awt.Color(255, 255, 255));
+        PPV8.setBorder(null);
+        PPV8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPV8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 570, 50, 50));
+
+        TablaClasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Clasificacion.png"))); // NOI18N
+        getContentPane().add(TablaClasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 920));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 670));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void PGT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT1ActionPerformed
+
+    private void PGT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT2ActionPerformed
+
+    private void PGT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT3ActionPerformed
+
+    private void PGT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT4ActionPerformed
+
+    private void PGT5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT5ActionPerformed
+
+    private void PGT6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT6ActionPerformed
+
+    private void PGT7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT7ActionPerformed
+
+    private void PGT8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGT8ActionPerformed
+
+    private void PPT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT1ActionPerformed
+
+    private void PPT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT2ActionPerformed
+
+    private void PPT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT3ActionPerformed
+
+    private void PPT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT4ActionPerformed
+
+    private void PPT5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT5ActionPerformed
+
+    private void PPT6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT6ActionPerformed
+
+    private void PPT7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT7ActionPerformed
+
+    private void PPT8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT8ActionPerformed
+
+    private void PL1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL1ActionPerformed
+
+    private void PL2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL2ActionPerformed
+
+    private void PL3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL3ActionPerformed
+
+    private void PL4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL4ActionPerformed
+
+    private void PL5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL5ActionPerformed
+
+    private void PL6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL6ActionPerformed
+
+    private void PL7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL7ActionPerformed
+
+    private void PL8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PL8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PL8ActionPerformed
+
+    private void PJL1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL1ActionPerformed
+
+    private void PJL2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL2ActionPerformed
+
+    private void PJL3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL3ActionPerformed
+
+    private void PJL4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL4ActionPerformed
+
+    private void PJL5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL5ActionPerformed
+
+    private void PJL6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL6ActionPerformed
+
+    private void PJL7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL7ActionPerformed
+
+    private void PJL8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJL8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJL8ActionPerformed
+
+    private void PGL1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL1ActionPerformed
+
+    private void PGL2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL2ActionPerformed
+
+    private void PGL3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL3ActionPerformed
+
+    private void PGL4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL4ActionPerformed
+
+    private void PGL5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL5ActionPerformed
+
+    private void PGL6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL6ActionPerformed
+
+    private void PGL7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL7ActionPerformed
+
+    private void PGL8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGL8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGL8ActionPerformed
+
+    private void PPL1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL1ActionPerformed
+
+    private void PPL2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL2ActionPerformed
+
+    private void PPL3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL3ActionPerformed
+
+    private void PPL4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL4ActionPerformed
+
+    private void PPL5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL5ActionPerformed
+
+    private void PPL6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL6ActionPerformed
+
+    private void PPL7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL7ActionPerformed
+
+    private void PPL8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPL8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPL8ActionPerformed
+
+    private void PJV1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV1ActionPerformed
+
+    private void PJV2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV2ActionPerformed
+
+    private void PJV3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV3ActionPerformed
+
+    private void PJV4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV4ActionPerformed
+
+    private void PJV5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV5ActionPerformed
+
+    private void PJV6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV6ActionPerformed
+
+    private void PJV7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV7ActionPerformed
+
+    private void PJV8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PJV8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PJV8ActionPerformed
+
+    private void PGV1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV1ActionPerformed
+
+    private void PGV2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV2ActionPerformed
+
+    private void PGV3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV3ActionPerformed
+
+    private void PGV4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV4ActionPerformed
+
+    private void PGV5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV5ActionPerformed
+
+    private void PGV6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV6ActionPerformed
+
+    private void PGV7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV7ActionPerformed
+
+    private void PGV8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGV8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PGV8ActionPerformed
+
+    private void PPV1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV1ActionPerformed
+
+    private void PPV2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV2ActionPerformed
+
+    private void PPV3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV3ActionPerformed
+
+    private void PPV4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV4ActionPerformed
+
+    private void PPV5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV5ActionPerformed
+
+    private void PPV6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV6ActionPerformed
+
+    private void PPV7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV7ActionPerformed
+
+    private void PPV8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPV8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPV8ActionPerformed
+
+    private void PV1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV1ActionPerformed
+
+    private void PV2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV2ActionPerformed
+
+    private void PV3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV3ActionPerformed
+
+    private void PV4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV4ActionPerformed
+
+    private void PV5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV5ActionPerformed
+
+    private void PV6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV6ActionPerformed
+
+    private void PV7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV7ActionPerformed
+
+    private void PV8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PV8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PV8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -74,6 +1319,111 @@ public class Clasificaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField E1;
+    private javax.swing.JTextField E2;
+    private javax.swing.JTextField E3;
+    private javax.swing.JTextField E4;
+    private javax.swing.JTextField E5;
+    private javax.swing.JTextField E6;
+    private javax.swing.JTextField E7;
+    private javax.swing.JTextField E8;
+    private javax.swing.JTextField PGL1;
+    private javax.swing.JTextField PGL2;
+    private javax.swing.JTextField PGL3;
+    private javax.swing.JTextField PGL4;
+    private javax.swing.JTextField PGL5;
+    private javax.swing.JTextField PGL6;
+    private javax.swing.JTextField PGL7;
+    private javax.swing.JTextField PGL8;
+    private javax.swing.JTextField PGT1;
+    private javax.swing.JTextField PGT2;
+    private javax.swing.JTextField PGT3;
+    private javax.swing.JTextField PGT4;
+    private javax.swing.JTextField PGT5;
+    private javax.swing.JTextField PGT6;
+    private javax.swing.JTextField PGT7;
+    private javax.swing.JTextField PGT8;
+    private javax.swing.JTextField PGV1;
+    private javax.swing.JTextField PGV2;
+    private javax.swing.JTextField PGV3;
+    private javax.swing.JTextField PGV4;
+    private javax.swing.JTextField PGV5;
+    private javax.swing.JTextField PGV6;
+    private javax.swing.JTextField PGV7;
+    private javax.swing.JTextField PGV8;
+    private javax.swing.JTextField PJL1;
+    private javax.swing.JTextField PJL2;
+    private javax.swing.JTextField PJL3;
+    private javax.swing.JTextField PJL4;
+    private javax.swing.JTextField PJL5;
+    private javax.swing.JTextField PJL6;
+    private javax.swing.JTextField PJL7;
+    private javax.swing.JTextField PJL8;
+    private javax.swing.JTextField PJT1;
+    private javax.swing.JTextField PJT2;
+    private javax.swing.JTextField PJT3;
+    private javax.swing.JTextField PJT4;
+    private javax.swing.JTextField PJT5;
+    private javax.swing.JTextField PJT6;
+    private javax.swing.JTextField PJT7;
+    private javax.swing.JTextField PJT8;
+    private javax.swing.JTextField PJV1;
+    private javax.swing.JTextField PJV2;
+    private javax.swing.JTextField PJV3;
+    private javax.swing.JTextField PJV4;
+    private javax.swing.JTextField PJV5;
+    private javax.swing.JTextField PJV6;
+    private javax.swing.JTextField PJV7;
+    private javax.swing.JTextField PJV8;
+    private javax.swing.JTextField PL1;
+    private javax.swing.JTextField PL2;
+    private javax.swing.JTextField PL3;
+    private javax.swing.JTextField PL4;
+    private javax.swing.JTextField PL5;
+    private javax.swing.JTextField PL6;
+    private javax.swing.JTextField PL7;
+    private javax.swing.JTextField PL8;
+    private javax.swing.JTextField PPL1;
+    private javax.swing.JTextField PPL2;
+    private javax.swing.JTextField PPL3;
+    private javax.swing.JTextField PPL4;
+    private javax.swing.JTextField PPL5;
+    private javax.swing.JTextField PPL6;
+    private javax.swing.JTextField PPL7;
+    private javax.swing.JTextField PPL8;
+    private javax.swing.JTextField PPT1;
+    private javax.swing.JTextField PPT2;
+    private javax.swing.JTextField PPT3;
+    private javax.swing.JTextField PPT4;
+    private javax.swing.JTextField PPT5;
+    private javax.swing.JTextField PPT6;
+    private javax.swing.JTextField PPT7;
+    private javax.swing.JTextField PPT8;
+    private javax.swing.JTextField PPV1;
+    private javax.swing.JTextField PPV2;
+    private javax.swing.JTextField PPV3;
+    private javax.swing.JTextField PPV4;
+    private javax.swing.JTextField PPV5;
+    private javax.swing.JTextField PPV6;
+    private javax.swing.JTextField PPV7;
+    private javax.swing.JTextField PPV8;
+    private javax.swing.JTextField PT1;
+    private javax.swing.JTextField PT2;
+    private javax.swing.JTextField PT3;
+    private javax.swing.JTextField PT4;
+    private javax.swing.JTextField PT5;
+    private javax.swing.JTextField PT6;
+    private javax.swing.JTextField PT7;
+    private javax.swing.JTextField PT8;
+    private javax.swing.JTextField PV1;
+    private javax.swing.JTextField PV2;
+    private javax.swing.JTextField PV3;
+    private javax.swing.JTextField PV4;
+    private javax.swing.JTextField PV5;
+    private javax.swing.JTextField PV6;
+    private javax.swing.JTextField PV7;
+    private javax.swing.JTextField PV8;
+    private javax.swing.JLabel TablaClasi;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
