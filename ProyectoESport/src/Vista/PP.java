@@ -41,14 +41,6 @@ public class PP extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
         jLabel2.setText("Inicio");
-<<<<<<< HEAD
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
-            }
-        });
-=======
->>>>>>> main
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 120, 70));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
@@ -65,11 +57,8 @@ public class PP extends javax.swing.JFrame {
         jLabel5.setForeground(java.awt.Color.white);
         jLabel5.setText("Equipos");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 40, -1, -1));
-<<<<<<< HEAD
-=======
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1GDAW01\\Downloads\\pp.jpg")); // NOI18N
->>>>>>> main
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -86,13 +75,6 @@ public class PP extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-
-    }//GEN-LAST:event_jLabel2MouseClicked
-
-=======
->>>>>>> main
     /**
      * @param args the command line arguments
      */
