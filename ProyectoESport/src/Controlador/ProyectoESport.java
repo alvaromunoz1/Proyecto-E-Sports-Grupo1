@@ -11,6 +11,7 @@ import ModeloUML.*;
 import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 
@@ -131,7 +132,7 @@ public class ProyectoESport {
     }
     
     public static void insertarPartidoSinResultado(int ID,String Nombre,
-            Equipo ID_Local,Equipo ID_Visitante,LocalDateTime Hora,
+            Equipo ID_Local,Equipo ID_Visitante,LocalTime Hora,
             int ID_Jornada) throws Exception
     {
                 p = new Partido(ID,Nombre,ID_Local,ID_Visitante,
@@ -140,7 +141,7 @@ public class ProyectoESport {
     }
     
     public static void insertarPartidoConResultado(int ID,String Nombre,
-            Equipo ID_Local,Equipo ID_Visitante,LocalDateTime Hora,
+            Equipo ID_Local,Equipo ID_Visitante,LocalTime Hora,
             int Resultado_Local,int Resultado_Visitante,int ID_Jornada) 
             throws Exception
     {
@@ -168,7 +169,7 @@ public class ProyectoESport {
         tp.CambiarResultado(p);
     }
     
-    public static void modificarHoraDePartido(int ID, LocalDateTime hora) 
+    public static void modificarHoraDePartido(int ID, LocalTime hora) 
             throws Exception
     {
         p.setId(ID);
