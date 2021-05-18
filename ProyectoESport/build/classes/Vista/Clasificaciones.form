@@ -1850,8 +1850,12 @@
     </Component>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Component class="javax.swing.JLabel" name="Imagen_Fondo">
 >>>>>>> main
+=======
+    <Component class="javax.swing.JLabel" name="jLabel1">
+>>>>>>> parent of a5228cd... clasificacion
 =======
     <Component class="javax.swing.JLabel" name="jLabel1">
 >>>>>>> parent of a5228cd... clasificacion
