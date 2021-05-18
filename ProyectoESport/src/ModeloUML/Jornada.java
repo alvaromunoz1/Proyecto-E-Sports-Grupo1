@@ -86,7 +86,5 @@ public class Jornada {
         return "Jornada{" + "nombre=" + nombre + ", fecha=" + fecha 
                 + ", id_calendario=" + id_calendario + ", partidos=" 
                 + partidos + '}';
-    }
-    
-    
+    }   
 }

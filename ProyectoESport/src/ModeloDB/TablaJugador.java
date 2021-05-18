@@ -6,7 +6,6 @@
 package ModeloDB;
 
 import ModeloUML.Jugador;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -18,23 +17,19 @@ import java.util.ArrayList;
 public class TablaJugador {
     
     
-        private Connection con;
+        private BaseDatos bd;
         private TablaPersona tp;
 
-    public TablaJugador(Connection con) {
-        this.con = con;
-    }
-    
-    public void setTablaPersona(TablaPersona tp)
-    {
-        this.tp = tp;
+    public TablaJugador() {
+        bd = new BaseDatos();
     }
     
      public void insertar(Jugador j) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "INSERT INTO Jugador VALUES (?,?);";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, j.getIdj());
         ps.setString(2,j.getRol());
       
@@ -42,14 +37,17 @@ public class TablaJugador {
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     }
      
      
      public void actualizarRol(Jugador j) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "UPDATE Jugador SET Rol=? WHERE IDJ=?";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         
         ps.setInt(3, j.getIdj());
         ps.setString(1, j.getRol());
@@ -58,27 +56,35 @@ public class TablaJugador {
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     }
      
      
        public void borrar(Jugador j) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "DELETE FROM Jugador WHERE IDJ=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, j.getIdj());
       
         int n = ps.executeUpdate();
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     } 
     
-        public ArrayList<Jugador>  seleccionarTodosLosJugadores() throws Exception
+        public ArrayList<Jugador>  seleccionarTodosLosJugadores() 
+                throws Exception
     {
+        bd.conectar();
+        
         ArrayList<Jugador> lista = new ArrayList();
         String plantilla = "SELECT * FROM Jugador;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ResultSet resultado = ps.executeQuery();
 
        while(resultado.next())
@@ -90,15 +96,17 @@ public class TablaJugador {
   
                 lista.add(j);
        }
+       bd.desconectar();
        return lista;
     }
     
     
     public Jugador  seleccionarUnJugador(int id) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "SELECT * FROM Jugador WHERE IDJ=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -110,6 +118,7 @@ public class TablaJugador {
            j.setIdj(resultado.getInt("IDJ"));
            j.setRol(resultado.getString("Rol"));
            
+           bd.desconectar();
            return j;
        }
        else
@@ -118,9 +127,10 @@ public class TablaJugador {
         
    public Jugador  seleccionarUnJugador_Persona(int id) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "SELECT * FROM Jugador WHERE IDJ=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -137,6 +147,7 @@ public class TablaJugador {
            j.setSueldo(tp.seleccionarUnaPersona(id).getSueldo());
            j.setEquipo(tp.seleccionarUnaPersona(id).getEquipo());
            
+           bd.desconectar();
            return j;
        }
        else
@@ -146,9 +157,10 @@ public class TablaJugador {
 
    public Jugador  seleccionarRol(int id) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "SELECT Rol FROM Jugador WHERE IDJ=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -159,10 +171,10 @@ public class TablaJugador {
            
            j.setRol(resultado.getString("Rol"));
            
+           bd.desconectar();
            return j;
        }
        else
            return null;
-    }
-    
+    }  
 }

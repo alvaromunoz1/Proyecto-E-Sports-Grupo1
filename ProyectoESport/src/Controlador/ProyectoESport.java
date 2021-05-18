@@ -18,12 +18,12 @@ import java.util.ArrayList;
 /**
  *
  * @author Imanol Urquijo
+ * Desde linea 1 hasta 680
  */
 public class ProyectoESport {
 
     
-    private static BaseDatos bd;
-    
+
     private static TablaCalendario tc;
     private static TablaJornada tj;
     private static TablaPartido tp;
@@ -47,53 +47,42 @@ public class ProyectoESport {
     
     public static void main(String[] args) {
     
-        ConectarBDyCrearTablas();
+        CrearTablas();
         CrearyIniciarVistas();
         
     }
     
-    public static void ConectarBDyCrearTablas()
+    public static void CrearTablas()
     {
         try{
             
-            bd = new BaseDatos();
-            bd.conectar();
+            tc = new TablaCalendario();
+            tj = new TablaJornada();
+            tp = new TablaPartido();
+            te = new TablaEquipo();
+            tper = new TablaPersona();
+            td = new TablaDueño();
+            ta = new TablaAsistente();
+            tentre = new TablaEntrenador();
+            tjug = new TablaJugador();
             
-            tc = new TablaCalendario(bd.getCon());
-            tj = new TablaJornada(bd.getCon());
-            tp = new TablaPartido(bd.getCon());
-            te = new TablaEquipo(bd.getCon());
-            tper = new TablaPersona(bd.getCon());
-            td = new TablaDueño(bd.getCon());
-            ta = new TablaAsistente(bd.getCon());
-            tentre = new TablaEntrenador(bd.getCon());
-            tjug = new TablaJugador(bd.getCon());
-            
-            tc.setTablaJornada(tj);
-            tj.setTablaPartido(tp);
-            tp.setTablaEquipo(te);
-            te.setTablasExtra(tentre, ta, td, tjug);
-            tper.setTablasExtra(tentre, ta, td, tjug);
-            td.setTablaPersona(tper);
-            ta.setTablaPersona(tper);
-            tentre.setTablaPersona(tper);
-            tjug.setTablaPersona(tper);
             
         }
         catch (Exception e)
         {
-            bd.desconectar();
             System.out.println(e.getMessage());
         }
     }
     
-    public static void insertarCalendario(int id,String nombre) throws Exception
+    public static void insertarCalendario(int id,String nombre) 
+            throws Exception
     {
                 c = new Calendario(id,nombre);
                 tc.insertar(c);
     }
     
-    public static void modificarCalendario(int id,String nombre) throws Exception
+    public static void modificarCalendario(int id,String nombre) 
+            throws Exception
     {
         c.setId(id);
         c.setNombre(nombre);
@@ -105,22 +94,24 @@ public class ProyectoESport {
         c.setId(id);
         tc.borrar(c);
     }
-    
-    
-    public static void insertarJornada(int id,String nombre, Date fecha, int id_calendario) throws Exception
+     
+    public static void insertarJornada(int id,String nombre, Date fecha, 
+            int id_calendario) throws Exception
     {
                 j = new Jornada(id,nombre,fecha,id_calendario);
                 tj.insertar(j);
     }
     
-    public static void modificarCalendarioDeJornada(int id, int id_calendario) throws Exception
+    public static void modificarCalendarioDeJornada(int id, int id_calendario) 
+            throws Exception
     {
         j.setId(id);
         j.setId_calendario(id_calendario);
         tj.CambiarCalendario(j);
     }
     
-    public static void modificarFechaDeJornada(int id, Date fecha) throws Exception
+    public static void modificarFechaDeJornada(int id, Date fecha) 
+            throws Exception
     {
         j.setId(id);
         j.setFecha(fecha);
@@ -158,7 +149,8 @@ public class ProyectoESport {
                 tp.insertarSinResultado(p);
     }
     
-    public static void modificarResultadoDePartido(int ID,int Resultado_Local,int Resultado_Visitante) throws Exception
+    public static void modificarResultadoDePartido(int ID,int Resultado_Local,
+            int Resultado_Visitante) throws Exception
     {
         p.setId(ID);
         p.setRes_local(Resultado_Local);
@@ -167,7 +159,8 @@ public class ProyectoESport {
         tp.CambiarResultado(p);
     }
     
-    public static void moverPartidoDeJornada(int ID,int id_jornada) throws Exception
+    public static void moverPartidoDeJornada(int ID,int id_jornada) 
+            throws Exception
     {
         p.setId(ID);
         p.setId_jornada(id_jornada);
@@ -175,7 +168,8 @@ public class ProyectoESport {
         tp.CambiarResultado(p);
     }
     
-    public static void modificarHoraDePartido(int ID, LocalDateTime hora) throws Exception
+    public static void modificarHoraDePartido(int ID, LocalDateTime hora) 
+            throws Exception
     {
         p.setId(ID);
         p.setHora(hora);
@@ -197,15 +191,16 @@ public class ProyectoESport {
         tp.borrarPorJornada(p);
     }
     
-    
-    public static void insertarEquipo(int id,String nombre, String web, int puntos, int id_calendario) throws Exception
+    public static void insertarEquipo(int id,String nombre, String web, 
+            int puntos, int id_calendario) throws Exception
     {
                 e = new Equipo(id,nombre,web,puntos,id_calendario);
                 
                 te.insertar(e);
     }
     
-    public static void modificarNombreDeEquipoyWeb(int id, String nombre, String web) throws Exception
+    public static void modificarNombreDeEquipoyWeb(int id, String nombre, 
+            String web) throws Exception
     {
         e.setId(id);
         e.setNombre(nombre);
@@ -214,7 +209,8 @@ public class ProyectoESport {
         te.actualizarNombreYWeb(e);
     }
     
-    public static void modificarPuntosDeEquipo(int id, int puntos) throws Exception
+    public static void modificarPuntosDeEquipo(int id, int puntos) 
+            throws Exception
     {
         e.setId(id);
         e.setPuntos(puntos);
@@ -229,9 +225,8 @@ public class ProyectoESport {
         te.borrar(e);
     }
     
-    
-    
-    public static void insertarPersona(int id,String nombre,String nick, int sueldo, int id_equipo) throws Exception
+    public static void insertarPersona(int id,String nombre,String nick, 
+            int sueldo, int id_equipo) throws Exception
     {
         per.setId(id);
         per.setNombre(nombre);
@@ -258,14 +253,14 @@ public class ProyectoESport {
         tper.ModificarSueldo(per);
     }
     
-    public static void cambiarPersonaDeEquipo(int id,int id_equipo) throws Exception
+    public static void cambiarPersonaDeEquipo(int id,int id_equipo) 
+            throws Exception
     {
         per.setId(0);
         per.getEquipo().setId(id);
         
         tper.CambiarDeEquipo(per);
     }
-    
     
     public static void bajaPersonaPorID(int id) throws Exception
     {
@@ -274,15 +269,12 @@ public class ProyectoESport {
         tper.borrar(per);
     }
     
-    
     public static void bajaPersonaPorEquipo(int id) throws Exception
     {
         per.getEquipo().setId(id);
         
         tper.borrarPorEquipo(per);
     }
-    
-    
     
     public static void insertarDueño(int id,int años) throws Exception
     {
@@ -307,7 +299,6 @@ public class ProyectoESport {
         td.borrar(d);
     }
     
-    
     public static void insertarAsistente(int id,int años) throws Exception
     {
         a.setIda(id);
@@ -330,8 +321,6 @@ public class ProyectoESport {
         
         ta.borrar(a);
     }
-    
-    
     
     public static void insertarEntrenador(int id,String email) throws Exception
     {
@@ -356,8 +345,6 @@ public class ProyectoESport {
         tentre.borrar(entre);
     }
     
-    
-    
     public static void insertarJugador(int id,String rol) throws Exception
     {
         jug.setIdj(id);
@@ -381,7 +368,8 @@ public class ProyectoESport {
         tjug.borrar(jug);
     }
     
-    public static Calendario seleccionarCalendarioPorID(int id) throws Exception
+    public static Calendario seleccionarCalendarioPorID(int id) 
+            throws Exception
     {
         c = tc.seleccionarUnCalendario(id);
 
@@ -397,7 +385,8 @@ public class ProyectoESport {
         return datos;
     }
     
-    public static Calendario seleccionarCalendarioConJornadas(int id) throws Exception
+    public static Calendario seleccionarCalendarioConJornadas(int id) 
+            throws Exception
     {
         c = tc.seleccionarCalendarioConJornada(id);
 
@@ -413,12 +402,13 @@ public class ProyectoESport {
         return datos;
     }
     
-    public static ArrayList<Jornada> datosJornadaPorCalendario(int id) throws Exception
+    public static String datosJornadaPorCalendario(int id) throws Exception
     {
-
+        String datos="";
         ArrayList<Jornada> lista = tj.seleccionarJornadasPorCalendario(id);
-
-        return lista;
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
     }
     
     public static Jornada seleccionarJornadaPorID(int id) throws Exception
@@ -428,7 +418,8 @@ public class ProyectoESport {
         return j;
     }
     
-    public static Jornada seleccionarJornadaConPartidos(int id) throws Exception
+    public static Jornada seleccionarJornadaConPartidos(int id) 
+            throws Exception
     {
         j = tj.seleccionarUnaJornadaConPartidos(id);
 
@@ -485,7 +476,8 @@ public class ProyectoESport {
         return e;
     }
     
-    public static Equipo seleccionarUnEquipoConIntegrantes(int id) throws Exception
+    public static Equipo seleccionarUnEquipoConIntegrantes(int id) 
+            throws Exception
     {
         e = te.seleccionarEquipoConIntegrantes(id);
 
@@ -499,6 +491,211 @@ public class ProyectoESport {
         return e;
     }
     
+        public static String datosTodosLasPersonas() throws Exception
+    {
+        String datos="";
+        ArrayList<Persona> lista = tper.seleccionarTodosLasPersonas();
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
+    }
     
+        
+    public static String datosPersonasPorEquipo(int id) throws Exception
+    {
+        String datos="";
+        ArrayList<Persona> lista = tper.seleccionarPersonasPorEquipos(id);
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
+    }    
+        
+    public static String datosIDPorEquipo(int id) throws Exception
+    {
+        String datos="";
+        ArrayList<Persona> lista = tper.seleccionarIDPorEquipos(id);
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
+    }    
+        
+    public static Persona seleccionarUnaPersona(int id) throws Exception
+    {
+        per = tper.seleccionarUnaPersona(id);
+
+        return per;
+    }       
+        
+    public static Persona seleccionarNombreDeUnaPersona(int id) 
+            throws Exception
+    {
+        per = tper.seleccionarNombreDeUnaPersona(id);
+
+        return per;
+    }         
+    
+    public static Persona seleccionarNickDeUnaPersona(int id) throws Exception
+    {
+        per = tper.seleccionarNickDeUnaPersona(id);
+
+        return per;
+    } 
+
+    public static Persona seleccionarSueldoDeUnaPersona(int id) 
+            throws Exception
+    {
+        per = tper.seleccionarSueldoDeUnaPersona(id);
+
+        return per;
+    } 
+
+    public static Persona seleccionarEquipoDeUnaPersona(int id) 
+            throws Exception
+    {
+        per = tper.seleccionarEquipoDeUnaPersona(id);
+
+        return per;
+    } 
+
+    public static String datosTodosLosAsistentes(int id) throws Exception
+    {
+        String datos="";
+        ArrayList<Asistente> lista = ta.seleccionarTodosLosAsistentes();
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
+    }
+
+    public static Asistente seleccionarUnAsistente(int id) throws Exception
+    {
+        a = ta.seleccionarUnAsistente(id);
+
+        return a;
+    }
+
+    public static Asistente seleccionarUnAsistentePersona(int id) 
+            throws Exception
+    {
+        a = ta.seleccionarUnAsistentePersona(id);
+
+        return a;
+    }
+
+    public static Asistente seleccionarAñosAsistente(int id) throws Exception
+    {
+        a = ta.seleccionarAñosAsistente(id);
+
+        return a;
+    }
+
+    public static String datosTodosLosDueños(int id) throws Exception
+    {
+        String datos="";
+        ArrayList<Dueño> lista = td.seleccionarTodosLosDueños();
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
+    }
+
+    public static Dueño seleccionarUnDueño(int id) throws Exception
+    {
+        d = td.seleccionarUnDueño(id);
+
+        return d;
+    }
+
+    public static Dueño seleccionarUnDueñoPersona(int id) throws Exception
+    {
+        d = td.seleccionarUnDueño_Persona(id);
+
+        return d;
+    }
+
+    public static Dueño seleccionarAñosDueño(int id) throws Exception
+    {
+        d = td.seleccionarAñosDueño(id);
+
+        return d;
+    }
+    
+    public static String datosTodosLosEntrnadores(int id) throws Exception
+    {
+        String datos="";
+        ArrayList<Entrenador> lista = tentre.seleccionarTodosLosEntrenadores();
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
+    }
+
+    public static Entrenador seleccionarUnEntrenador(int id) throws Exception
+    {
+        entre = tentre.seleccionarUnEntrenador(id);
+
+        return entre;
+    }
+
+    public static Entrenador seleccionarUnEntrenadorPersona(int id) 
+            throws Exception
+    {
+        entre = tentre.seleccionarUnEntrenador_Persona(id);
+
+        return entre;
+    }
+
+    public static Entrenador seleccionarMailEntrenador(int id) throws Exception
+    {
+        entre = tentre.seleccionarEmail(id);
+
+        return entre;
+    }    
+    
+    public static String datosTodosLosJugadores(int id) throws Exception
+    {
+        String datos="";
+        ArrayList<Jugador> lista = tjug.seleccionarTodosLosJugadores();
+        for(int x = 0; x < lista.size(); x++)
+            datos+= lista.get(x).toString();
+        return datos;
+    }
+
+    public static Jugador seleccionarUnJugador(int id) throws Exception
+    {
+        jug = tjug.seleccionarUnJugador(id);
+
+        return jug;
+    }
+
+    public static Jugador seleccionarUnJugadorPersona(int id) throws Exception
+    {
+        jug = tjug.seleccionarUnJugador_Persona(id);
+
+        return jug;
+    }
+
+    public static Jugador seleccionarRolJugador(int id) throws Exception
+    {
+        jug = tjug.seleccionarRol(id);
+
+        return jug;
+    }    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
     
 }

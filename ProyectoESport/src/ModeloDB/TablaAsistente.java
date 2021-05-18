@@ -6,7 +6,6 @@
 package ModeloDB;
 
 import ModeloUML.Asistente;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -17,24 +16,20 @@ import java.util.ArrayList;
  */
 public class TablaAsistente {
     
-        private Connection con;
         private TablaPersona tp;
+        private BaseDatos bd;
 
-    public TablaAsistente(Connection con) {
-        this.con = con;
+    public TablaAsistente() {
+        bd = new BaseDatos();
+        
     }
-    
-    public void setTablaPersona(TablaPersona tp)
-    {
-        this.tp = tp;
-    }
-    
     
      public void insertar(Asistente a) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "INSERT INTO Asistente VALUES (?,?);";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, a.getIda());
         ps.setInt(2, a.getAños_asistente());
       
@@ -42,14 +37,17 @@ public class TablaAsistente {
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     }
      
      
      public void actualizarAñosAsistente(Asistente a) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "UPDATE Dueino SET Anios_Asistente=? WHERE IDA=?";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         
         ps.setInt(3, a.getIda());
         ps.setInt(1, a.getAños_asistente());
@@ -58,27 +56,35 @@ public class TablaAsistente {
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     }
      
      
        public void borrar(Asistente a) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "DELETE FROM Asistente WHERE IDA=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, a.getIda());
       
         int n = ps.executeUpdate();
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     } 
     
-        public ArrayList<Asistente>  seleccionarTodosLosAsistentes() throws Exception
+        public ArrayList<Asistente>  seleccionarTodosLosAsistentes() 
+                throws Exception
     {
+        bd.conectar();
+        
         ArrayList<Asistente> lista = new ArrayList();
         String plantilla = "SELECT * FROM Asistentes;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ResultSet resultado = ps.executeQuery();
 
        while(resultado.next())
@@ -93,14 +99,17 @@ public class TablaAsistente {
                 
                 lista.add(a);
        }
+       bd.desconectar();
        return lista;
+       
     }
     
         public Asistente  seleccionarUnAsistente(int id) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "SELECT * FROM Asistente WHERE IDA=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -112,18 +121,21 @@ public class TablaAsistente {
            a.setIda(resultado.getInt("IDA"));
            a.setAños_asistente(resultado.getInt("Anios_Asistente"));
            
+           bd.desconectar();
            return a;
        }
        else
            return null;
+       
     }
         
         
    public Asistente  seleccionarUnAsistentePersona(int id) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "SELECT * FROM Asistente WHERE IDA=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -140,6 +152,7 @@ public class TablaAsistente {
            a.setSueldo(tp.seleccionarUnaPersona(id).getSueldo());
            a.setEquipo(tp.seleccionarUnaPersona(id).getEquipo());
            
+           bd.desconectar();
            return a;
        }
        else
@@ -148,9 +161,10 @@ public class TablaAsistente {
     
     public Asistente  seleccionarAñosAsistente(int id) throws Exception
     {
+        bd.conectar();
         
-        String plantilla = "SELECT * FROM Asistente WHERE IDA=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        String plantilla = "SELECT Anios_Asistente FROM Asistente WHERE IDA=?;";
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -161,10 +175,10 @@ public class TablaAsistente {
            
            a.setAños_asistente(resultado.getInt("Anios_Asistente"));
            
+           bd.desconectar();
            return a;
        }
        else
            return null;
     }
-    
 }

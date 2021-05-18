@@ -5,7 +5,7 @@
  */
 package ModeloUML;
 
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 /**
  *
@@ -18,7 +18,7 @@ public class Partido {
     private String nombre;
     private Equipo local;
     private Equipo visitante;
-    private LocalDateTime hora;
+    private LocalTime hora;
     private int res_local;
     private int res_visit;
     private int id_jornada;
@@ -27,7 +27,7 @@ public class Partido {
     }
 
     public Partido(int id, String nombre, Equipo local, Equipo visitante, 
-            LocalDateTime hora, int id_jornada) {
+            LocalTime hora, int id_jornada) {
         this.id = id;
         this.nombre = nombre;
         this.local = local;
@@ -37,7 +37,7 @@ public class Partido {
     }
 
     public Partido(int id, String nombre, Equipo local, Equipo visitante, 
-            LocalDateTime hora, int res_local, int res_visit, int id_jornada) {
+            LocalTime hora, int res_local, int res_visit, int id_jornada) {
         this.id = id;
         this.nombre = nombre;
         this.local = local;
@@ -80,11 +80,11 @@ public class Partido {
         this.visitante = visitante;
     }
 
-    public LocalDateTime getHora() {
+    public LocalTime getHora() {
         return hora;
     }
 
-    public void setHora(LocalDateTime hora) {
+    public void setHora(LocalTime hora) {
         this.hora = hora;
     }
 
@@ -119,6 +119,4 @@ public class Partido {
                 + ", res_local=" + res_local + ", res_visit=" + res_visit 
                 + ", id_jornada=" + id_jornada + '}';
     }
-    
-    
 }
