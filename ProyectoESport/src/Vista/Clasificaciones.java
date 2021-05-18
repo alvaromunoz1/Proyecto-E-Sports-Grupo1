@@ -136,8 +136,12 @@ public class Clasificaciones extends javax.swing.JFrame {
         PPV8 = new javax.swing.JTextField();
         TablaClasi = new javax.swing.JLabel();
 <<<<<<< HEAD
+<<<<<<< HEAD
         Imagen_Fondo = new javax.swing.JLabel();
 >>>>>>> main
+=======
+        jLabel1 = new javax.swing.JLabel();
+>>>>>>> parent of a5228cd... clasificacion
 =======
         jLabel1 = new javax.swing.JLabel();
 >>>>>>> parent of a5228cd... clasificacion
@@ -970,9 +974,14 @@ public class Clasificaciones extends javax.swing.JFrame {
         getContentPane().add(TablaClasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         Imagen_Fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
         getContentPane().add(Imagen_Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 670));
 >>>>>>> main
+=======
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 670));
+>>>>>>> parent of a5228cd... clasificacion
 =======
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 670));
@@ -1449,7 +1458,11 @@ public class Clasificaciones extends javax.swing.JFrame {
     private javax.swing.JTextField PV8;
     private javax.swing.JLabel TablaClasi;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> main
+=======
+    private javax.swing.JLabel jLabel1;
+>>>>>>> parent of a5228cd... clasificacion
 =======
     private javax.swing.JLabel jLabel1;
 >>>>>>> parent of a5228cd... clasificacion
