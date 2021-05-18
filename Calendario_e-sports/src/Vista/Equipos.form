@@ -66,13 +66,13 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="G2">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\1gdaw03\Desktop\proyecto\imagenes equipos\G2.png"/>
-        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="G2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="sentinels">
       <Properties>
@@ -83,6 +83,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sentinelsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="liquid">
       <Properties>
@@ -93,6 +96,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="liquidActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="A100thieves">
       <Properties>
@@ -103,6 +109,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="A100thievesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="fnatic">
       <Properties>
@@ -113,6 +122,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fnaticActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="V1">
       <Properties>
@@ -123,6 +135,9 @@
           <Border info="null"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="V1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
