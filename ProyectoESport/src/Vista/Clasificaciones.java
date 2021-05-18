@@ -28,6 +28,7 @@ public class Clasificaciones extends javax.swing.JFrame {
     private void initComponents() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         jLabel1 = new javax.swing.JLabel();
 =======
         E1 = new javax.swing.JTextField();
@@ -147,12 +148,15 @@ public class Clasificaciones extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 >>>>>>> parent of a5228cd... clasificacion
 =======
+=======
+>>>>>>> parent of 02320b4... tabla clasificaciones
         jLabel1 = new javax.swing.JLabel();
 >>>>>>> parent of a5228cd... clasificacion
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 920));
@@ -995,10 +999,15 @@ public class Clasificaciones extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 670));
 >>>>>>> parent of a5228cd... clasificacion
+=======
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 920));
+>>>>>>> parent of 02320b4... tabla clasificaciones
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     private void PGT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PGT1ActionPerformed
@@ -1322,6 +1331,8 @@ public class Clasificaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_PV8ActionPerformed
 
 >>>>>>> main
+=======
+>>>>>>> parent of 02320b4... tabla clasificaciones
     /**
      * @param args the command line arguments
      */
@@ -1358,6 +1369,7 @@ public class Clasificaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
 <<<<<<< HEAD
     private javax.swing.JLabel jLabel1;
 =======
@@ -1477,6 +1489,8 @@ public class Clasificaciones extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
 >>>>>>> parent of a5228cd... clasificacion
 =======
+=======
+>>>>>>> parent of 02320b4... tabla clasificaciones
     private javax.swing.JLabel jLabel1;
 >>>>>>> parent of a5228cd... clasificacion
     // End of variables declaration//GEN-END:variables

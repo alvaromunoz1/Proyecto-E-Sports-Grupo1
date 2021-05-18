@@ -40,10 +40,14 @@
                   <Component id="liquid" pref="0" max="32767" attributes="0"/>
               </Group>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <EmptySpace pref="76" max="32767" attributes="0"/>
 =======
               <EmptySpace pref="140" max="32767" attributes="0"/>
 >>>>>>> main
+=======
+              <EmptySpace pref="76" max="32767" attributes="0"/>
+>>>>>>> parent of 02320b4... tabla clasificaciones
           </Group>
       </Group>
     </DimensionLayout>
@@ -63,10 +67,14 @@
                   <Component id="V1" max="32767" attributes="0"/>
               </Group>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <EmptySpace pref="92" max="32767" attributes="0"/>
 =======
               <EmptySpace pref="113" max="32767" attributes="0"/>
 >>>>>>> main
+=======
+              <EmptySpace pref="92" max="32767" attributes="0"/>
+>>>>>>> parent of 02320b4... tabla clasificaciones
           </Group>
       </Group>
     </DimensionLayout>
