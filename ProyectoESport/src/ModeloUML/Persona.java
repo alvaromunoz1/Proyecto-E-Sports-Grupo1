@@ -82,6 +82,4 @@ public class Persona {
         return "Persona{" + "id=" + id + ", nombre=" + nombre + ", nick=" 
                 + nick + ", sueldo=" + sueldo + ", equipo=" + equipo + '}';
     }
-    
-    
 }

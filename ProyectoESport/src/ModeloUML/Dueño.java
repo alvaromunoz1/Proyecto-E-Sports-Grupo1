@@ -51,7 +51,5 @@ public class Dueño extends Persona {
     public String toString() {
         return "Due\u00f1o{" + "idd=" + idd + ", a\u00f1os_due\u00f1o=" 
                 + años_dueño + '}';
-    }
-    
-    
+    }   
 }

@@ -51,8 +51,5 @@ public class Asistente extends Persona {
     public String toString() {
         return "Asistente{" + "ida=" + ida + ", a\u00f1os_asistente=" 
                 + años_asistente + '}';
-    }
-    
-    
-    
+    }  
 }

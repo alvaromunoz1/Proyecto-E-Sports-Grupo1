@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vistas;
+package Vista;
 
 /**
  *
@@ -36,23 +36,53 @@ public class Equipos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        G2.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Desktop\\proyecto\\imagenes equipos\\G2.png")); // NOI18N
+        G2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/G2.png"))); // NOI18N
         G2.setBorder(null);
+        G2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                G2ActionPerformed(evt);
+            }
+        });
 
-        sentinels.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/sentinels.png"))); // NOI18N
+        sentinels.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/sentinels.png"))); // NOI18N
         sentinels.setBorder(null);
+        sentinels.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sentinelsActionPerformed(evt);
+            }
+        });
 
-        liquid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/liquid.png"))); // NOI18N
+        liquid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/liquid.png"))); // NOI18N
         liquid.setBorder(null);
+        liquid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                liquidActionPerformed(evt);
+            }
+        });
 
-        A100thieves.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/100thieves.png"))); // NOI18N
+        A100thieves.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/100thieves.png"))); // NOI18N
         A100thieves.setBorder(null);
+        A100thieves.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A100thievesActionPerformed(evt);
+            }
+        });
 
-        fnatic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/fnatic.png"))); // NOI18N
+        fnatic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/fnatic.png"))); // NOI18N
         fnatic.setBorder(null);
+        fnatic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fnaticActionPerformed(evt);
+            }
+        });
 
-        V1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/V1.png"))); // NOI18N
+        V1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/V1.png"))); // NOI18N
         V1.setBorder(null);
+        V1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                V1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -71,7 +101,7 @@ public class Equipos extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(V1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(liquid, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(134, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -86,11 +116,35 @@ public class Equipos extends javax.swing.JFrame {
                     .addComponent(A100thieves, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(fnatic, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(V1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void sentinelsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sentinelsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sentinelsActionPerformed
+
+    private void G2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_G2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_G2ActionPerformed
+
+    private void liquidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_liquidActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_liquidActionPerformed
+
+    private void A100thievesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A100thievesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A100thievesActionPerformed
+
+    private void fnaticActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fnaticActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fnaticActionPerformed
+
+    private void V1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_V1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_V1ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -59,8 +59,5 @@ public class Calendario {
     public String toString() {
         return "Calendario{" + "id=" + id + ", nombre=" + nombre 
                 + ", jornadas=" + jornadas + '}';
-    }
-    
-    
-    
+    }  
 }

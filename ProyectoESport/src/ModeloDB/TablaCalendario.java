@@ -6,7 +6,6 @@
 package ModeloDB;
 
 import ModeloUML.Calendario;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -17,20 +16,20 @@ import java.util.ArrayList;
  */
 public class TablaCalendario {
     
-    private Connection con;
+    private BaseDatos bd;
     private TablaJornada tj;
 
-    public TablaCalendario(Connection con, TablaJornada tj) {
-        this.con = con;
-        this.tj = tj;
+    public TablaCalendario() {
+        bd = new BaseDatos();
     }
+    
     
      public void insertar(Calendario c) throws Exception
     {
-        // Preparar y ejecutar la sentencia sql.
+        bd.conectar();
         
         String plantilla = "INSERT INTO Calendario VALUES (?,?);";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, c.getId());
         ps.setString(2,c.getNombre());
       
@@ -38,15 +37,17 @@ public class TablaCalendario {
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     }
      
      
      public void actualizar(Calendario c) throws Exception
     {
-        // Preparar y ejecutar la sentencia sql.
+        bd.conectar();
         
         String plantilla = "UPDATE tpersonas SET Nombre =?  WHERE ID =?";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(2, c.getId());
         ps.setString(1,c.getNombre());
       
@@ -54,35 +55,40 @@ public class TablaCalendario {
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     }
      
      
       public void borrar(Calendario c) throws Exception
     {
-        // no es necesario todo el objeto con el dni es suficiente
+        bd.conectar();
         
         String plantilla = "DELET FROM Calendario WHERE ID=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, c.getId());
       
         int n = ps.executeUpdate();
         ps.close();
         if (n != 1)
             throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
     }
         
     public ArrayList<Calendario>  seleccionarTodo() throws Exception
     {
+        bd.conectar();
+        
         ArrayList<Calendario> lista = new ArrayList();
       
         String plantilla = "SELECT * FROM Calendario;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
        
         ResultSet resultado = ps.executeQuery();
 
        while(resultado.next())
        {
-                // Crear objeto
                 Calendario c = new Calendario();
                 
                 c.setId(resultado.getInt("ID"));
@@ -90,15 +96,17 @@ public class TablaCalendario {
                 
                 lista.add(c);
        }
+       bd.desconectar();
        return lista;
     }
     
     
     public Calendario  seleccionarUnCalendario(int id) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "SELECT * FROM Calendario WHERE ID=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -110,6 +118,7 @@ public class TablaCalendario {
            c.setId(resultado.getInt("ID"));
            c.setNombre(resultado.getString("Nombre"));
            
+           bd.desconectar();
            return c;
        }
        else
@@ -119,9 +128,10 @@ public class TablaCalendario {
         
     public Calendario seleccionarCalendarioConJornada(int id) throws Exception
     {
+        bd.conectar();
         
         String plantilla = "SELECT * FROM Calendario WHERE ID=?;";
-        PreparedStatement ps = con.prepareStatement(plantilla);
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
         ResultSet resultado = ps.executeQuery();
@@ -132,6 +142,8 @@ public class TablaCalendario {
            c.setId(resultado.getInt("ID"));
            c.setNombre(resultado.getString("Nombre"));
            c.setJornadas(tj.seleccionarJornadasPorCalendario(id));
+           
+           bd.desconectar();
            return c;
        }
            return null;

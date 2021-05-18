@@ -18,58 +18,27 @@ public class Equipo {
     private String paginaWeb;
     private int puntos;
     private int id_calendario;
-    private Dueño dueño;
-    private Asistente asistente;
-    private Entrenador entrenador;
-    private ArrayList<Jugador> jugadores;
+    private ArrayList<Persona> personas;
 
     public Equipo() {
     }
 
     public Equipo(int id, String nombre, String paginaWeb, int puntos, 
-            int id_calendario, Dueño dueño, Asistente asistente, 
-            Entrenador entrenador, ArrayList<Jugador> jugadores) {
+            int id_calendario, ArrayList<Persona> personas) {
         this.id = id;
         this.nombre = nombre;
         this.paginaWeb = paginaWeb;
         this.puntos = puntos;
         this.id_calendario = id_calendario;
-        this.dueño = dueño;
-        this.asistente = asistente;
-        this.entrenador = entrenador;
-        this.jugadores = jugadores;
+        this.personas = personas;
     }
 
-    public Dueño getDueño() {
-        return dueño;
+    public ArrayList<Persona> getPersonas() {
+        return personas;
     }
 
-    public void setDueño(Dueño dueño) {
-        this.dueño = dueño;
-    }
-
-    public Asistente getAsistente() {
-        return asistente;
-    }
-
-    public void setAsistente(Asistente asistente) {
-        this.asistente = asistente;
-    }
-
-    public Entrenador getEntrenador() {
-        return entrenador;
-    }
-
-    public void setEntrenador(Entrenador entrenador) {
-        this.entrenador = entrenador;
-    }
-
-    public ArrayList<Jugador> getJugadores() {
-        return jugadores;
-    }
-
-    public void setJugadores(ArrayList<Jugador> jugadores) {
-        this.jugadores = jugadores;
+    public void setPersonas(ArrayList<Persona> personas) {
+        this.personas = personas;
     }
 
     public Equipo(int id, String nombre, String paginaWeb, int puntos, 
@@ -132,11 +101,7 @@ public class Equipo {
     public String toString() {
         return "Equipo{" + "id=" + id + ", nombre=" + nombre + ", paginaWeb=" 
                 + paginaWeb + ", puntos=" + puntos + ", id_calendario=" 
-                + id_calendario + ", due\u00f1o=" + dueño + ", asistente=" 
-                + asistente + ", entrenador=" + entrenador + ", jugadores=" 
-                + jugadores + '}';
-    }
-    
-    
-    
+                + id_calendario + ", due\u00f1o=" + ", personas=" 
+                + personas + '}';
+    }   
 }

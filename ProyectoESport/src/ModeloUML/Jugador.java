@@ -51,6 +51,4 @@ public class Jugador extends Persona {
     public String toString() {
         return "Jugador{" + "idj=" + idj + ", rol=" + rol + '}';
     }
-    
-    
 }

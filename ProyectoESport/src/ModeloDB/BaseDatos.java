@@ -14,7 +14,7 @@ import java.sql.DriverManager;
  */
 public class BaseDatos {
     
-        private Connection conexion;
+    private Connection conexion;
 
     public BaseDatos() {
     }
