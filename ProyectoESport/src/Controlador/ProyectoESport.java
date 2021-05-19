@@ -26,7 +26,7 @@ import javax.swing.JFrame;
  */
 public class ProyectoESport {
 
-    
+    private static int posicion;
 
     private static TablaCalendario tc;
     private static TablaJornada tj;
@@ -978,6 +978,19 @@ public class ProyectoESport {
             return false;
         }
     }    
+
+    public static boolean isAnterior() {
+        
+        if (posicion == 0)
+            return false;
+        return true;
+    }
+
+    public static boolean isSiguiente() {
+        if (posicion == listaPersonas.size()-1)
+            return false;
+        return true;
+    }
     
    
     

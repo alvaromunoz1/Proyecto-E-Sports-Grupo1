@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import Controlador.ProyectoESport;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author sergio
@@ -28,266 +31,120 @@ public class JornadasAdmin extends javax.swing.JFrame {
     private void initComponents() {
 
         EquipoLocal1 = new javax.swing.JTextField();
-        ResultadoLocal1 = new javax.swing.JTextField();
         EquipoLocal2 = new javax.swing.JTextField();
-        ResultadoLocal2 = new javax.swing.JTextField();
         EquipoLocal3 = new javax.swing.JTextField();
+        ResultadoLocal1 = new javax.swing.JTextField();
+        ResultadoLocal2 = new javax.swing.JTextField();
         ResultadoLocal3 = new javax.swing.JTextField();
+        EquipoVisitante1 = new javax.swing.JTextField();
+        EquipoVisitante2 = new javax.swing.JTextField();
+        EquipoVisitante3 = new javax.swing.JTextField();
+        ResultadoVisitante1 = new javax.swing.JTextField();
+        ResultadoVisitante2 = new javax.swing.JTextField();
+        ResultadoVisitante3 = new javax.swing.JTextField();
+        NumJornada = new javax.swing.JTextField();
+        bAnterior = new javax.swing.JButton();
+        bSiguiente = new javax.swing.JButton();
         Jornada1 = new javax.swing.JLabel();
-        EquipoLocal4 = new javax.swing.JTextField();
-        ResultadoLocal4 = new javax.swing.JTextField();
-        EquipoLocal5 = new javax.swing.JTextField();
-        ResultadoLocal5 = new javax.swing.JTextField();
-        EquipoLocal6 = new javax.swing.JTextField();
-        ResultadoLocal6 = new javax.swing.JTextField();
-        Jornada2 = new javax.swing.JLabel();
-        EquipoLocal7 = new javax.swing.JTextField();
-        ResultadoLocal7 = new javax.swing.JTextField();
-        EquipoLocal8 = new javax.swing.JTextField();
-        ResultadoLocal8 = new javax.swing.JTextField();
-        EquipoLocal9 = new javax.swing.JTextField();
-        ResultadoLocal9 = new javax.swing.JTextField();
-        Jornada3 = new javax.swing.JLabel();
-        EquipoLocal10 = new javax.swing.JTextField();
-        ResultadoLocal10 = new javax.swing.JTextField();
-        EquipoLocal11 = new javax.swing.JTextField();
-        ResultadoLocal11 = new javax.swing.JTextField();
-        EquipoLocal12 = new javax.swing.JTextField();
-        ResultadoLocal12 = new javax.swing.JTextField();
-        Jornada4 = new javax.swing.JLabel();
-        EquipoLocal13 = new javax.swing.JTextField();
-        EquipoLocal14 = new javax.swing.JTextField();
-        EquipoLocal15 = new javax.swing.JTextField();
-        Jornada5 = new javax.swing.JLabel();
-        EquipoLocal16 = new javax.swing.JTextField();
-        EquipoLocal17 = new javax.swing.JTextField();
-        EquipoLocal18 = new javax.swing.JTextField();
-        Jornada6 = new javax.swing.JLabel();
-        EquipoLocal19 = new javax.swing.JTextField();
-        EquipoLocal20 = new javax.swing.JTextField();
-        EquipoLocal21 = new javax.swing.JTextField();
-        Jornada7 = new javax.swing.JLabel();
-        EquipoLocal22 = new javax.swing.JTextField();
-        EquipoLocal23 = new javax.swing.JTextField();
-        EquipoLocal24 = new javax.swing.JTextField();
-        Jornada8 = new javax.swing.JLabel();
-        EquipoLocal25 = new javax.swing.JTextField();
-        EquipoLocal26 = new javax.swing.JTextField();
-        EquipoLocal27 = new javax.swing.JTextField();
-        Jornada9 = new javax.swing.JLabel();
-        EquipoLocal28 = new javax.swing.JTextField();
-        EquipoLocal29 = new javax.swing.JTextField();
-        EquipoLocal30 = new javax.swing.JTextField();
-        Jornada10 = new javax.swing.JLabel();
-        ResultadoLocal13 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         EquipoLocal1.setBackground(new java.awt.Color(255, 255, 255));
         EquipoLocal1.setBorder(null);
-        getContentPane().add(EquipoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 210, 40));
-
-        ResultadoLocal1.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal1.setBorder(null);
-        getContentPane().add(ResultadoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 70, 50, 50));
+        getContentPane().add(EquipoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 210, 40));
 
         EquipoLocal2.setBackground(new java.awt.Color(255, 255, 255));
         EquipoLocal2.setBorder(null);
-        getContentPane().add(EquipoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 210, 40));
-
-        ResultadoLocal2.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal2.setBorder(null);
-        getContentPane().add(ResultadoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 50, 50));
+        getContentPane().add(EquipoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 210, 40));
 
         EquipoLocal3.setBackground(new java.awt.Color(255, 255, 255));
         EquipoLocal3.setBorder(null);
-        getContentPane().add(EquipoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 210, 40));
+        getContentPane().add(EquipoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 210, 40));
+
+        ResultadoLocal1.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(ResultadoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 190, 50, 40));
+
+        ResultadoLocal2.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(ResultadoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 250, 50, 40));
 
         ResultadoLocal3.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal3.setBorder(null);
-        getContentPane().add(ResultadoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 50, 40));
+        getContentPane().add(ResultadoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 310, 50, 40));
+
+        EquipoVisitante1.setBackground(new java.awt.Color(255, 255, 255));
+        EquipoVisitante1.setBorder(null);
+        getContentPane().add(EquipoVisitante1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 190, 210, 40));
+
+        EquipoVisitante2.setBackground(new java.awt.Color(255, 255, 255));
+        EquipoVisitante2.setBorder(null);
+        getContentPane().add(EquipoVisitante2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 250, 210, 40));
+
+        EquipoVisitante3.setBackground(new java.awt.Color(255, 255, 255));
+        EquipoVisitante3.setBorder(null);
+        getContentPane().add(EquipoVisitante3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, 210, 40));
+
+        ResultadoVisitante1.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(ResultadoVisitante1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 190, 50, 40));
+
+        ResultadoVisitante2.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(ResultadoVisitante2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 250, 50, 40));
+
+        ResultadoVisitante3.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(ResultadoVisitante3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 310, 50, 40));
+
+        NumJornada.setBackground(new java.awt.Color(153, 153, 0));
+        NumJornada.setBorder(null);
+        getContentPane().add(NumJornada, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 30));
+
+        bAnterior.setText("Anterior");
+        bAnterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bAnteriorActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, -1));
+
+        bSiguiente.setText("Siguiente");
+        bSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bSiguienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 130, -1, -1));
 
         Jornada1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
-
-        EquipoLocal4.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal4.setBorder(null);
-        getContentPane().add(EquipoLocal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 70, 210, 40));
-
-        ResultadoLocal4.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal4.setBorder(null);
-        getContentPane().add(ResultadoLocal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 130, 50, 50));
-
-        EquipoLocal5.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal5.setBorder(null);
-        getContentPane().add(EquipoLocal5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 130, 210, 40));
-
-        ResultadoLocal5.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal5.setBorder(null);
-        getContentPane().add(ResultadoLocal5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 190, 50, 40));
-
-        EquipoLocal6.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal6.setBorder(null);
-        getContentPane().add(EquipoLocal6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 190, 210, 40));
-
-        ResultadoLocal6.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal6.setBorder(null);
-        getContentPane().add(ResultadoLocal6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 70, 50, 50));
-
-        Jornada2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada2, new org.netbeans.lib.awtextra.AbsoluteConstraints(973, 11, -1, -1));
-
-        EquipoLocal7.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal7.setBorder(null);
-        getContentPane().add(EquipoLocal7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 210, 40));
-
-        ResultadoLocal7.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal7.setBorder(null);
-        getContentPane().add(ResultadoLocal7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, 50, 40));
-
-        EquipoLocal8.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal8.setBorder(null);
-        getContentPane().add(EquipoLocal8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 210, 40));
-
-        ResultadoLocal8.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal8.setBorder(null);
-        getContentPane().add(ResultadoLocal8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 50, 40));
-
-        EquipoLocal9.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal9.setBorder(null);
-        getContentPane().add(EquipoLocal9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 210, 40));
-
-        ResultadoLocal9.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal9.setBorder(null);
-        getContentPane().add(ResultadoLocal9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 440, 50, 40));
-
-        Jornada3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 259, -1, -1));
-
-        EquipoLocal10.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal10.setBorder(null);
-        getContentPane().add(EquipoLocal10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 320, 210, 40));
-
-        ResultadoLocal10.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal10.setBorder(null);
-        getContentPane().add(ResultadoLocal10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 320, 50, 40));
-
-        EquipoLocal11.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal11.setBorder(null);
-        getContentPane().add(EquipoLocal11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 380, 210, 40));
-
-        ResultadoLocal11.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal11.setBorder(null);
-        getContentPane().add(ResultadoLocal11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 380, 50, 40));
-
-        EquipoLocal12.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal12.setBorder(null);
-        getContentPane().add(EquipoLocal12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 440, 210, 40));
-
-        ResultadoLocal12.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal12.setBorder(null);
-        getContentPane().add(ResultadoLocal12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 440, 50, 40));
-
-        Jornada4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada4, new org.netbeans.lib.awtextra.AbsoluteConstraints(973, 259, -1, -1));
-
-        EquipoLocal13.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal13.setBorder(null);
-        getContentPane().add(EquipoLocal13, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, 210, 40));
-
-        EquipoLocal14.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal14.setBorder(null);
-        getContentPane().add(EquipoLocal14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 630, 210, 40));
-
-        EquipoLocal15.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal15.setBorder(null);
-        getContentPane().add(EquipoLocal15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 690, 210, 40));
-
-        Jornada5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 507, -1, -1));
-
-        EquipoLocal16.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal16.setBorder(null);
-        getContentPane().add(EquipoLocal16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 570, 210, 40));
-
-        EquipoLocal17.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal17.setBorder(null);
-        getContentPane().add(EquipoLocal17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 630, 210, 40));
-
-        EquipoLocal18.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal18.setBorder(null);
-        getContentPane().add(EquipoLocal18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 690, 210, 40));
-
-        Jornada6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada6, new org.netbeans.lib.awtextra.AbsoluteConstraints(973, 507, -1, -1));
-
-        EquipoLocal19.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal19.setBorder(null);
-        getContentPane().add(EquipoLocal19, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 810, 210, 40));
-
-        EquipoLocal20.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal20.setBorder(null);
-        getContentPane().add(EquipoLocal20, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 880, 210, 40));
-
-        EquipoLocal21.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal21.setBorder(null);
-        getContentPane().add(EquipoLocal21, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 930, 210, 40));
-
-        Jornada7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 755, -1, -1));
-
-        EquipoLocal22.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal22.setBorder(null);
-        getContentPane().add(EquipoLocal22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 820, 210, 40));
-
-        EquipoLocal23.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal23.setBorder(null);
-        getContentPane().add(EquipoLocal23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 880, 210, 40));
-
-        EquipoLocal24.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal24.setBorder(null);
-        getContentPane().add(EquipoLocal24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 930, 210, 40));
-
-        Jornada8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada8, new org.netbeans.lib.awtextra.AbsoluteConstraints(973, 755, -1, -1));
-
-        EquipoLocal25.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal25.setBorder(null);
-        getContentPane().add(EquipoLocal25, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 1060, 210, 40));
-
-        EquipoLocal26.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal26.setBorder(null);
-        getContentPane().add(EquipoLocal26, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 1120, 210, 40));
-
-        EquipoLocal27.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal27.setBorder(null);
-        getContentPane().add(EquipoLocal27, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 1180, 210, 40));
-
-        Jornada9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 1003, -1, -1));
-
-        EquipoLocal28.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal28.setBorder(null);
-        getContentPane().add(EquipoLocal28, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 1060, 210, 40));
-
-        EquipoLocal29.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal29.setBorder(null);
-        getContentPane().add(EquipoLocal29, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 1120, 210, 40));
-
-        EquipoLocal30.setBackground(new java.awt.Color(255, 255, 255));
-        EquipoLocal30.setBorder(null);
-        getContentPane().add(EquipoLocal30, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 1180, 210, 40));
-
-        Jornada10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada10, new org.netbeans.lib.awtextra.AbsoluteConstraints(973, 1003, -1, -1));
-
-        ResultadoLocal13.setBackground(new java.awt.Color(255, 255, 255));
-        ResultadoLocal13.setBorder(null);
-        getContentPane().add(ResultadoLocal13, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 50, 40));
+        getContentPane().add(Jornada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAnteriorActionPerformed
+         if (ProyectoESport.isAnterior())
+        {
+            // objeto
+            String n=ProyectoESport.getAnteriorNombre();
+            Integer e = ProyectoESport.getEdad();
+            String p = ProyectoESport.getProfesion();
+            String t=ProyectoESport.getTelefono();
+            llenar(n,e,p,t);
+        }
+        else
+            JOptionPane.showMessageDialog(this, " No hay más personas");
+    
+    }//GEN-LAST:event_bAnteriorActionPerformed
+
+    private void bSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSiguienteActionPerformed
+        if (ProyectoESport.isSiguiente())
+        {
+            String n=ProyectoESport.getSiguienteNombre();
+            Integer e = ProyectoESport.getEdad();
+            String p = ProyectoESport.getProfesion();
+            String t=ProyectoESport.getTelefono();
+            llenar(n,e,p,t);
+        }
+        else
+            JOptionPane.showMessageDialog(this, " No hay más personas");
+    }//GEN-LAST:event_bSiguienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -326,57 +183,20 @@ public class JornadasAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField EquipoLocal1;
-    private javax.swing.JTextField EquipoLocal10;
-    private javax.swing.JTextField EquipoLocal11;
-    private javax.swing.JTextField EquipoLocal12;
-    private javax.swing.JTextField EquipoLocal13;
-    private javax.swing.JTextField EquipoLocal14;
-    private javax.swing.JTextField EquipoLocal15;
-    private javax.swing.JTextField EquipoLocal16;
-    private javax.swing.JTextField EquipoLocal17;
-    private javax.swing.JTextField EquipoLocal18;
-    private javax.swing.JTextField EquipoLocal19;
     private javax.swing.JTextField EquipoLocal2;
-    private javax.swing.JTextField EquipoLocal20;
-    private javax.swing.JTextField EquipoLocal21;
-    private javax.swing.JTextField EquipoLocal22;
-    private javax.swing.JTextField EquipoLocal23;
-    private javax.swing.JTextField EquipoLocal24;
-    private javax.swing.JTextField EquipoLocal25;
-    private javax.swing.JTextField EquipoLocal26;
-    private javax.swing.JTextField EquipoLocal27;
-    private javax.swing.JTextField EquipoLocal28;
-    private javax.swing.JTextField EquipoLocal29;
     private javax.swing.JTextField EquipoLocal3;
-    private javax.swing.JTextField EquipoLocal30;
-    private javax.swing.JTextField EquipoLocal4;
-    private javax.swing.JTextField EquipoLocal5;
-    private javax.swing.JTextField EquipoLocal6;
-    private javax.swing.JTextField EquipoLocal7;
-    private javax.swing.JTextField EquipoLocal8;
-    private javax.swing.JTextField EquipoLocal9;
+    private javax.swing.JTextField EquipoVisitante1;
+    private javax.swing.JTextField EquipoVisitante2;
+    private javax.swing.JTextField EquipoVisitante3;
     private javax.swing.JLabel Jornada1;
-    private javax.swing.JLabel Jornada10;
-    private javax.swing.JLabel Jornada2;
-    private javax.swing.JLabel Jornada3;
-    private javax.swing.JLabel Jornada4;
-    private javax.swing.JLabel Jornada5;
-    private javax.swing.JLabel Jornada6;
-    private javax.swing.JLabel Jornada7;
-    private javax.swing.JLabel Jornada8;
-    private javax.swing.JLabel Jornada9;
+    private javax.swing.JTextField NumJornada;
     private javax.swing.JTextField ResultadoLocal1;
-    private javax.swing.JTextField ResultadoLocal10;
-    private javax.swing.JTextField ResultadoLocal11;
-    private javax.swing.JTextField ResultadoLocal12;
-    private javax.swing.JTextField ResultadoLocal13;
     private javax.swing.JTextField ResultadoLocal2;
     private javax.swing.JTextField ResultadoLocal3;
-    private javax.swing.JTextField ResultadoLocal4;
-    private javax.swing.JTextField ResultadoLocal5;
-    private javax.swing.JTextField ResultadoLocal6;
-    private javax.swing.JTextField ResultadoLocal7;
-    private javax.swing.JTextField ResultadoLocal8;
-    private javax.swing.JTextField ResultadoLocal9;
+    private javax.swing.JTextField ResultadoVisitante1;
+    private javax.swing.JTextField ResultadoVisitante2;
+    private javax.swing.JTextField ResultadoVisitante3;
+    private javax.swing.JButton bAnterior;
+    private javax.swing.JButton bSiguiente;
     // End of variables declaration//GEN-END:variables
 }
