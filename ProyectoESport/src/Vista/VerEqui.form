@@ -39,20 +39,20 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
-                                      <Component id="jTextField7" min="-2" pref="169" max="-2" attributes="0"/>
+                                      <Component id="jID" min="-2" pref="169" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField8" alignment="0" pref="169" max="32767" attributes="0"/>
+                                          <Component id="jPuntos" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jEquipo" alignment="0" pref="169" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
                           <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jTextField11" alignment="1" pref="169" max="32767" attributes="0"/>
-                              <Component id="jTextField10" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jNombre" alignment="1" pref="169" max="32767" attributes="0"/>
+                              <Component id="jWeb" alignment="1" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -78,7 +78,7 @@
               <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel1" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="jTextField7" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jID" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -87,20 +87,20 @@
                       <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel3" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="jTextField10" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jWeb" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jTextField11" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jNombre" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="65" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel8" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="jTextField9" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPuntos" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel6" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="jTextField8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jEquipo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
               <Component id="jButton2" min="-2" pref="58" max="-2" attributes="0"/>
@@ -126,12 +126,12 @@
         <Property name="text" type="java.lang.String" value="ID EQUIPO"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField7">
+    <Component class="javax.swing.JTextField" name="jID">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jIDActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField8">
+    <Component class="javax.swing.JTextField" name="jEquipo">
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
@@ -141,9 +141,9 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
+    <Component class="javax.swing.JTextField" name="jWeb">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField11">
+    <Component class="javax.swing.JTextField" name="jNombre">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
@@ -177,7 +177,7 @@
         <Property name="text" type="java.lang.String" value="PUNTOS"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField9">
+    <Component class="javax.swing.JTextField" name="jPuntos">
     </Component>
   </SubComponents>
 </Form>
