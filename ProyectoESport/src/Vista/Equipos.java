@@ -16,6 +16,7 @@ public class Equipos extends javax.swing.JFrame {
      */
     public Equipos() {
         initComponents();
+        int selec;
     }
 
     /**
@@ -122,6 +123,12 @@ public class Equipos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void seleccion()
+    {
+        
+        
+    }
+    
     private void sentinelsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sentinelsActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_sentinelsActionPerformed

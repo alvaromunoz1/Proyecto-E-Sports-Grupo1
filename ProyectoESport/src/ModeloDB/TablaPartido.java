@@ -257,4 +257,28 @@ public class TablaPartido {
        else
            return null;
     }   
+    
+    public Partido  seleccionarIDdePartido(String nombre) throws Exception
+    {
+        bd.conectar();
+        
+        String plantilla = "SELECT ID FROM Partido WHERE Nombre=?;";
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
+        ps.setString(1, nombre);
+       
+        ResultSet resultado = ps.executeQuery();
+
+       if (resultado.next())
+       {
+           Partido p = new Partido();
+           
+           p.setId(resultado.getInt("ID"));
+           
+           bd.desconectar();
+           return p;
+       }
+       else
+           return null;
+    }    
+    
 }

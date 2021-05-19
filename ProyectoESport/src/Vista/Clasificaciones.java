@@ -27,16 +27,465 @@ public class Clasificaciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        E1 = new javax.swing.JTextField();
+        E2 = new javax.swing.JTextField();
+        E3 = new javax.swing.JTextField();
+        E4 = new javax.swing.JTextField();
+        E5 = new javax.swing.JTextField();
+        E6 = new javax.swing.JTextField();
+        E7 = new javax.swing.JTextField();
+        E8 = new javax.swing.JTextField();
+        PT1 = new javax.swing.JTextField();
+        PT2 = new javax.swing.JTextField();
+        PT3 = new javax.swing.JTextField();
+        PT4 = new javax.swing.JTextField();
+        PT5 = new javax.swing.JTextField();
+        PT6 = new javax.swing.JTextField();
+        PT7 = new javax.swing.JTextField();
+        PT8 = new javax.swing.JTextField();
+        PJT1 = new javax.swing.JTextField();
+        PJT2 = new javax.swing.JTextField();
+        PJT3 = new javax.swing.JTextField();
+        PJT4 = new javax.swing.JTextField();
+        PJT5 = new javax.swing.JTextField();
+        PJT6 = new javax.swing.JTextField();
+        PJT7 = new javax.swing.JTextField();
+        PJT8 = new javax.swing.JTextField();
+        PGT1 = new javax.swing.JTextField();
+        PGT2 = new javax.swing.JTextField();
+        PGT3 = new javax.swing.JTextField();
+        PGT4 = new javax.swing.JTextField();
+        PGT5 = new javax.swing.JTextField();
+        PGT6 = new javax.swing.JTextField();
+        PGT7 = new javax.swing.JTextField();
+        PGT8 = new javax.swing.JTextField();
+        PPT1 = new javax.swing.JTextField();
+        PPT2 = new javax.swing.JTextField();
+        PPT3 = new javax.swing.JTextField();
+        PPT4 = new javax.swing.JTextField();
+        PPT5 = new javax.swing.JTextField();
+        PPT6 = new javax.swing.JTextField();
+        PPT7 = new javax.swing.JTextField();
+        PPT8 = new javax.swing.JTextField();
+        PL1 = new javax.swing.JTextField();
+        PL2 = new javax.swing.JTextField();
+        PL3 = new javax.swing.JTextField();
+        PL4 = new javax.swing.JTextField();
+        PL5 = new javax.swing.JTextField();
+        PL6 = new javax.swing.JTextField();
+        PL7 = new javax.swing.JTextField();
+        PL8 = new javax.swing.JTextField();
+        PJL1 = new javax.swing.JTextField();
+        PJL2 = new javax.swing.JTextField();
+        PJL3 = new javax.swing.JTextField();
+        PJL4 = new javax.swing.JTextField();
+        PJL5 = new javax.swing.JTextField();
+        PJL6 = new javax.swing.JTextField();
+        PJL7 = new javax.swing.JTextField();
+        PJL8 = new javax.swing.JTextField();
+        PGL1 = new javax.swing.JTextField();
+        PGL2 = new javax.swing.JTextField();
+        PGL3 = new javax.swing.JTextField();
+        PGL4 = new javax.swing.JTextField();
+        PGL5 = new javax.swing.JTextField();
+        PGL6 = new javax.swing.JTextField();
+        PGL7 = new javax.swing.JTextField();
+        PGL8 = new javax.swing.JTextField();
+        PPL1 = new javax.swing.JTextField();
+        PPL2 = new javax.swing.JTextField();
+        PPL3 = new javax.swing.JTextField();
+        PPL4 = new javax.swing.JTextField();
+        PPL5 = new javax.swing.JTextField();
+        PPL6 = new javax.swing.JTextField();
+        PPL7 = new javax.swing.JTextField();
+        PPL8 = new javax.swing.JTextField();
+        PV1 = new javax.swing.JTextField();
+        PV2 = new javax.swing.JTextField();
+        PV3 = new javax.swing.JTextField();
+        PV4 = new javax.swing.JTextField();
+        PV5 = new javax.swing.JTextField();
+        PV6 = new javax.swing.JTextField();
+        PV7 = new javax.swing.JTextField();
+        PV8 = new javax.swing.JTextField();
+        PJV1 = new javax.swing.JTextField();
+        PJV2 = new javax.swing.JTextField();
+        PJV3 = new javax.swing.JTextField();
+        PJV4 = new javax.swing.JTextField();
+        PJV5 = new javax.swing.JTextField();
+        PJV6 = new javax.swing.JTextField();
+        PJV7 = new javax.swing.JTextField();
+        PJV8 = new javax.swing.JTextField();
+        PGV1 = new javax.swing.JTextField();
+        PGV2 = new javax.swing.JTextField();
+        PGV3 = new javax.swing.JTextField();
+        PGV4 = new javax.swing.JTextField();
+        PGV5 = new javax.swing.JTextField();
+        PGV6 = new javax.swing.JTextField();
+        PGV7 = new javax.swing.JTextField();
+        PGV8 = new javax.swing.JTextField();
+        PPV1 = new javax.swing.JTextField();
+        PPV2 = new javax.swing.JTextField();
+        PPV3 = new javax.swing.JTextField();
+        PPV4 = new javax.swing.JTextField();
+        PPV5 = new javax.swing.JTextField();
+        PPV6 = new javax.swing.JTextField();
+        PPV7 = new javax.swing.JTextField();
+        PPV8 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1gdaw03\\Downloads\\Fondo_Clasificacion.jpg")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 920));
+        E1.setBorder(null);
+        getContentPane().add(E1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 270, 50));
+
+        E2.setBorder(null);
+        getContentPane().add(E2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 270, 50));
+
+        E3.setBorder(null);
+        getContentPane().add(E3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, 270, 50));
+
+        E4.setBorder(null);
+        getContentPane().add(E4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 270, 50));
+
+        E5.setBorder(null);
+        getContentPane().add(E5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 270, 50));
+
+        E6.setBorder(null);
+        getContentPane().add(E6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 500, 270, 50));
+
+        E7.setBorder(null);
+        getContentPane().add(E7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, 270, 50));
+
+        E8.setBorder(null);
+        getContentPane().add(E8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 640, 270, 50));
+
+        PT1.setBackground(new java.awt.Color(177, 107, 255));
+        PT1.setBorder(null);
+        getContentPane().add(PT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 60, 50));
+
+        PT2.setBackground(new java.awt.Color(177, 107, 255));
+        PT2.setBorder(null);
+        getContentPane().add(PT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 60, 50));
+
+        PT3.setBackground(new java.awt.Color(177, 107, 255));
+        PT3.setBorder(null);
+        getContentPane().add(PT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 60, 50));
+
+        PT4.setBackground(new java.awt.Color(177, 107, 255));
+        PT4.setBorder(null);
+        getContentPane().add(PT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 370, 60, 50));
+
+        PT5.setBackground(new java.awt.Color(177, 107, 255));
+        PT5.setBorder(null);
+        getContentPane().add(PT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 430, 60, 50));
+
+        PT6.setBackground(new java.awt.Color(177, 107, 255));
+        PT6.setBorder(null);
+        getContentPane().add(PT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 500, 60, 50));
+
+        PT7.setBackground(new java.awt.Color(177, 107, 255));
+        PT7.setBorder(null);
+        getContentPane().add(PT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 570, 60, 50));
+
+        PT8.setBackground(new java.awt.Color(177, 107, 255));
+        PT8.setBorder(null);
+        getContentPane().add(PT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 640, 60, 50));
+
+        PJT1.setBorder(null);
+        getContentPane().add(PJT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 60, 50));
+
+        PJT2.setBorder(null);
+        getContentPane().add(PJT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 60, 60));
+
+        PJT3.setBorder(null);
+        getContentPane().add(PJT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 300, 60, 50));
+
+        PJT4.setBorder(null);
+        getContentPane().add(PJT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, 60, 50));
+
+        PJT5.setBorder(null);
+        getContentPane().add(PJT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, 60, 60));
+
+        PJT6.setBorder(null);
+        getContentPane().add(PJT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 60, 50));
+
+        PJT7.setBorder(null);
+        getContentPane().add(PJT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 570, 60, 50));
+
+        PJT8.setBorder(null);
+        getContentPane().add(PJT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 640, 60, 50));
+
+        PGT1.setBorder(null);
+        getContentPane().add(PGT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 60, 50));
+
+        PGT2.setBorder(null);
+        getContentPane().add(PGT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 60, 50));
+
+        PGT3.setBorder(null);
+        getContentPane().add(PGT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 60, 50));
+
+        PGT4.setBorder(null);
+        getContentPane().add(PGT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 370, 60, 50));
+
+        PGT5.setBorder(null);
+        getContentPane().add(PGT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 440, 60, 50));
+
+        PGT6.setBorder(null);
+        getContentPane().add(PGT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, 60, 50));
+
+        PGT7.setBorder(null);
+        getContentPane().add(PGT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 570, 60, 50));
+
+        PGT8.setBorder(null);
+        getContentPane().add(PGT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 640, 60, 50));
+
+        PPT1.setBorder(null);
+        PPT1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PPT1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(PPT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, 60, 50));
+
+        PPT2.setBorder(null);
+        getContentPane().add(PPT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, 60, 50));
+
+        PPT3.setBorder(null);
+        getContentPane().add(PPT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 300, 60, 50));
+
+        PPT4.setBorder(null);
+        getContentPane().add(PPT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 370, 60, 50));
+
+        PPT5.setBorder(null);
+        getContentPane().add(PPT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 440, 60, 50));
+
+        PPT6.setBorder(null);
+        getContentPane().add(PPT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 500, 60, 50));
+
+        PPT7.setBorder(null);
+        getContentPane().add(PPT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 570, 60, 50));
+
+        PPT8.setBorder(null);
+        getContentPane().add(PPT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 640, 60, 50));
+
+        PL1.setBackground(new java.awt.Color(0, 102, 254));
+        PL1.setBorder(null);
+        getContentPane().add(PL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 170, 60, 50));
+
+        PL2.setBackground(new java.awt.Color(0, 102, 254));
+        PL2.setBorder(null);
+        getContentPane().add(PL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 230, 60, 50));
+
+        PL3.setBackground(new java.awt.Color(0, 102, 254));
+        PL3.setBorder(null);
+        getContentPane().add(PL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 300, 60, 50));
+
+        PL4.setBackground(new java.awt.Color(0, 102, 254));
+        PL4.setBorder(null);
+        getContentPane().add(PL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 370, 60, 50));
+
+        PL5.setBackground(new java.awt.Color(0, 102, 254));
+        PL5.setBorder(null);
+        getContentPane().add(PL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 440, 60, 50));
+
+        PL6.setBackground(new java.awt.Color(0, 102, 254));
+        PL6.setBorder(null);
+        getContentPane().add(PL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 500, 60, 50));
+
+        PL7.setBackground(new java.awt.Color(0, 102, 254));
+        PL7.setBorder(null);
+        getContentPane().add(PL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 570, 60, 50));
+
+        PL8.setBackground(new java.awt.Color(0, 102, 204));
+        PL8.setBorder(null);
+        getContentPane().add(PL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 640, 60, 50));
+
+        PJL1.setBorder(null);
+        getContentPane().add(PJL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, 60, 50));
+
+        PJL2.setBorder(null);
+        getContentPane().add(PJL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 230, 60, 50));
+
+        PJL3.setBorder(null);
+        getContentPane().add(PJL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 300, 60, 50));
+
+        PJL4.setBorder(null);
+        getContentPane().add(PJL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 370, 60, 50));
+
+        PJL5.setBorder(null);
+        getContentPane().add(PJL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 440, 60, 50));
+
+        PJL6.setBorder(null);
+        getContentPane().add(PJL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 500, 60, 50));
+
+        PJL7.setBorder(null);
+        getContentPane().add(PJL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 570, 60, 50));
+
+        PJL8.setBorder(null);
+        getContentPane().add(PJL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 640, 60, 50));
+
+        PGL1.setBorder(null);
+        getContentPane().add(PGL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 170, 60, 50));
+
+        PGL2.setBorder(null);
+        getContentPane().add(PGL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 230, 60, 50));
+
+        PGL3.setBorder(null);
+        getContentPane().add(PGL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 300, 60, 50));
+
+        PGL4.setBorder(null);
+        getContentPane().add(PGL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 370, 60, 50));
+
+        PGL5.setBorder(null);
+        getContentPane().add(PGL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 430, 60, 50));
+
+        PGL6.setBorder(null);
+        getContentPane().add(PGL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 500, 60, 50));
+
+        PGL7.setBorder(null);
+        getContentPane().add(PGL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 570, 60, 50));
+
+        PGL8.setBorder(null);
+        getContentPane().add(PGL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 640, 60, 50));
+
+        PPL1.setBorder(null);
+        getContentPane().add(PPL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 170, 60, 50));
+
+        PPL2.setBorder(null);
+        getContentPane().add(PPL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 230, 60, 50));
+
+        PPL3.setBorder(null);
+        getContentPane().add(PPL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 300, 60, 50));
+
+        PPL4.setBorder(null);
+        getContentPane().add(PPL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 370, 60, 50));
+
+        PPL5.setBorder(null);
+        getContentPane().add(PPL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 440, 60, 50));
+
+        PPL6.setBorder(null);
+        getContentPane().add(PPL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 500, 60, 50));
+
+        PPL7.setBorder(null);
+        getContentPane().add(PPL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 570, 60, 50));
+
+        PPL8.setBorder(null);
+        getContentPane().add(PPL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 640, 60, 50));
+
+        PV1.setBackground(new java.awt.Color(202, 46, 46));
+        PV1.setBorder(null);
+        getContentPane().add(PV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 170, 60, 50));
+
+        PV2.setBackground(new java.awt.Color(202, 46, 46));
+        PV2.setBorder(null);
+        getContentPane().add(PV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 240, 60, 50));
+
+        PV3.setBackground(new java.awt.Color(202, 46, 46));
+        PV3.setBorder(null);
+        getContentPane().add(PV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 300, 60, 50));
+
+        PV4.setBackground(new java.awt.Color(202, 46, 46));
+        PV4.setBorder(null);
+        getContentPane().add(PV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 370, 60, 50));
+
+        PV5.setBackground(new java.awt.Color(202, 46, 46));
+        PV5.setBorder(null);
+        getContentPane().add(PV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 440, 60, 50));
+
+        PV6.setBackground(new java.awt.Color(202, 46, 46));
+        PV6.setBorder(null);
+        getContentPane().add(PV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 500, 60, 50));
+
+        PV7.setBackground(new java.awt.Color(202, 46, 46));
+        PV7.setBorder(null);
+        getContentPane().add(PV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 570, 60, 50));
+
+        PV8.setBackground(new java.awt.Color(202, 46, 46));
+        PV8.setBorder(null);
+        getContentPane().add(PV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 640, 60, 50));
+
+        PJV1.setBorder(null);
+        getContentPane().add(PJV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 170, 60, 50));
+
+        PJV2.setBorder(null);
+        getContentPane().add(PJV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 230, 60, 50));
+
+        PJV3.setBorder(null);
+        getContentPane().add(PJV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 300, 60, 50));
+
+        PJV4.setBorder(null);
+        getContentPane().add(PJV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 370, 60, 50));
+
+        PJV5.setBorder(null);
+        getContentPane().add(PJV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 440, 60, 50));
+
+        PJV6.setBorder(null);
+        getContentPane().add(PJV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 500, 60, 50));
+
+        PJV7.setBorder(null);
+        getContentPane().add(PJV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 570, 60, 50));
+
+        PJV8.setBorder(null);
+        getContentPane().add(PJV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 640, 60, 50));
+
+        PGV1.setBorder(null);
+        getContentPane().add(PGV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 170, 60, 50));
+
+        PGV2.setBorder(null);
+        getContentPane().add(PGV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 230, 60, 50));
+
+        PGV3.setBorder(null);
+        getContentPane().add(PGV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 300, 60, 50));
+
+        PGV4.setBorder(null);
+        getContentPane().add(PGV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 370, 60, 50));
+
+        PGV5.setBorder(null);
+        getContentPane().add(PGV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 440, 60, 50));
+
+        PGV6.setBorder(null);
+        getContentPane().add(PGV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 500, 60, 50));
+
+        PGV7.setBorder(null);
+        getContentPane().add(PGV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 570, 60, 50));
+
+        PGV8.setBorder(null);
+        getContentPane().add(PGV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 640, 60, 50));
+
+        PPV1.setBorder(null);
+        getContentPane().add(PPV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 170, 60, 50));
+
+        PPV2.setBorder(null);
+        getContentPane().add(PPV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 240, 60, 50));
+
+        PPV3.setBorder(null);
+        getContentPane().add(PPV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 300, 60, 50));
+
+        PPV4.setBorder(null);
+        getContentPane().add(PPV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 370, 60, 50));
+
+        PPV5.setBorder(null);
+        getContentPane().add(PPV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 440, 60, 50));
+
+        PPV6.setBorder(null);
+        getContentPane().add(PPV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 500, 60, 50));
+
+        PPV7.setBorder(null);
+        getContentPane().add(PPV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 570, 60, 50));
+
+        PPV8.setBorder(null);
+        getContentPane().add(PPV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 640, 60, 50));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Clasificacion.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void PPT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PPT1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -74,6 +523,110 @@ public class Clasificaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField E1;
+    private javax.swing.JTextField E2;
+    private javax.swing.JTextField E3;
+    private javax.swing.JTextField E4;
+    private javax.swing.JTextField E5;
+    private javax.swing.JTextField E6;
+    private javax.swing.JTextField E7;
+    private javax.swing.JTextField E8;
+    private javax.swing.JTextField PGL1;
+    private javax.swing.JTextField PGL2;
+    private javax.swing.JTextField PGL3;
+    private javax.swing.JTextField PGL4;
+    private javax.swing.JTextField PGL5;
+    private javax.swing.JTextField PGL6;
+    private javax.swing.JTextField PGL7;
+    private javax.swing.JTextField PGL8;
+    private javax.swing.JTextField PGT1;
+    private javax.swing.JTextField PGT2;
+    private javax.swing.JTextField PGT3;
+    private javax.swing.JTextField PGT4;
+    private javax.swing.JTextField PGT5;
+    private javax.swing.JTextField PGT6;
+    private javax.swing.JTextField PGT7;
+    private javax.swing.JTextField PGT8;
+    private javax.swing.JTextField PGV1;
+    private javax.swing.JTextField PGV2;
+    private javax.swing.JTextField PGV3;
+    private javax.swing.JTextField PGV4;
+    private javax.swing.JTextField PGV5;
+    private javax.swing.JTextField PGV6;
+    private javax.swing.JTextField PGV7;
+    private javax.swing.JTextField PGV8;
+    private javax.swing.JTextField PJL1;
+    private javax.swing.JTextField PJL2;
+    private javax.swing.JTextField PJL3;
+    private javax.swing.JTextField PJL4;
+    private javax.swing.JTextField PJL5;
+    private javax.swing.JTextField PJL6;
+    private javax.swing.JTextField PJL7;
+    private javax.swing.JTextField PJL8;
+    private javax.swing.JTextField PJT1;
+    private javax.swing.JTextField PJT2;
+    private javax.swing.JTextField PJT3;
+    private javax.swing.JTextField PJT4;
+    private javax.swing.JTextField PJT5;
+    private javax.swing.JTextField PJT6;
+    private javax.swing.JTextField PJT7;
+    private javax.swing.JTextField PJT8;
+    private javax.swing.JTextField PJV1;
+    private javax.swing.JTextField PJV2;
+    private javax.swing.JTextField PJV3;
+    private javax.swing.JTextField PJV4;
+    private javax.swing.JTextField PJV5;
+    private javax.swing.JTextField PJV6;
+    private javax.swing.JTextField PJV7;
+    private javax.swing.JTextField PJV8;
+    private javax.swing.JTextField PL1;
+    private javax.swing.JTextField PL2;
+    private javax.swing.JTextField PL3;
+    private javax.swing.JTextField PL4;
+    private javax.swing.JTextField PL5;
+    private javax.swing.JTextField PL6;
+    private javax.swing.JTextField PL7;
+    private javax.swing.JTextField PL8;
+    private javax.swing.JTextField PPL1;
+    private javax.swing.JTextField PPL2;
+    private javax.swing.JTextField PPL3;
+    private javax.swing.JTextField PPL4;
+    private javax.swing.JTextField PPL5;
+    private javax.swing.JTextField PPL6;
+    private javax.swing.JTextField PPL7;
+    private javax.swing.JTextField PPL8;
+    private javax.swing.JTextField PPT1;
+    private javax.swing.JTextField PPT2;
+    private javax.swing.JTextField PPT3;
+    private javax.swing.JTextField PPT4;
+    private javax.swing.JTextField PPT5;
+    private javax.swing.JTextField PPT6;
+    private javax.swing.JTextField PPT7;
+    private javax.swing.JTextField PPT8;
+    private javax.swing.JTextField PPV1;
+    private javax.swing.JTextField PPV2;
+    private javax.swing.JTextField PPV3;
+    private javax.swing.JTextField PPV4;
+    private javax.swing.JTextField PPV5;
+    private javax.swing.JTextField PPV6;
+    private javax.swing.JTextField PPV7;
+    private javax.swing.JTextField PPV8;
+    private javax.swing.JTextField PT1;
+    private javax.swing.JTextField PT2;
+    private javax.swing.JTextField PT3;
+    private javax.swing.JTextField PT4;
+    private javax.swing.JTextField PT5;
+    private javax.swing.JTextField PT6;
+    private javax.swing.JTextField PT7;
+    private javax.swing.JTextField PT8;
+    private javax.swing.JTextField PV1;
+    private javax.swing.JTextField PV2;
+    private javax.swing.JTextField PV3;
+    private javax.swing.JTextField PV4;
+    private javax.swing.JTextField PV5;
+    private javax.swing.JTextField PV6;
+    private javax.swing.JTextField PV7;
+    private javax.swing.JTextField PV8;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

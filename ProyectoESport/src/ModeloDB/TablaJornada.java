@@ -191,7 +191,29 @@ public class TablaJornada {
            return null;
     }
     
+    public Jornada  seleccionarIdJornada(String nombre) throws Exception
+    {
+        bd.conectar();
         
+        String plantilla = "SELECT ID FROM Jornada WHERE Nombre=?;";
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
+        ps.setString(1, nombre);
+       
+        ResultSet resultado = ps.executeQuery();
+
+       if (resultado.next())
+       {
+           Jornada j = new Jornada();
+           
+           j.setId(resultado.getInt("ID"));
+           
+           bd.desconectar();
+           return j;
+       }
+       else
+           return null;
+    }    
+    
     public Jornada  seleccionarUnaJornadaConPartidos(int id) throws Exception
     {
         bd.conectar();
