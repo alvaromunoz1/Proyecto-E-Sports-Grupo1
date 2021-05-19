@@ -14,13 +14,15 @@ import java.sql.Time;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
 
 
 
 /**
  *
  * @author Imanol Urquijo
- * Desde linea 1 hasta 680
+ * Desde linea 1 hasta 967
  */
 public class ProyectoESport {
 
@@ -53,6 +55,26 @@ public class ProyectoESport {
     private static Login vl;
     private static DatosEquipos vde;
     private static Clasificaciones vc;
+    private static BorrarDueño vbd;
+    private static BorrarEqui vbe;
+    private static BorrarJornada vbjor;
+    private static BorrarJug vbjug;
+    private static BorrarPartido vbp;
+    private static BorrarUsuario vbu;
+    private static IntroDueño vid;
+    private static IntroJug vijug;
+    private static IntroEqui vie;
+    private static IntroResult vir;
+    private static IntroUsuario viu;
+    private static ModDueño vmd;
+    private static ModEqui vme;
+    private static ModJug vmjug;
+    private static ModUsuario vmu;
+    private static VistaAdmin vadmin;
+    private static VerDueño vvd;
+    private static VerEqui vve;
+    private static VerJug vvjug;
+    private static VerUsuario vvu;
     
     
     public static void main(String[] args) {
@@ -94,7 +116,27 @@ public class ProyectoESport {
             vl = new Login();
             vde = new DatosEquipos();
             vc = new Clasificaciones();
-        
+            vbd = new BorrarDueño();
+            vbe = new BorrarEqui();
+            vbjor = new BorrarJornada();
+            vbjug = new BorrarJug();
+            vbp = new BorrarPartido();
+            vbu = new BorrarUsuario();
+            vid = new IntroDueño();
+            vie = new IntroEqui();
+            vijug = new IntroJug();
+            vir = new IntroResult();
+            viu = new IntroUsuario();
+            vmd = new ModDueño();
+            vme = new ModEqui();
+            vmjug = new ModJug();
+            vmu = new ModUsuario();
+            vvd = new VerDueño();
+            vve = new VerEqui();
+            vvjug = new VerJug();
+            vvu = new VerUsuario();
+            vadmin = new VistaAdmin();
+
         }
         catch (Exception e)
         {
@@ -120,6 +162,89 @@ public class ProyectoESport {
         vp.setVisible(true);
     }
     
+    public static void VistaAdministrador(char a) 
+    {
+        vl.dispose();
+        vadmin.setVisible(true);
+    }    
+    
+    public static void VistaBorrarDueño() 
+    {
+        vbd.setVisible(true);
+    }    
+    public static void VistaBorrarEquipo() 
+    {
+        vbe.setVisible(true);
+    } 
+    public static void VistaBorrarJornada() 
+    {
+        vbjor.setVisible(true);
+    } 
+    public static void VistaBorrarJugador() 
+    {
+        vbjug.setVisible(true);
+    } 
+    public static void VistaBorrarPartido() 
+    {
+        vbp.setVisible(true);
+    } 
+    public static void VistaBorrarUsuario() 
+    {
+        vbu.setVisible(true);
+    } 
+    public static void VistaIntroDueño() 
+    {
+        vid.setVisible(true);
+    } 
+    public static void VistaIntroEquipo() 
+    {
+        vie.setVisible(true);
+    } 
+    public static void VistaIntroJugador() 
+    {
+        vijug.setVisible(true);
+    } 
+    public static void VistaIntroResultado() 
+    {
+        vir.setVisible(true);
+    } 
+    public static void VistaIntroUsuario() 
+    {
+        viu.setVisible(true);
+    } 
+    public static void VistaModificarDueño() 
+    {
+        vmd.setVisible(true);
+    } 
+    public static void VistaModificarEquipo() 
+    {
+        vme.setVisible(true);
+    } 
+    public static void VistaModificarJugador() 
+    {
+        vmjug.setVisible(true);
+    } 
+    public static void VistaModificarUsuario() 
+    {
+        vmu.setVisible(true);
+    } 
+    public static void VistaVerDueño() 
+    {
+        vvd.setVisible(true);
+    } 
+    public static void VistaVerEquipo() 
+    {
+        vve.setVisible(true);
+    } 
+    public static void VistaVerJugador() 
+    {
+        vvjug.setVisible(true);
+    } 
+    public static void VistaVerUsuario() 
+    {
+        vvu.setVisible(true);
+    } 
+
     
     public static void VistaEquipos() 
     {
@@ -141,6 +266,11 @@ public class ProyectoESport {
         vp.setVisible(false);
       
         vc.setVisible(true);
+    }
+    
+    public static void volverPrincipalAdministrador (JFrame v)
+    {
+        v.dispose();
     }
     
     public static boolean identificar(String usuario,String contraseña) throws Exception{
@@ -503,6 +633,13 @@ public class ProyectoESport {
         return j;
     }
     
+    public static Jornada seleccionarIDdeJornada(String nombre) throws Exception
+    {
+        j = tj.seleccionarIdJornada(nombre);
+
+        return j;
+    }    
+    
     public static Jornada seleccionarJornadaConPartidos(int id) 
             throws Exception
     {
@@ -535,6 +672,13 @@ public class ProyectoESport {
 
         return p;
     }
+    
+    public static Partido seleccionarIDdPartido(String nombre) throws Exception
+    {
+        p = tp.seleccionarIDdePartido(nombre);
+
+        return p;
+    }    
     
     public static String datosTodosLosEquipos() throws Exception
     {
@@ -786,9 +930,43 @@ public class ProyectoESport {
         return u;
     }    
     
+    public static boolean llenarJornadas(JComboBox lista){
+        try
+        {
+            ArrayList<Jornada> jornadas = tj.seleccionarTodo();
+            
+            for(int x = 0; x < jornadas.size(); x++)
+            {
+                lista.insertItemAt(jornadas.get(x).getNombre(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }
+
+       
     
+    public static boolean llenarPartidos(javax.swing.JComboBox lista){
+        try
+        {
+            ArrayList<Partido> partidos = tp.seleccionarPartidosPorJornada(Vista.IntroResult.idj.getId());
+            
+            for(int x = 0; x < partidos.size(); x++)
+            {
+                lista.insertItemAt(partidos.get(x).getNombre(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }    
     
-    
+   
     
     
     
