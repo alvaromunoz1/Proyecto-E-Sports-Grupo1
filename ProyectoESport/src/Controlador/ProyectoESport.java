@@ -22,7 +22,7 @@ import javax.swing.JFrame;
 /**
  *
  * @author Imanol Urquijo
- * Desde linea 1 hasta 967
+ * Desde linea 1 hasta 980
  */
 public class ProyectoESport {
 
@@ -776,6 +776,14 @@ public class ProyectoESport {
         return per;
     } 
 
+    public static ArrayList<Persona> seleccionarIDdeTodasLasPersonas() throws Exception
+    {
+
+        ArrayList<Persona> lista = tper.seleccionarTodosLosID();
+
+        return lista;
+    }    
+    
     public static Persona seleccionarSueldoDeUnaPersona(int id) 
             throws Exception
     {
@@ -823,13 +831,11 @@ public class ProyectoESport {
         return a;
     }
 
-    public static String datosTodosLosDueños() throws Exception
+    public static ArrayList<Dueño> seleccionarTodosLosDueños() throws Exception
     {
-        String datos="";
         ArrayList<Dueño> lista = td.seleccionarTodosLosDueños();
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        return lista;
     }
 
     public static Dueño seleccionarUnDueño(int id) throws Exception

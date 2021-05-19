@@ -165,7 +165,27 @@ public class TablaPersona {
        return lista;
     }
         
-     
+    public ArrayList<Persona>  seleccionarTodosLosID() 
+                throws Exception
+    {
+        bd.conectar();
+        
+        ArrayList<Persona> lista = new ArrayList();
+        String plantilla = "SELECT ID FROM Personas;";
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
+        ResultSet resultado = ps.executeQuery();
+
+       while(resultado.next())
+       {
+                Persona p = new Persona();
+                
+                p.setId(resultado.getInt("ID"));
+                
+                lista.add(p);
+       }
+       bd.desconectar();
+       return lista;
+    }     
         public ArrayList<Persona>  seleccionarPersonasPorEquipos(int id) 
                 throws Exception
     {

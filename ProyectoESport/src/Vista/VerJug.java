@@ -6,7 +6,11 @@
 package Vista;
 
 import Controlador.ProyectoESport;
+import Excepciones.CampoVacio;
+import Excepciones.ResultadoNegativo;
 import ModeloUML.Jugador;
+import ModeloUML.Persona;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,8 +22,7 @@ public class VerJug extends javax.swing.JFrame {
     /**
      * Creates new form VerJug
      */
-    public static Jugador idj;
-    public static 
+    public static Jugador jug;
     
     public VerJug() {
         initComponents();
@@ -173,8 +176,17 @@ public class VerJug extends javax.swing.JFrame {
     private void jIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jIDActionPerformed
         try
       {
-        ProyectoESport.seleccionarUnJugadorPersona(Integer.parseInt(jID.getText()));
-        
+        if (datosCorrectos())
+        {  
+          
+            jug = ProyectoESport.seleccionarUnJugadorPersona(Integer.parseInt(jID.getText()));
+
+            jNombre.setText(jug.getNombre());
+            jNick.setText(jug.getNick());
+            jSueldo.setText(String.valueOf(jug.getSueldo()));
+            jEquipo.setText(String.valueOf(jug.getEquipo().getId()));
+            jRol.setText(jug.getRol());
+        }
       }
       catch(Exception e)
       {
@@ -182,8 +194,37 @@ public class VerJug extends javax.swing.JFrame {
       }
     }//GEN-LAST:event_jIDActionPerformed
 
+    private boolean datosCorrectos(){ 
+        try
+        {
+            if (validarID())
+            {  
+                return true;
+            }
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(this,"El resultado introducido esta vacio o no es válido");
+            return false;
+        }
+        return false;
+    }
+  
+    private boolean validarID() throws Exception{
+        
+        ArrayList<Persona> per = ProyectoESport.seleccionarIDdeTodasLasPersonas();
+        int i = Integer.parseInt(jID.getText());
+        for(int x = 0; x < per.size(); x++)
+            if (i == per.get(x).getId())
+                return true;
+                
+                
+        if (jID.getText() == null)
+                throw new CampoVacio();
+                return false;
+    }    
+    
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+            ProyectoESport.volverPrincipalAdministrador(this);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
