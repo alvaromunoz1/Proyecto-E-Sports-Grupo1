@@ -354,6 +354,14 @@ public class ProyectoESport {
                 tp.insertarSinResultado(p);
     }
     
+    public static void insertarPartidoBasico(int ID,String Nombre,
+            LocalTime Hora,
+            int ID_Jornada) throws Exception
+    {
+                p = new Partido(ID,Nombre,Hora,ID_Jornada);
+                tp.insertarSinResultado(p);
+    }    
+    
     public static void insertarPartidoConResultado(int ID,String Nombre,
             Equipo ID_Local,Equipo ID_Visitante,LocalTime Hora,
             int Resultado_Local,int Resultado_Visitante,int ID_Jornada) 
@@ -657,13 +665,12 @@ public class ProyectoESport {
         return datos;
     }
     
-    public static String datosPartidosPorJornada(int id) throws Exception
+    public static ArrayList<Jornada> seleccionarPartidosPorJornada(int id) throws Exception
     {
-        String datos="";
-        ArrayList<Partido> lista = tp.seleccionarPartidosPorJornada(id);
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        ArrayList<Jornada> lista = tj.seleccionarJornadasPorCalendario(id);
+        
+        return lista;
     }
     
     public static Partido seleccionarUnPartido(int id) throws Exception

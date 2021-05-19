@@ -51,7 +51,27 @@ public class TablaPartido {
         bd.desconectar();
     }
      
-    
+
+     public void insertarPartidoBasico(Partido p) throws Exception
+    {
+        bd.conectar();
+        
+        String plantilla = "INSERT INTO(ID,Nombre,Hora"
+                + ",ID_Jornada) Partido VALUES (?,?,?,?);";
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
+        ps.setInt(1, p.getId());
+        ps.setString(2,p.getNombre());
+        ps.setTime(5, convertirHora(p.getHora()));
+        ps.setInt(6, p.getId_jornada());
+      
+        int n = ps.executeUpdate();
+        ps.close();
+        if (n != 1)
+            throw new Exception("El número de filas actualizadas no es uno");
+        
+        bd.desconectar();
+    }     
+     
     public void insertarConResultado(Partido p) throws Exception
     {
         bd.conectar();
