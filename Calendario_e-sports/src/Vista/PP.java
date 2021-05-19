@@ -58,7 +58,7 @@ public class PP extends javax.swing.JFrame {
         jLabel5.setText("Equipos");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 40, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1GDAW01\\Downloads\\pp.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1GDAW01\\Desktop\\Proyecto-E-Sports-Grupo1\\Imagenes\\pp.jpg")); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
