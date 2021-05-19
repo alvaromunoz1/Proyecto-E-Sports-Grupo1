@@ -51,53 +51,100 @@ public class DatosEquipos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel1.setForeground(java.awt.Color.white);
         jLabel1.setText("ID_Equipo");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 79, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, 30));
+
+        tfEntrenadorEquipo.setEditable(false);
+        tfEntrenadorEquipo.setBorder(null);
         getContentPane().add(tfEntrenadorEquipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 590, 329, -1));
 
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel2.setForeground(java.awt.Color.white);
         jLabel2.setText("Nombre");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 79, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 90, 40));
+
+        tfAsistenteEquipo.setEditable(false);
+        tfAsistenteEquipo.setBorder(null);
         getContentPane().add(tfAsistenteEquipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 329, -1));
 
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel3.setForeground(java.awt.Color.white);
         jLabel3.setText("PaginaWeb");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 79, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 100, 60));
+
+        tfDueñoEquipo.setEditable(false);
+        tfDueñoEquipo.setBorder(null);
         getContentPane().add(tfDueñoEquipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 329, -1));
 
+        jLabel4.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel4.setForeground(java.awt.Color.white);
         jLabel4.setText("Puntos");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 79, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 79, 50));
+
+        tfIDCal.setEditable(false);
+        tfIDCal.setBorder(null);
         getContentPane().add(tfIDCal, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 370, 329, -1));
 
+        jLabel5.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel5.setForeground(java.awt.Color.white);
         jLabel5.setText("ID_Calendario");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 360, -1, 40));
+
+        tfPuntosEquipo.setEditable(false);
+        tfPuntosEquipo.setBorder(null);
         getContentPane().add(tfPuntosEquipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 290, 329, -1));
 
+        jLabel6.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel6.setForeground(java.awt.Color.white);
         jLabel6.setText("Dueño");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 450, 79, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, 79, 50));
+
+        tfPaginaWeb.setEditable(false);
+        tfPaginaWeb.setBorder(null);
         getContentPane().add(tfPaginaWeb, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 329, -1));
 
+        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel7.setForeground(java.awt.Color.white);
         jLabel7.setText("Asistente");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 520, 79, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 506, 110, 40));
+
+        tfNombreE.setEditable(false);
+        tfNombreE.setBorder(null);
         getContentPane().add(tfNombreE, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 329, -1));
 
+        jLabel8.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel8.setForeground(java.awt.Color.white);
         jLabel8.setText("Entrenador");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 600, 79, -1));
-        getContentPane().add(tfIDE, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 329, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 570, 130, 50));
 
+        tfIDE.setEditable(false);
+        tfIDE.setBorder(null);
+        getContentPane().add(tfIDE, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 70, 329, -1));
+
+        jLabel9.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        jLabel9.setForeground(java.awt.Color.white);
         jLabel9.setText("Jugadores");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 670, 79, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 666, 120, 30));
 
+        jButton1.setBackground(java.awt.Color.black);
+        jButton1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        jButton1.setForeground(java.awt.Color.white);
         jButton1.setText("Atras");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 670, 83, 44));
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 790, 83, 44));
 
+        taJugadoresEquipo.setEditable(false);
         taJugadoresEquipo.setColumns(20);
         taJugadoresEquipo.setRows(5);
+        taJugadoresEquipo.setBorder(null);
         jScrollPane1.setViewportView(taJugadoresEquipo);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 670, 329, 184));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\1GDAW01\\Downloads\\54362.jpg")); // NOI18N
-        jLabel10.setText("jLabel10");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(-300, -260, -1, 1170));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/54362.jpg"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 920));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
