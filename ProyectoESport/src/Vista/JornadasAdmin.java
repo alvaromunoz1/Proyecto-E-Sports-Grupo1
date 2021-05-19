@@ -19,6 +19,16 @@ public class JornadasAdmin extends javax.swing.JFrame {
      */
     public JornadasAdmin() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        // Utilizamos la ventana para dar de alta una persona
+        EquipoLocal1.setEditable(false);
+        EquipoLocal2.setEditable(false);
+        EquipoLocal3.setEditable(false);
+        EquipoLocal4.setEditable(false);
+        EquipoVisitante1.setEditable(false);
+        EquipoVisitante2.setEditable(false);
+        EquipoVisitante3.setEditable(false);
+        EquipoVisitante4.setEditable(false);
     }
 
     /**
@@ -33,68 +43,94 @@ public class JornadasAdmin extends javax.swing.JFrame {
         EquipoLocal1 = new javax.swing.JTextField();
         EquipoLocal2 = new javax.swing.JTextField();
         EquipoLocal3 = new javax.swing.JTextField();
+        EquipoLocal4 = new javax.swing.JTextField();
         ResultadoLocal1 = new javax.swing.JTextField();
         ResultadoLocal2 = new javax.swing.JTextField();
         ResultadoLocal3 = new javax.swing.JTextField();
+        ResultadoLocal4 = new javax.swing.JTextField();
         EquipoVisitante1 = new javax.swing.JTextField();
         EquipoVisitante2 = new javax.swing.JTextField();
         EquipoVisitante3 = new javax.swing.JTextField();
+        EquipoVisitante4 = new javax.swing.JTextField();
         ResultadoVisitante1 = new javax.swing.JTextField();
         ResultadoVisitante2 = new javax.swing.JTextField();
         ResultadoVisitante3 = new javax.swing.JTextField();
+        ResultadoVisitante4 = new javax.swing.JTextField();
         NumJornada = new javax.swing.JTextField();
         bAnterior = new javax.swing.JButton();
         bSiguiente = new javax.swing.JButton();
-        Jornada1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        IDCal = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        bSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         EquipoLocal1.setBackground(new java.awt.Color(255, 255, 255));
         EquipoLocal1.setBorder(null);
-        getContentPane().add(EquipoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 210, 40));
+        getContentPane().add(EquipoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 210, 40));
 
         EquipoLocal2.setBackground(new java.awt.Color(255, 255, 255));
         EquipoLocal2.setBorder(null);
-        getContentPane().add(EquipoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 210, 40));
+        getContentPane().add(EquipoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 210, 40));
 
         EquipoLocal3.setBackground(new java.awt.Color(255, 255, 255));
         EquipoLocal3.setBorder(null);
-        getContentPane().add(EquipoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 210, 40));
+        getContentPane().add(EquipoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 210, 40));
+
+        EquipoLocal4.setBackground(new java.awt.Color(255, 255, 255));
+        EquipoLocal4.setBorder(null);
+        EquipoLocal4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EquipoLocal4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(EquipoLocal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 380, 210, 40));
 
         ResultadoLocal1.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(ResultadoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 190, 50, 40));
+        getContentPane().add(ResultadoLocal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 50, 40));
 
         ResultadoLocal2.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(ResultadoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 250, 50, 40));
+        getContentPane().add(ResultadoLocal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 50, 40));
 
         ResultadoLocal3.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(ResultadoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 310, 50, 40));
+        getContentPane().add(ResultadoLocal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, 50, 40));
+
+        ResultadoLocal4.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(ResultadoLocal4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, 50, 40));
 
         EquipoVisitante1.setBackground(new java.awt.Color(255, 255, 255));
         EquipoVisitante1.setBorder(null);
-        getContentPane().add(EquipoVisitante1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 190, 210, 40));
+        getContentPane().add(EquipoVisitante1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 200, 210, 40));
 
         EquipoVisitante2.setBackground(new java.awt.Color(255, 255, 255));
         EquipoVisitante2.setBorder(null);
-        getContentPane().add(EquipoVisitante2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 250, 210, 40));
+        getContentPane().add(EquipoVisitante2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 260, 210, 40));
 
         EquipoVisitante3.setBackground(new java.awt.Color(255, 255, 255));
         EquipoVisitante3.setBorder(null);
-        getContentPane().add(EquipoVisitante3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, 210, 40));
+        getContentPane().add(EquipoVisitante3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 320, 210, 40));
+
+        EquipoVisitante4.setBackground(new java.awt.Color(255, 255, 255));
+        EquipoVisitante4.setBorder(null);
+        getContentPane().add(EquipoVisitante4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 380, 210, 40));
 
         ResultadoVisitante1.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(ResultadoVisitante1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 190, 50, 40));
+        getContentPane().add(ResultadoVisitante1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 200, 50, 40));
 
         ResultadoVisitante2.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(ResultadoVisitante2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 250, 50, 40));
+        getContentPane().add(ResultadoVisitante2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 260, 50, 40));
 
         ResultadoVisitante3.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(ResultadoVisitante3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 310, 50, 40));
+        getContentPane().add(ResultadoVisitante3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 320, 50, 40));
 
-        NumJornada.setBackground(new java.awt.Color(153, 153, 0));
+        ResultadoVisitante4.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(ResultadoVisitante4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 380, 50, 40));
+
+        NumJornada.setBackground(new java.awt.Color(153, 135, 36));
         NumJornada.setBorder(null);
-        getContentPane().add(NumJornada, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 30));
+        getContentPane().add(NumJornada, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 170, 30));
 
         bAnterior.setText("Anterior");
         bAnterior.addActionListener(new java.awt.event.ActionListener() {
@@ -102,7 +138,7 @@ public class JornadasAdmin extends javax.swing.JFrame {
                 bAnteriorActionPerformed(evt);
             }
         });
-        getContentPane().add(bAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 90, -1));
+        getContentPane().add(bAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 90, -1));
 
         bSiguiente.setText("Siguiente");
         bSiguiente.addActionListener(new java.awt.event.ActionListener() {
@@ -110,10 +146,23 @@ public class JornadasAdmin extends javax.swing.JFrame {
                 bSiguienteActionPerformed(evt);
             }
         });
-        getContentPane().add(bSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 130, -1, -1));
+        getContentPane().add(bSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, -1, -1));
 
-        Jornada1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
-        getContentPane().add(Jornada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, -1, -1));
+        jLabel1.setText("Calendario");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 70, 60));
+
+        IDCal.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                IDCalFocusLost(evt);
+            }
+        });
+        getContentPane().add(IDCal, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 220, 50));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, -1, -1));
+
+        bSalir.setText("Salir");
+        getContentPane().add(bSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 450, 90, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,7 +178,7 @@ public class JornadasAdmin extends javax.swing.JFrame {
             llenar(n,e,p,t);
         }
         else
-            JOptionPane.showMessageDialog(this, " No hay más personas");
+            JOptionPane.showMessageDialog(this, " No hay más Jornadas");
     
     }//GEN-LAST:event_bAnteriorActionPerformed
 
@@ -143,8 +192,16 @@ public class JornadasAdmin extends javax.swing.JFrame {
             llenar(n,e,p,t);
         }
         else
-            JOptionPane.showMessageDialog(this, " No hay más personas");
+            JOptionPane.showMessageDialog(this, " No hay más Jornadas");
     }//GEN-LAST:event_bSiguienteActionPerformed
+
+    private void EquipoLocal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EquipoLocal4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EquipoLocal4ActionPerformed
+
+    private void IDCalFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_IDCalFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IDCalFocusLost
 
     /**
      * @param args the command line arguments
@@ -185,18 +242,25 @@ public class JornadasAdmin extends javax.swing.JFrame {
     private javax.swing.JTextField EquipoLocal1;
     private javax.swing.JTextField EquipoLocal2;
     private javax.swing.JTextField EquipoLocal3;
+    private javax.swing.JTextField EquipoLocal4;
     private javax.swing.JTextField EquipoVisitante1;
     private javax.swing.JTextField EquipoVisitante2;
     private javax.swing.JTextField EquipoVisitante3;
-    private javax.swing.JLabel Jornada1;
+    private javax.swing.JTextField EquipoVisitante4;
+    private javax.swing.JTextField IDCal;
     private javax.swing.JTextField NumJornada;
     private javax.swing.JTextField ResultadoLocal1;
     private javax.swing.JTextField ResultadoLocal2;
     private javax.swing.JTextField ResultadoLocal3;
+    private javax.swing.JTextField ResultadoLocal4;
     private javax.swing.JTextField ResultadoVisitante1;
     private javax.swing.JTextField ResultadoVisitante2;
     private javax.swing.JTextField ResultadoVisitante3;
+    private javax.swing.JTextField ResultadoVisitante4;
     private javax.swing.JButton bAnterior;
+    private javax.swing.JButton bSalir;
     private javax.swing.JButton bSiguiente;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

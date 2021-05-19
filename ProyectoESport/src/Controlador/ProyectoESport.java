@@ -656,13 +656,12 @@ public class ProyectoESport {
         return j;
     }
     
-    public static String datosTodosLosPartidos() throws Exception
+    public static ArrayList<Partido> seleccionarTodosLosPartidos() throws Exception
     {
-        String datos="";
+
         ArrayList<Partido> lista = tp.seleccionarPartidos();
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        return lista;
     }
     
     public static ArrayList<Jornada> seleccionarPartidosPorJornada(int id) throws Exception
