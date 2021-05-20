@@ -24,6 +24,11 @@ public class VerDueño extends javax.swing.JFrame {
     
     public VerDueño() {
         initComponents();
+        jNombre.setEditable(false);
+        jNick.setEditable(false);
+        jSueldo.setEditable(false);
+        jEquipo.setEditable(false);
+        jAños.setEditable(false);
     }
 
     /**
@@ -167,17 +172,14 @@ public class VerDueño extends javax.swing.JFrame {
             try
       {
         if (datosCorrectos())
-        {  
-          
+        {    
            due = ProyectoESport.seleccionarUnDueñoPersona(Integer.parseInt(jID.getText()));
 
             jNombre.setText(due.getNombre());
             jNick.setText(due.getNick());
             jSueldo.setText(String.valueOf(due.getSueldo()));
             jEquipo.setText(String.valueOf(due.getEquipo().getId()));
-            jAños.setText(String.valueOf(due.getAños_dueño()));
-            
-            
+            jAños.setText(String.valueOf(due.getAños_dueño()));       
         }
       }
       catch(Exception e)

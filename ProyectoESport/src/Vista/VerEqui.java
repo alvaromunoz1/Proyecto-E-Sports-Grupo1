@@ -6,7 +6,10 @@
 package Vista;
 
 import Controlador.ProyectoESport;
+import Excepciones.CampoVacio;
 import ModeloUML.Equipo;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -21,6 +24,10 @@ public class VerEqui extends javax.swing.JFrame {
     
     public VerEqui() {
         initComponents();
+        jNombre.setEditable(false);
+        jWeb.setEditable(false);
+        jPuntos.setEditable(false);
+        jEquipo.setEditable(false);
     }
 
     /**
@@ -51,7 +58,7 @@ public class VerEqui extends javax.swing.JFrame {
         jLabel3.setText("PAGINA WEB");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel6.setText("ID EQUIPO");
+        jLabel6.setText("ID CALENDARIO");
 
         jID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,14 +164,13 @@ public class VerEqui extends javax.swing.JFrame {
             try
       {
         if (datosCorrectos())
-        {  
-          
+        {   
            equi = ProyectoESport.seleccionarUnEquipo(Integer.parseInt(jID.getText()));
 
             jNombre.setText(equi.getNombre());
-            jWeb.setText (a);
-            
-            
+            jWeb.setText(equi.getPaginaWeb());
+            jPuntos.setText(String.valueOf(equi.getPuntos()));
+            jEquipo.setText(String.valueOf(equi.getId_calendario()));    
         }
       }
       catch(Exception e)
@@ -173,6 +179,34 @@ public class VerEqui extends javax.swing.JFrame {
       }
     }//GEN-LAST:event_jIDActionPerformed
 
+    private boolean datosCorrectos(){ 
+        try
+        {
+            if (validarID())
+            {  
+                return true;
+            }
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(this,"El resultado introducido esta vacio o no es válido");
+            return false;
+        }
+        return false;
+    }
+  
+    private boolean validarID() throws Exception{
+        
+        ArrayList<Equipo> equi = ProyectoESport.datosTodosLosEquipos();
+        int i = Integer.parseInt(jID.getText());
+        for(int x = 0; x < equi.size(); x++)
+            if (i == equi.get(x).getId())
+                return true;
+                     
+        if (jID.getText() == null)
+                throw new CampoVacio();
+                return false;
+    }    
+    
     /**
      * @param args the command line arguments
      */

@@ -22,7 +22,7 @@ import javax.swing.JFrame;
 /**
  *
  * @author Imanol Urquijo
- * Desde linea 1 hasta 980
+ * Desde linea 1 hasta 1080
  */
 public class ProyectoESport {
 
@@ -295,7 +295,12 @@ public class ProyectoESport {
                 c = new Calendario(id,nombre);
                 tc.insertar(c);
     }
-    
+    public static void insertarUsuario(int id,String nombre,String contra, char tipo) 
+            throws Exception
+    {
+                u = new Usuario(id,nombre,contra,tipo);
+                tu.insertarUsuario(u);
+    }    
     public static void modificarCalendario(int id,String nombre) 
             throws Exception
     {
@@ -309,7 +314,13 @@ public class ProyectoESport {
         c.setId(id);
         tc.borrar(c);
     }
-     
+    
+    public static void bajaUsuario(int id) throws Exception
+    {
+        u.setId(id);
+        tu.borrarUsuario(u);
+    }
+    
     public static void insertarJornada(int id,String nombre, Date fecha, 
             int id_calendario) throws Exception
     {
@@ -422,14 +433,17 @@ public class ProyectoESport {
                 te.insertar(e);
     }
     
-    public static void modificarNombreDeEquipoyWeb(int id, String nombre, 
-            String web) throws Exception
+    public static void modificarEquipo(int id, String nombre, 
+            String web,int equipo,int puntos) throws Exception
     {
         e.setId(id);
         e.setNombre(nombre);
         e.setPaginaWeb(web);
-
-        te.actualizarNombreYWeb(e);
+        e.setId_calendario(id);
+        e.setPuntos(id);
+        
+        te.actualizarNombreYWebCalendario(e);
+        te.actualizarPuntos(e);
     }
     
     public static void modificarPuntosDeEquipo(int id, int puntos) 
@@ -449,7 +463,7 @@ public class ProyectoESport {
     }
     
     public static void insertarPersona(int id,String nombre,String nick, 
-            int sueldo, int id_equipo) throws Exception
+            double sueldo, int id_equipo) throws Exception
     {
         per.setId(id);
         per.setNombre(nombre);
@@ -460,12 +474,15 @@ public class ProyectoESport {
         tper.insertar(per);
     }
     
-    public static void modificarNick(int id,String nombre) throws Exception
+    public static void modificarPersona(int id,String nombre,String nick, double sueldo, int equipo) throws Exception
     {
-        per.setId(0);
+        per.setId(id);
+        per.setNombre(nombre);
         per.setNick(nombre);
+        per.setSueldo(id);
+        per.getEquipo().setId(id);
         
-        tper.actualizarNick(per);
+        tper.actualizarPersona(per);
     }
     
     public static void modificarSueldo(int id,int sueldo) throws Exception
@@ -476,10 +493,20 @@ public class ProyectoESport {
         tper.ModificarSueldo(per);
     }
     
+    public static void modificarUsuario(int id,String nombre,String contra,char tipo) throws Exception
+    {
+        u.setId(id);
+        u.setNombre(nombre);
+        u.setContraseña(contra);
+        u.setTipo(tipo);
+        
+        tu.cambiarUsuario(u);
+    }
+    
     public static void cambiarPersonaDeEquipo(int id,int id_equipo) 
             throws Exception
     {
-        per.setId(0);
+        per.setId(id);
         per.getEquipo().setId(id);
         
         tper.CambiarDeEquipo(per);
@@ -686,13 +713,11 @@ public class ProyectoESport {
         return p;
     }    
     
-    public static String datosTodosLosEquipos() throws Exception
+    public static ArrayList<Equipo> datosTodosLosEquipos() throws Exception
     {
-        String datos="";
         ArrayList<Equipo> lista = te.seleccionarTodosLosEquipos();
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        return lista;
     }
     
     public static String datosEquiposPorCalendario(int id) throws Exception
@@ -922,7 +947,6 @@ public class ProyectoESport {
     
     public static ArrayList<Usuario> seleccionarTodosLosUsuarios() throws Exception
     {
-        String datos="";
         ArrayList<Usuario> lista = tu.seleccionarTodosLosUsuarios();
         
         return lista;
@@ -959,9 +983,103 @@ public class ProyectoESport {
         }
     }
 
-       
-    
-    public static boolean llenarPartidos(javax.swing.JComboBox lista){
+    public static boolean llenarJornadasID(JComboBox lista){
+        try
+        {
+            ArrayList<Jornada> jornadas = tj.seleccionarTodo();
+            
+            for(int x = 0; x < jornadas.size(); x++)
+            {
+                lista.insertItemAt(jornadas.get(x).getId(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }       
+    public static boolean llenarDueñosID(JComboBox lista){
+        try
+        {
+            ArrayList<Dueño> dueño = td.seleccionarTodosLosDueños();
+            
+            for(int x = 0; x < dueño.size(); x++)
+            {
+                lista.insertItemAt(dueño.get(x).getId(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }       
+    public static boolean llenarJugadoresID(JComboBox lista){
+        try
+        {
+            ArrayList<Jugador> jug = tjug.seleccionarTodosLosJugadores();
+            
+            for(int x = 0; x < jug.size(); x++)
+            {
+                lista.insertItemAt(jug.get(x).getId(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }       
+    public static boolean llenarEquiposID(JComboBox lista){
+        try
+        {
+            ArrayList<Equipo> equi = te.seleccionarTodosLosEquipos();
+            
+            for(int x = 0; x < equi.size(); x++)
+            {
+                lista.insertItemAt(equi.get(x).getId(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }       
+    public static boolean llenarUsuariosID(JComboBox lista){
+        try
+        {
+            ArrayList<Usuario> usu = tu.seleccionarTodosLosUsuarios();
+            
+            for(int x = 0; x < usu.size(); x++)
+            {
+                lista.insertItemAt(usu.get(x).getId(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }       
+    public static boolean llenarPartidosID(JComboBox lista){
+        try
+        {
+            ArrayList<Partido> par = tp.seleccionarPartidos();
+            
+            for(int x = 0; x < par.size(); x++)
+            {
+                lista.insertItemAt(par.get(x).getId(), x);
+            }
+            return true;
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
+    }    
+    public static boolean llenarPartidos(JComboBox lista){
         try
         {
             ArrayList<Partido> partidos = tp.seleccionarPartidosPorJornada(Vista.IntroResult.idj.getId());

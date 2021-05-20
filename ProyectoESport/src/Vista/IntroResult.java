@@ -25,6 +25,7 @@ public class IntroResult extends javax.swing.JFrame {
     
     public IntroResult() {
         initComponents();
+        ProyectoESport.llenarJornadas(jComboJornada);
     }
 
     /**

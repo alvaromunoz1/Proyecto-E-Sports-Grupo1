@@ -49,15 +49,18 @@ public class TablaPersona {
     }
      
      
-     public void actualizarNick(Persona p) throws Exception
+     public void actualizarPersona(Persona p) throws Exception
     {
         bd.conectar();
         
-        String plantilla = "UPDATE personas SET Nick=? WHERE ID =?";
+        String plantilla = "UPDATE personas SET Nombre=?, Nick=?, Sueldo=?, ID_Equipo=? WHERE ID =?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         
-        ps.setInt(3, p.getId());
-        ps.setString(1, p.getNick());
+        ps.setInt(5, p.getId());
+        ps.setString(1, p.getNombre());
+        ps.setString(2, p.getNick());
+        ps.setDouble(3, p.getSueldo());
+        ps.setInt(4, p.getEquipo().getId());
       
         int n = ps.executeUpdate();
         ps.close();

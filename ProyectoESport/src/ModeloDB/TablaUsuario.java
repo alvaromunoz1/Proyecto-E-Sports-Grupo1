@@ -26,7 +26,7 @@ public class TablaUsuario {
     }
     
     
-     public void insertar(Usuario u) throws Exception
+     public void insertarUsuario(Usuario u) throws Exception
     {
         bd.conectar();
         
@@ -46,15 +46,17 @@ public class TablaUsuario {
     }
      
      
-     public void cambiarTipo(Usuario u) throws Exception
+     public void cambiarUsuario(Usuario u) throws Exception
     {
         bd.conectar();
         
-        String plantilla = "UPDATE Usuarios SET Tipo=? WHERE ID =?";
+        String plantilla = "UPDATE Usuarios SET Nombre=?, Contrasenia=?, Tipo=? WHERE ID =?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         
-        ps.setInt(2, u.getId());
-        ps.setString(1, String.valueOf(u.getTipo()));
+        ps.setInt(4, u.getId());
+        ps.setString(1, u.getNombre());
+        ps.setString(2, u.getContraseña());
+        ps.setString(3, String.valueOf(u.getTipo()));
       
         int n = ps.executeUpdate();
         ps.close();
@@ -67,7 +69,7 @@ public class TablaUsuario {
     
         
         
-      public void borrar(Usuario u) throws Exception
+      public void borrarUsuario(Usuario u) throws Exception
     {
         bd.conectar();
         

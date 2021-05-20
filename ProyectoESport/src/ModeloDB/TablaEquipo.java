@@ -45,17 +45,18 @@ public class TablaEquipo {
     }
      
      
-     public void actualizarNombreYWeb(Equipo e) throws Exception
+     public void actualizarNombreYWebCalendario(Equipo e) throws Exception
     {
         bd.conectar();
         
-        String plantilla = "UPDATE Jornada SET Nombre =?, Pagina_Web =?  "
-                + "WHERE ID =?";
+        String plantilla = "UPDATE Jornada SET Nombre =?, Pagina_Web =?,  "
+                + "ID_Calendario WHERE ID =?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         
-        ps.setInt(3, e.getId());
+        ps.setInt(4, e.getId());
         ps.setString(1, e.getNombre());
         ps.setString(2, e.getPaginaWeb());
+        ps.setInt(3, e.getId_calendario());
       
         int n = ps.executeUpdate();
         ps.close();

@@ -26,6 +26,11 @@ public class VerJug extends javax.swing.JFrame {
     
     public VerJug() {
         initComponents();
+        jNombre.setEditable(false);
+        jNick.setEditable(false);
+        jSueldo.setEditable(false);
+        jEquipo.setEditable(false);
+        jRol.setEditable(false);
     }
 
     /**

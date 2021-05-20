@@ -6,6 +6,10 @@
 package Vista;
 
 import Controlador.ProyectoESport;
+import Excepciones.CampoVacio;
+import ModeloUML.Usuario;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,8 +20,13 @@ public class VerUsuario extends javax.swing.JFrame {
     /**
      * Creates new form VerUsuario
      */
+    public static Usuario usu;
+    
     public VerUsuario() {
         initComponents();
+        jNombre.setEditable(false);
+        jContra.setEditable(false);
+        jTipo.setEditable(false);
     }
 
     /**
@@ -135,9 +144,49 @@ public class VerUsuario extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jIDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jIDActionPerformed
+      try
+      {
+        if (datosCorrectos())
+        {   
+           usu = ProyectoESport.seleccionarUnUsuario(Integer.parseInt(jID.getText()));
 
+            jNombre.setText(usu.getNombre());
+            jContra.setText(usu.getContraseña());
+            jTipo.setText(String.valueOf(usu.getTipo()));   
+        }
+      }
+      catch(Exception e)
+      {
+          JOptionPane.showMessageDialog(this,"El ID introducido esta vacio o no es válido");
+      }
+    }//GEN-LAST:event_jIDActionPerformed
+    private boolean datosCorrectos(){ 
+        try
+        {
+            if (validarID())
+            {  
+                return true;
+            }
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(this,"El resultado introducido esta vacio o no es válido");
+            return false;
+        }
+        return false;
+    }
+  
+    private boolean validarID() throws Exception{
+        
+        ArrayList<Usuario> equi = ProyectoESport.seleccionarTodosLosUsuarios();
+        int i = Integer.parseInt(jID.getText());
+        for(int x = 0; x < equi.size(); x++)
+            if (i == equi.get(x).getId())
+                return true;
+                     
+        if (jID.getText() == null)
+                throw new CampoVacio();
+                return false;
+    }
     /**
      * @param args the command line arguments
      */
