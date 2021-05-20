@@ -8,6 +8,7 @@ package Vista;
 import Controlador.ProyectoESport;
 import Excepciones.CampoVacio;
 import Excepciones.SalarioMin;
+import ModeloUML.Equipo;
 import ModeloUML.Jugador;
 import ModeloUML.Persona;
 import java.util.ArrayList;
@@ -255,10 +256,17 @@ public class ModJug extends javax.swing.JFrame {
             throw new CampoVacio();
     }    
 
-    private void validarEquipo() throws Exception{
-       
+    private boolean validarEquipo() throws Exception{
+        
+       ArrayList<Equipo> per = ProyectoESport.datosTodosLosEquipos();
+        int i = Integer.parseInt(jEquipo.getText());
+        for(int x = 0; x < per.size(); x++)
+            if (i == per.get(x).getId())
+                return true;
+        
         if (jEquipo.getText() == null)
                 throw new CampoVacio();
+                return false;
     }    
     
     private void validarRol() throws Exception{

@@ -55,6 +55,12 @@ public class Partido {
         this.id_jornada = id_jornada;
     }
 
+    public Partido(int id, String nombre, int id_jornada) {
+        this.id = id;
+        this.nombre = nombre;
+        this.id_jornada = id_jornada;
+    }
+
     
     
     public int getId() {

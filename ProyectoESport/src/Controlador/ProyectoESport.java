@@ -366,11 +366,10 @@ public class ProyectoESport {
     }
     
     public static void insertarPartidoBasico(int ID,String Nombre,
-            LocalTime Hora,
             int ID_Jornada) throws Exception
     {
-                p = new Partido(ID,Nombre,Hora,ID_Jornada);
-                tp.insertarSinResultado(p);
+                p = new Partido(ID,Nombre,ID_Jornada);
+                tp.insertarPartidoBasico(p);
     }    
     
     public static void insertarPartidoConResultado(int ID,String Nombre,
@@ -425,13 +424,15 @@ public class ProyectoESport {
         tp.borrarPorJornada(p);
     }
     
-    public static void insertarEquipo(int id,String nombre, String web, 
-            int puntos, int id_calendario) throws Exception
+    public static void insertarEquipo(int id,String nombre, String web,
+            int id_calendario) throws Exception
     {
+                int puntos = 0;
                 e = new Equipo(id,nombre,web,puntos,id_calendario);
                 
                 te.insertar(e);
     }
+    
     
     public static void modificarEquipo(int id, String nombre, 
             String web,int equipo,int puntos) throws Exception
@@ -626,13 +627,11 @@ public class ProyectoESport {
         return c;
     }
     
-    public static String datosCalendarios() throws Exception
+    public static ArrayList<Calendario> datosCalendarios() throws Exception
     {
-        String datos="";
         ArrayList<Calendario> lista = tc.seleccionarTodo();
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        return lista;
     }
     
     public static Calendario seleccionarCalendarioConJornadas(int id) 
@@ -643,13 +642,11 @@ public class ProyectoESport {
         return c;
     }
     
-    public static String datosTodasLasJornada() throws Exception
+    public static ArrayList<Jornada> datosTodasLasJornada() throws Exception
     {
-        String datos="";
         ArrayList<Jornada> lista = tj.seleccionarTodo();
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        return lista;
     }
     
     public static String datosJornadaPorCalendario(int id) throws Exception

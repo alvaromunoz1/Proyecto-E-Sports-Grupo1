@@ -9,6 +9,7 @@ import Controlador.ProyectoESport;
 import Excepciones.CampoVacio;
 import Excepciones.SalarioMin;
 import ModeloUML.Dueño;
+import ModeloUML.Equipo;
 import ModeloUML.Persona;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -253,10 +254,17 @@ public class ModDueño extends javax.swing.JFrame {
             throw new CampoVacio();
     }    
 
-    private void validarEquipo() throws Exception{
+    private boolean validarEquipo() throws Exception{
        
+        ArrayList<Equipo> per = ProyectoESport.datosTodosLosEquipos();
+        int i = Integer.parseInt(jEquipo.getText());
+        for(int x = 0; x < per.size(); x++)
+            if (i == per.get(x).getId())
+                return true;
+        
         if (jEquipo.getText() == null)
                 throw new CampoVacio();
+                return false;
     }    
     
     private void validarAñosDueño() throws Exception{

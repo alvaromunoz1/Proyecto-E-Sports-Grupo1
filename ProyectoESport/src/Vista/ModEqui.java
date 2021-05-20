@@ -7,6 +7,7 @@ package Vista;
 
 import Controlador.ProyectoESport;
 import Excepciones.CampoVacio;
+import ModeloUML.Calendario;
 import ModeloUML.Equipo;
 import ModeloUML.Persona;
 import java.util.ArrayList;
@@ -168,7 +169,7 @@ public class ModEqui extends javax.swing.JFrame {
         {
             validarDatosNuevos();
             ProyectoESport.modificarEquipo(Integer.parseInt(jID.getText()), jNombre.getText(), jWeb.getText(), Integer.parseInt(jPuntos.getText()), Integer.parseInt(jCalendario.getText()));
-            JOptionPane.showMessageDialog(this,"El jugador ha sido modificado correctamente");
+            JOptionPane.showMessageDialog(this,"El equipo ha sido modificado correctamente");
             ProyectoESport.volverPrincipalAdministrador(this);
         }
         catch(Exception e)
@@ -228,10 +229,17 @@ public class ModEqui extends javax.swing.JFrame {
             throw new CampoVacio();
     }    
 
-    private void validarCal() throws Exception{
+    private boolean validarCal() throws Exception{
        
+        ArrayList<Calendario> per = ProyectoESport.datosCalendarios();
+        int i = Integer.parseInt(jCalendario.getText());
+        for(int x = 0; x < per.size(); x++)
+            if (i == per.get(x).getId())
+                return true;
+        
         if (jCalendario.getText() == null)
                 throw new CampoVacio();
+                return false;
     }    
       
     

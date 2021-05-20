@@ -56,13 +56,11 @@ public class TablaPartido {
     {
         bd.conectar();
         
-        String plantilla = "INSERT INTO(ID,Nombre,Hora"
-                + ",ID_Jornada) Partido VALUES (?,?,?,?);";
+        String plantilla = "INSERT INTO(ID,Nombre,ID_Jornada) Partido VALUES (?,?,?);";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, p.getId());
         ps.setString(2,p.getNombre());
-        ps.setTime(5, convertirHora(p.getHora()));
-        ps.setInt(6, p.getId_jornada());
+        ps.setInt(3, p.getId_jornada());
       
         int n = ps.executeUpdate();
         ps.close();
@@ -206,7 +204,7 @@ public class TablaPartido {
                 p.setNombre(resultado.getString("Nombre"));
                 p.getLocal().setId(resultado.getInt("ID_Local"));
                 p.getVisitante().setId(resultado.getInt("ID_Visitante"));
-                p.setHora(resultado.getTime(""));
+                p.setHora(LocalTime.resultado.getTime(""));
                 p.setRes_local(resultado.getInt("Resultado_Local"));
                 p.setRes_visit(resultado.getInt("Resultado_Visitante"));
                 p.setId_jornada(resultado.getInt("ID_Jornada"));

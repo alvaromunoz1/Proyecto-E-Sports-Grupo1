@@ -144,21 +144,21 @@ public class VerUsuario extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jIDActionPerformed
-      try
-      {
-        if (datosCorrectos())
-        {   
-           usu = ProyectoESport.seleccionarUnUsuario(Integer.parseInt(jID.getText()));
+        try
+        {
+            if (datosCorrectos())
+            {
+                usu = ProyectoESport.seleccionarUnUsuario(Integer.parseInt(jID.getText()));
 
-            jNombre.setText(usu.getNombre());
-            jContra.setText(usu.getContraseña());
-            jTipo.setText(String.valueOf(usu.getTipo()));   
+                jNombre.setText(usu.getNombre());
+                jContra.setText(usu.getContraseña());
+                jTipo.setText(String.valueOf(usu.getTipo()));
+            }
         }
-      }
-      catch(Exception e)
-      {
-          JOptionPane.showMessageDialog(this,"El ID introducido esta vacio o no es válido");
-      }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(this,"El ID introducido esta vacio o no es válido");
+        }
     }//GEN-LAST:event_jIDActionPerformed
     private boolean datosCorrectos(){ 
         try
