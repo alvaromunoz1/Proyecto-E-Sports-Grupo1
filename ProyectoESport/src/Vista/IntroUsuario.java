@@ -11,6 +11,7 @@ import Excepciones.DatoNoValido;
 import Excepciones.DatoRepetido;
 import ModeloUML.Usuario;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -193,8 +194,9 @@ public class IntroUsuario extends javax.swing.JFrame {
         try
         {
             validarDatosNuevos();
-            ProyectoESport.insertarEquipo(Integer.parseInt(jID.getText()), jNombre.getText(),jWeb.getText(),Integer.parseInt(jTipo.getText()));
-            JOptionPane.showMessageDialog(this,"El equipo ha sido introducido al registro correctamente");
+            char tip = jTipo.getText().charAt(0);
+            ProyectoESport.insertarUsuario(Integer.parseInt(jID.getText()), jNombre.getText(),jContra.getText(), tip);
+            JOptionPane.showMessageDialog(this,"El usuario ha sido introducido al registro correctamente");
             ProyectoESport.volverPrincipalAdministrador(this);
         }
         catch(Exception e)

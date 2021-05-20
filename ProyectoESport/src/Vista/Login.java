@@ -5,6 +5,13 @@
  */
 package Vista;
 
+import Controlador.ProyectoESport;
+import Excepciones.CampoVacio;
+import ModeloUML.Usuario;
+import static Vista.ModUsuario.usu;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 1gdaw03
@@ -14,6 +21,8 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
+    public static Usuario usu;
+    
     public Login() {
         initComponents();
     }
@@ -29,31 +38,31 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        pfUsuarios = new javax.swing.JPasswordField();
-        tfUsuario = new javax.swing.JTextField();
+        jContra = new javax.swing.JPasswordField();
+        jID = new javax.swing.JTextField();
         bAceptar = new javax.swing.JButton();
         bCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Usuario");
+        jLabel1.setText("ID USUARIO");
 
-        jLabel2.setText("Contraseña");
+        jLabel2.setText("CONTRASEÑA");
 
-        tfUsuario.addActionListener(new java.awt.event.ActionListener() {
+        jID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfUsuarioActionPerformed(evt);
+                jIDActionPerformed(evt);
             }
         });
 
-        bAceptar.setText("Aceptar");
+        bAceptar.setText("ENTRAR");
         bAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bAceptarActionPerformed(evt);
             }
         });
 
-        bCancelar.setText("Cancelar");
+        bCancelar.setText("SALIR");
         bCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bCancelarActionPerformed(evt);
@@ -65,14 +74,14 @@ public class Login extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(180, Short.MAX_VALUE)
+                .addContainerGap(178, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(109, 109, 109)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pfUsuarios)
-                    .addComponent(tfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jContra)
+                    .addComponent(jID, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(180, 180, 180))
             .addGroup(layout.createSequentialGroup()
                 .addGap(202, 202, 202)
@@ -87,11 +96,11 @@ public class Login extends javax.swing.JFrame {
                 .addGap(104, 104, 104)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(tfUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(67, 67, 67)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(pfUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jContra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(69, 69, 69)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bAceptar)
@@ -102,14 +111,61 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tfUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfUsuarioActionPerformed
+    private void jIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jIDActionPerformed
         
-    }//GEN-LAST:event_tfUsuarioActionPerformed
+    }//GEN-LAST:event_jIDActionPerformed
 
     private void bAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAceptarActionPerformed
+
+            try
+      {
+        if (datosCorrectos())
+        {    
+            usu = ProyectoESport.seleccionarUnUsuario(Integer.parseInt(jID.getText()));
+            if(usu.getTipo().toString().compareTo("A") == 0)
+                ProyectoESport.VistaPrincipalAdmin();
+        
+            if(usu.getTipo().toString().compareTo("C") == 0)
+                ProyectoESport.VistaPrincipalUsuario();
+                
+        }
+      }
+      catch(Exception e)
+      {
+          JOptionPane.showMessageDialog(this,"El ID o Contraseña no son validos");
+      }        
         
     }//GEN-LAST:event_bAceptarActionPerformed
 
+    private boolean validarID() throws Exception{
+        
+        ArrayList<Usuario> per = ProyectoESport.seleccionarTodosLosUsuarios();
+        int i = Integer.parseInt(jID.getText());
+        for(int x = 0; x < per.size(); x++)
+            if (i == per.get(x).getId())
+                return true;
+        
+        if (jID.getText() == null)
+                throw new CampoVacio();
+                return false;      
+    }    
+    
+    private boolean validarContraseña() throws Exception{
+        
+        usu = ProyectoESport.seleccionarUnUsuario(Integer.parseInt(jID.getText()));
+        if (usu.getContraseña().compareTo(jContra.getText()) == 0)
+                return true;
+        else
+                return false;      
+    } 
+
+    private boolean datosCorrectos() throws Exception{
+        
+        validarID();
+        validarContraseña();
+        return true;
+    } 
+    
     private void bCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCancelarActionPerformed
         
     }//GEN-LAST:event_bCancelarActionPerformed
@@ -152,9 +208,9 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bAceptar;
     private javax.swing.JButton bCancelar;
+    private javax.swing.JPasswordField jContra;
+    private javax.swing.JTextField jID;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPasswordField pfUsuarios;
-    private javax.swing.JTextField tfUsuario;
     // End of variables declaration//GEN-END:variables
 }

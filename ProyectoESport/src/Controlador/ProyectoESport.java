@@ -155,18 +155,25 @@ public class ProyectoESport {
         vl.setVisible(true);
     }
     
-    public static void VistaPrincipal(char a) 
+    public static void VistaPrincipalUsuario() 
     {
         vl.dispose();
-        
+ 
         vp.setVisible(true);
     }
-    
-    public static void VistaAdministrador(char a) 
+
+    public static void VistaPrincipalAdmin() 
     {
         vl.dispose();
+ 
         vadmin.setVisible(true);
+    }
+    
+    public static void SalirPrograma(char a) 
+    {
+        System.exit(1);
     }    
+        
     
     public static void VistaBorrarDueño() 
     {
