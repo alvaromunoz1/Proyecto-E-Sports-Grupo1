@@ -50,10 +50,8 @@ public class ProyectoESport {
     private static Jugador jug;
     private static Usuario u;
     
-    private static Equipos ve;
     private static PP vp;
     private static Login vl;
-    private static DatosEquipos vde;
     private static Clasificaciones vc;
     private static BorrarDueño vbd;
     private static BorrarEqui vbe;
@@ -75,6 +73,7 @@ public class ProyectoESport {
     private static VerEqui vve;
     private static VerJug vvjug;
     private static VerUsuario vvu;
+    private static JornadasUsu vjusu;
     
     
     public static void main(String[] args) {
@@ -111,11 +110,8 @@ public class ProyectoESport {
     {
         try{
             
-            ve = new Equipos();
-            vp = new PP();
+            
             vl = new Login();
-            vde = new DatosEquipos();
-            vc = new Clasificaciones();
             vbd = new BorrarDueño();
             vbe = new BorrarEqui();
             vbjor = new BorrarJornada();
@@ -135,7 +131,7 @@ public class ProyectoESport {
             vve = new VerEqui();
             vvjug = new VerJug();
             vvu = new VerUsuario();
-            vadmin = new VistaAdmin();
+            
 
         }
         catch (Exception e)
@@ -144,11 +140,6 @@ public class ProyectoESport {
         }
     }
     
-    public static void CerrarPrograma()
-    {
-        vl.setVisible(false);
-        vl.dispose();
-    }
     
     public static void VistaLogin()
     {
@@ -158,18 +149,18 @@ public class ProyectoESport {
     public static void VistaPrincipalUsuario() 
     {
         vl.dispose();
- 
+        vp = new PP();
         vp.setVisible(true);
     }
 
     public static void VistaPrincipalAdmin() 
     {
         vl.dispose();
- 
+        vadmin = new VistaAdmin();
         vadmin.setVisible(true);
     }
     
-    public static void SalirPrograma(char a) 
+    public static void SalirPrograma() 
     {
         System.exit(1);
     }    
@@ -177,6 +168,8 @@ public class ProyectoESport {
     
     public static void VistaBorrarDueño() 
     {
+        vadmin.setVisible(true);
+        
         vbd.setVisible(true);
     }    
     public static void VistaBorrarEquipo() 
@@ -252,26 +245,17 @@ public class ProyectoESport {
         vvu.setVisible(true);
     } 
 
-    
-    public static void VistaEquipos() 
+    public static void VistaUltimaJornada() 
     {
         vp.setVisible(false);
-        vde.setVisible(false);
-      
-        ve.setVisible(true);
-    }
-    
-    public static void VistaDatosEquipos(int elec) 
-    {
-        ve.setVisible(false);
-      
-        vde.setVisible(true);
-    }
+        vjusu = new JornadasUsu();
+        vjusu.setVisible(true);
+    }    
     
     public static void VistaClasificaciones() 
     {
         vp.setVisible(false);
-      
+        vc = new Clasificaciones();
         vc.setVisible(true);
     }
     

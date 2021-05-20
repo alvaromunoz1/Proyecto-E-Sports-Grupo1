@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import Controlador.ProyectoESport;
+
 /**
  *
  * @author 1GDAW01
@@ -28,38 +30,43 @@ public class PP extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jResul = new javax.swing.JButton();
+        jClasi = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
-        jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Inicio");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 120, 70));
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
-        jLabel3.setForeground(java.awt.Color.white);
-        jLabel3.setText("Calsificaciones");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 240, 40));
-
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
-        jLabel4.setForeground(java.awt.Color.white);
-        jLabel4.setText("Resultados");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 170, 30));
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
-        jLabel5.setForeground(java.awt.Color.white);
-        jLabel5.setText("Equipos");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 40, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\1GDAW01\\Downloads\\pp.jpg")); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jResul.setBackground(new java.awt.Color(0, 255, 255));
+        jResul.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
+        jResul.setText("RESULTADOS");
+        jResul.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jResulActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jResul, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, 480, 160));
+
+        jClasi.setBackground(new java.awt.Color(0, 255, 255));
+        jClasi.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
+        jClasi.setText("CLASIFICACION");
+        jClasi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jClasiActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jClasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 160));
+
+        jButton1.setText("SALIR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 220, 140, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -74,6 +81,18 @@ public class PP extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jClasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jClasiActionPerformed
+        ProyectoESport.VistaClasificaciones();
+    }//GEN-LAST:event_jClasiActionPerformed
+
+    private void jResulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jResulActionPerformed
+        ProyectoESport.VistaUltimaJornada();
+    }//GEN-LAST:event_jResulActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ProyectoESport.SalirPrograma();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -111,11 +130,10 @@ public class PP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jClasi;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton jResul;
     // End of variables declaration//GEN-END:variables
 }

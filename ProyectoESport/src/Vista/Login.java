@@ -7,6 +7,7 @@ package Vista;
 
 import Controlador.ProyectoESport;
 import Excepciones.CampoVacio;
+import Excepciones.DatoNoEncontrado;
 import ModeloUML.Usuario;
 import static Vista.ModUsuario.usu;
 import java.util.ArrayList;
@@ -155,19 +156,23 @@ public class Login extends javax.swing.JFrame {
         usu = ProyectoESport.seleccionarUnUsuario(Integer.parseInt(jID.getText()));
         if (usu.getContraseña().compareTo(jContra.getText()) == 0)
                 return true;
-        else
-                return false;      
+        
+        if (jID.getText() == null)
+                throw new CampoVacio();
+                return false; 
     } 
 
     private boolean datosCorrectos() throws Exception{
         
-        validarID();
-        validarContraseña();
-        return true;
+        if (validarID() && validarContraseña())
+        {    
+            return true; 
+        }    
+        return false;
     } 
     
     private void bCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCancelarActionPerformed
-        
+    ProyectoESport.SalirPrograma();
     }//GEN-LAST:event_bCancelarActionPerformed
 
     /**
