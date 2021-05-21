@@ -79,7 +79,6 @@ public class ProyectoESport {
     public static void main(String[] args) {
     
         CrearTablas();
-        CrearVistas();
         VistaLogin();
         
     }
@@ -105,44 +104,11 @@ public class ProyectoESport {
             System.out.println(e.getMessage());
         }
     }
-    
-    public static void CrearVistas() 
-    {
-        try{
-            
-            
-            vl = new Login();
-            
-            vbe = new BorrarEqui();
-            vbjor = new BorrarJornada();
-            vbjug = new BorrarJug();
-            vbp = new BorrarPartido();
-            vbu = new BorrarUsuario();
-            vid = new IntroDueño();
-            vie = new IntroEqui();
-            vijug = new IntroJug();
-            vir = new IntroResult();
-            viu = new IntroUsuario();
-            vmd = new ModDueño();
-            vme = new ModEqui();
-            vmjug = new ModJug();
-            vmu = new ModUsuario();
-            vvd = new VerDueño();
-            vve = new VerEqui();
-            vvjug = new VerJug();
-            vvu = new VerUsuario();
-            
-
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
-    }
-    
+        
     
     public static void VistaLogin()
     {
+        vl = new Login();
         vl.setVisible(true);
     }
     
@@ -174,74 +140,110 @@ public class ProyectoESport {
     }    
     public static void VistaBorrarEquipo() 
     {
+        vadmin.setVisible(false);
+        vbe = new BorrarEqui();
         vbe.setVisible(true);
     } 
     public static void VistaBorrarJornada() 
     {
+        vadmin.setVisible(false);
+        vbjor = new BorrarJornada();
         vbjor.setVisible(true);
     } 
     public static void VistaBorrarJugador() 
     {
+        vadmin.setVisible(false);
+        vbjug = new BorrarJug();
         vbjug.setVisible(true);
     } 
     public static void VistaBorrarPartido() 
     {
+        vadmin.setVisible(false);
+        vbp = new BorrarPartido();
         vbp.setVisible(true);
     } 
     public static void VistaBorrarUsuario() 
     {
+        vadmin.setVisible(false);
+        vbu = new BorrarUsuario();
         vbu.setVisible(true);
     } 
     public static void VistaIntroDueño() 
     {
+        vadmin.setVisible(false);
+        vid = new IntroDueño();
         vid.setVisible(true);
     } 
     public static void VistaIntroEquipo() 
     {
+        vadmin.setVisible(false);
+        vie = new IntroEqui();
         vie.setVisible(true);
     } 
     public static void VistaIntroJugador() 
     {
+        vadmin.setVisible(false);
+        vijug = new IntroJug();
         vijug.setVisible(true);
     } 
     public static void VistaIntroResultado() 
     {
+        vadmin.setVisible(false);
+        vir = new IntroResult();
         vir.setVisible(true);
     } 
     public static void VistaIntroUsuario() 
     {
+        vadmin.setVisible(false);
+        viu = new IntroUsuario();
         viu.setVisible(true);
     } 
     public static void VistaModificarDueño() 
     {
+        vadmin.setVisible(false);
+        vmd = new ModDueño();
         vmd.setVisible(true);
     } 
     public static void VistaModificarEquipo() 
     {
+        vadmin.setVisible(false);
+        vme = new ModEqui();
         vme.setVisible(true);
     } 
     public static void VistaModificarJugador() 
     {
+        vadmin.setVisible(false);
+        vmjug = new ModJug();
         vmjug.setVisible(true);
     } 
     public static void VistaModificarUsuario() 
     {
+        vadmin.setVisible(false);
+        vmu = new ModUsuario();
         vmu.setVisible(true);
     } 
     public static void VistaVerDueño() 
     {
+        vadmin.setVisible(false);
+        vvd = new VerDueño();
         vvd.setVisible(true);
     } 
     public static void VistaVerEquipo() 
     {
+        vadmin.setVisible(false);
+        vve = new VerEqui();
         vve.setVisible(true);
     } 
     public static void VistaVerJugador() 
     {
+        vadmin.setVisible(false);
+        vvjug = new VerJug();
         vvjug.setVisible(true);
     } 
     public static void VistaVerUsuario() 
     {
+        vadmin.setVisible(false);
+        vvu = new VerUsuario();
         vvu.setVisible(true);
     } 
 
@@ -687,10 +689,10 @@ public class ProyectoESport {
         return lista;
     }
     
-    public static ArrayList<Jornada> seleccionarPartidosPorJornada(int id) throws Exception
+    public static ArrayList<Partido> seleccionarPartidosPorJornada(int id) throws Exception
     {
 
-        ArrayList<Jornada> lista = tj.seleccionarJornadasPorCalendario(id);
+        ArrayList<Partido> lista = tp.seleccionarPartidosPorJornada(id);
         
         return lista;
     }

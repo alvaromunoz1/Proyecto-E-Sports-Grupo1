@@ -49,7 +49,7 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "UPDATE Jornada SET Nombre =?, Pagina_Web =?,  "
+        String plantilla = "UPDATE Equipo SET Nombre =?, Pagina_Web =?,  "
                 + "ID_Calendario WHERE ID =?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         
@@ -70,10 +70,10 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "UPDATE Jornada SET Punto=?  WHERE ID =?";
+        String plantilla = "UPDATE Equipo SET Puntos=?  WHERE ID=?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         
-        ps.setInt(3, e.getId());
+        ps.setInt(2, e.getId());
         ps.setInt(1, e.getPuntos());
       
         int n = ps.executeUpdate();
