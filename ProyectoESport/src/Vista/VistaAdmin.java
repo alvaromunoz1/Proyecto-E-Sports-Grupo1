@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import Controlador.ProyectoESport;
+
 /**
  *
  * @author Usuario
@@ -30,7 +32,7 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jGeneral = new javax.swing.JMenu();
+        jClasificacion = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jIntroResult = new javax.swing.JMenuItem();
         jVerResult = new javax.swing.JMenuItem();
@@ -61,7 +63,7 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu9 = new javax.swing.JMenu();
-        jMenu10 = new javax.swing.JMenu();
+        jSalir = new javax.swing.JMenu();
 
         jMenu1.setText("jMenu1");
 
@@ -69,13 +71,13 @@ public class VistaAdmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jGeneral.setText("CLASIFICACION");
-        jGeneral.addActionListener(new java.awt.event.ActionListener() {
+        jClasificacion.setText("CLASIFICACION");
+        jClasificacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jGeneralActionPerformed(evt);
+                jClasificacionActionPerformed(evt);
             }
         });
-        jMenuBar1.add(jGeneral);
+        jMenuBar1.add(jClasificacion);
 
         jMenu5.setText("JORNADAS");
 
@@ -258,13 +260,13 @@ public class VistaAdmin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu4);
 
-        jMenu10.setText("SALIR");
-        jMenu10.addActionListener(new java.awt.event.ActionListener() {
+        jSalir.setText("SALIR");
+        jSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu10ActionPerformed(evt);
+                jSalirActionPerformed(evt);
             }
         });
-        jMenuBar1.add(jMenu10);
+        jMenuBar1.add(jSalir);
 
         setJMenuBar(jMenuBar1);
 
@@ -283,80 +285,80 @@ public class VistaAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jvEkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jvEkiActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaVerEquipo();
     }//GEN-LAST:event_jvEkiActionPerformed
 
-    private void jGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jGeneralActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jGeneralActionPerformed
+    private void jClasificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jClasificacionActionPerformed
+        ProyectoESport.VistaClasificaciones();
+    }//GEN-LAST:event_jClasificacionActionPerformed
 
     private void jIntroResultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jIntroResultActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaIntroResultado();
     }//GEN-LAST:event_jIntroResultActionPerformed
 
     private void jcJugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcJugActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaIntroJugador();
     }//GEN-LAST:event_jcJugActionPerformed
 
     private void jvJugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jvJugActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaVerJugador();
     }//GEN-LAST:event_jvJugActionPerformed
 
     private void jmJugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmJugActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaModificarJugador();
     }//GEN-LAST:event_jmJugActionPerformed
 
     private void jbJugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbJugActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaBorrarJugador();
     }//GEN-LAST:event_jbJugActionPerformed
 
     private void jbEkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbEkiActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaBorrarEquipo();
     }//GEN-LAST:event_jbEkiActionPerformed
 
     private void jmEkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmEkiActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaModificarEquipo();
     }//GEN-LAST:event_jmEkiActionPerformed
 
     private void jcEkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcEkiActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaIntroEquipo();
     }//GEN-LAST:event_jcEkiActionPerformed
 
     private void jcDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcDueActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaIntroDueño();
     }//GEN-LAST:event_jcDueActionPerformed
 
     private void jvDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jvDueActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaVerDueño();
     }//GEN-LAST:event_jvDueActionPerformed
 
     private void jmDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmDueActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaModificarDueño();
     }//GEN-LAST:event_jmDueActionPerformed
 
     private void jbDueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDueActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaBorrarDueño();
     }//GEN-LAST:event_jbDueActionPerformed
 
     private void jcUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcUsuActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaIntroUsuario();
     }//GEN-LAST:event_jcUsuActionPerformed
 
     private void jvUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jvUsuActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaVerUsuario();
     }//GEN-LAST:event_jvUsuActionPerformed
 
     private void jmUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmUsuActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaModificarUsuario();
     }//GEN-LAST:event_jmUsuActionPerformed
 
     private void jbUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbUsuActionPerformed
-        // TODO add your handling code here:
+        ProyectoESport.VistaBorrarUsuario();
     }//GEN-LAST:event_jbUsuActionPerformed
 
-    private void jMenu10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenu10ActionPerformed
+    private void jSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSalirActionPerformed
+        ProyectoESport.SalirPrograma();
+    }//GEN-LAST:event_jSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -396,10 +398,9 @@ public class VistaAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem jAñadirPartido;
     private javax.swing.JMenuItem jBorrarPartido;
-    private javax.swing.JMenu jGeneral;
+    private javax.swing.JMenu jClasificacion;
     private javax.swing.JMenuItem jIntroResult;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -412,6 +413,7 @@ public class VistaAdmin extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenu jSalir;
     private javax.swing.JMenuItem jVerResult;
     private javax.swing.JMenuItem jbDue;
     private javax.swing.JMenuItem jbEki;

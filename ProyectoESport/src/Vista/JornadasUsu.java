@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Usuario
+ * @author Imanol Urquijo
  */
 public class JornadasUsu extends javax.swing.JFrame {
 
@@ -105,10 +105,6 @@ public class JornadasUsu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(601, 601, 601))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -130,10 +126,6 @@ public class JornadasUsu extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(ResultadoLocal2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(EquipoLocal4, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(ResultadoLocal4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(2, 2, 2)
@@ -146,7 +138,13 @@ public class JornadasUsu extends javax.swing.JFrame {
                                         .addComponent(ResultadoLocal1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(30, 30, 30)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(EquipoLocal4, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(18, 18, 18)
+                                    .addComponent(ResultadoLocal4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(80, 80, 80)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -169,7 +167,7 @@ public class JornadasUsu extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(EquipoVisitante1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addContainerGap(447, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,9 +216,9 @@ public class JornadasUsu extends javax.swing.JFrame {
                         .addComponent(Hora3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(48, 48, 48)
                         .addComponent(Hora4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addGap(45, 45, 45)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(69, 69, 69))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {EquipoLocal1, EquipoLocal2, EquipoLocal3, EquipoLocal4, EquipoVisitante1, EquipoVisitante2, EquipoVisitante3, EquipoVisitante4, ResultadoLocal1, ResultadoLocal2, ResultadoLocal3, ResultadoLocal4, ResultadoVisitante1, ResultadoVisitante2, ResultadoVisitante3, ResultadoVisitante4});
@@ -244,21 +242,25 @@ public class JornadasUsu extends javax.swing.JFrame {
             ResultadoLocal1.setText(String.valueOf(par.get(0).getRes_local()));
             EquipoVisitante1.setText(par.get(0).getVisitante().getNombre());
             ResultadoVisitante1.setText(String.valueOf(par.get(0).getRes_visit()));
+            Hora1.setText(par.get(0).getHora().toString());
             
             EquipoLocal2.setText(par.get(1).getLocal().getNombre());
             ResultadoLocal2.setText(String.valueOf(par.get(1).getRes_local()));
             EquipoVisitante2.setText(par.get(1).getVisitante().getNombre());
             ResultadoVisitante2.setText(String.valueOf(par.get(1).getRes_visit()));
+            Hora2.setText(par.get(0).getHora().toString());
             
             EquipoLocal3.setText(par.get(2).getLocal().getNombre());
             ResultadoLocal3.setText(String.valueOf(par.get(2).getRes_local()));
             EquipoVisitante3.setText(par.get(2).getVisitante().getNombre());
             ResultadoVisitante3.setText(String.valueOf(par.get(2).getRes_visit()));
+            Hora3.setText(par.get(0).getHora().toString());
             
             EquipoLocal4.setText(par.get(3).getLocal().getNombre());
             ResultadoLocal4.setText(String.valueOf(par.get(3).getRes_local()));
             EquipoVisitante4.setText(par.get(3).getVisitante().getNombre());
             ResultadoVisitante4.setText(String.valueOf(par.get(3).getRes_visit()));
+            Hora4.setText(par.get(0).getHora().toString());
             
             }
         catch(Exception e)

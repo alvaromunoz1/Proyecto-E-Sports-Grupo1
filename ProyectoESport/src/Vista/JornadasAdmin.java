@@ -6,17 +6,26 @@
 package Vista;
 
 import Controlador.ProyectoESport;
+import ModeloUML.Jornada;
+import ModeloUML.Partido;
+import java.util.ArrayList;
+import java.util.Iterator;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author sergio
+ * @author Imanol Urquijo
  */
+
+
 public class JornadasAdmin extends javax.swing.JFrame {
 
     /**
      * Creates new form JornadasAdmin
      */
+    public static Iterator<Jornada> it;
+    public static ArrayList<Partido> par;
+    
     public JornadasAdmin() {
         initComponents();
 
@@ -32,6 +41,8 @@ public class JornadasAdmin extends javax.swing.JFrame {
         Hora2.setEditable(false);
         Hora3.setEditable(false);
         Hora4.setEditable(false);
+        
+        RellenarIterador();
                 
     }
 
@@ -61,7 +72,6 @@ public class JornadasAdmin extends javax.swing.JFrame {
         ResultadoVisitante3 = new javax.swing.JTextField();
         ResultadoVisitante4 = new javax.swing.JTextField();
         NumJornada = new javax.swing.JTextField();
-        bAnterior = new javax.swing.JButton();
         bSiguiente = new javax.swing.JButton();
         Hora2 = new javax.swing.JTextField();
         Hora3 = new javax.swing.JTextField();
@@ -69,8 +79,9 @@ public class JornadasAdmin extends javax.swing.JFrame {
         Hora4 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        bSalir = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        bVolver = new javax.swing.JButton();
+        jID = new javax.swing.JTextField();
+        bAnterior1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -117,21 +128,13 @@ public class JornadasAdmin extends javax.swing.JFrame {
         NumJornada.setBorder(null);
         getContentPane().add(NumJornada, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 170, 30));
 
-        bAnterior.setText("Anterior");
-        bAnterior.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bAnteriorActionPerformed(evt);
-            }
-        });
-        getContentPane().add(bAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 90, -1));
-
         bSiguiente.setText("Siguiente");
         bSiguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bSiguienteActionPerformed(evt);
             }
         });
-        getContentPane().add(bSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, -1, -1));
+        getContentPane().add(bSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, 90, -1));
         getContentPane().add(Hora2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 190, 60));
         getContentPane().add(Hora3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 190, 60));
         getContentPane().add(Hora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 190, 60));
@@ -144,46 +147,130 @@ public class JornadasAdmin extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Jornadas.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, -1, -1));
 
-        bSalir.setText("Salir");
-        getContentPane().add(bSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 450, 90, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 170, 40));
+        bVolver.setText("Volver");
+        bVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bVolverActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 450, 90, -1));
+        getContentPane().add(jID, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 170, 40));
+
+        bAnterior1.setText("Anterior");
+        bAnterior1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bAnterior1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bAnterior1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 90, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAnteriorActionPerformed
-<<<<<<< HEAD
-        
-    }//GEN-LAST:event_bAnteriorActionPerformed
-
     private void bSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSiguienteActionPerformed
-        
-=======
-         if (ProyectoESport.isAnterior())
-        {
-            // objeto
-            String EL=ProyectoESport.getAnteriorEquipoLocal();
-            String EV=ProyectoESport.getAnteriorEquipoVisitante();
-        }
-        else
-            JOptionPane.showMessageDialog(this, " No hay más Jornadas");
-    
-    }//GEN-LAST:event_bAnteriorActionPerformed
-
-    private void bSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSiguienteActionPerformed
-        if (ProyectoESport.isSiguiente())
-        {
-            String EL=ProyectoESport.getSiguienteEquipoLocal();
-            String EV=ProyectoESport.getSiguienteEquipoVisitante();
-        }
-        else
-            JOptionPane.showMessageDialog(this, " No hay más Jornadas");
->>>>>>> main
+        SiguienteDatos();
     }//GEN-LAST:event_bSiguienteActionPerformed
 
+    
+    private void RellenarIterador()
+    {
+        try{
+            ArrayList<Jornada> jor = ProyectoESport.seleccionarJornadasPorCalendario(Integer.parseInt(jID.getText()));
+            
+            it = jor.iterator();
+            }
+        catch(Exception e)
+        {
+            
+        }
+    }    
+    
+    private void PrimerosDatos()
+    {
+        try{
+
+            par = ProyectoESport.seleccionarPartidosPorJornada(it.next().getId());
+
+            EquipoLocal1.setText(par.get(0).getLocal().getNombre());
+            ResultadoLocal1.setText(String.valueOf(par.get(0).getRes_local()));
+            EquipoVisitante1.setText(par.get(0).getVisitante().getNombre());
+            ResultadoVisitante1.setText(String.valueOf(par.get(0).getRes_visit()));
+            Hora1.setText(par.get(0).getHora().toString());
+            
+            EquipoLocal2.setText(par.get(1).getLocal().getNombre());
+            ResultadoLocal2.setText(String.valueOf(par.get(1).getRes_local()));
+            EquipoVisitante2.setText(par.get(1).getVisitante().getNombre());
+            ResultadoVisitante2.setText(String.valueOf(par.get(1).getRes_visit()));
+            Hora2.setText(par.get(0).getHora().toString());
+            
+            EquipoLocal3.setText(par.get(2).getLocal().getNombre());
+            ResultadoLocal3.setText(String.valueOf(par.get(2).getRes_local()));
+            EquipoVisitante3.setText(par.get(2).getVisitante().getNombre());
+            ResultadoVisitante3.setText(String.valueOf(par.get(2).getRes_visit()));
+            Hora3.setText(par.get(0).getHora().toString());
+            
+            EquipoLocal4.setText(par.get(3).getLocal().getNombre());
+            ResultadoLocal4.setText(String.valueOf(par.get(3).getRes_local()));
+            EquipoVisitante4.setText(par.get(3).getVisitante().getNombre());
+            ResultadoVisitante4.setText(String.valueOf(par.get(3).getRes_visit()));
+            Hora4.setText(par.get(0).getHora().toString());
+            
+            }
+        catch(Exception e)
+        {
+        
+        }
+    }    
+    
+    private void SiguienteDatos()
+    {
+        try{
+
+            par = ProyectoESport.seleccionarPartidosPorJornada(it.next().getId());
+
+            EquipoLocal1.setText(par.get(0).getLocal().getNombre());
+            ResultadoLocal1.setText(String.valueOf(par.get(0).getRes_local()));
+            EquipoVisitante1.setText(par.get(0).getVisitante().getNombre());
+            ResultadoVisitante1.setText(String.valueOf(par.get(0).getRes_visit()));
+            Hora1.setText(par.get(0).getHora().toString());
+            
+            EquipoLocal2.setText(par.get(1).getLocal().getNombre());
+            ResultadoLocal2.setText(String.valueOf(par.get(1).getRes_local()));
+            EquipoVisitante2.setText(par.get(1).getVisitante().getNombre());
+            ResultadoVisitante2.setText(String.valueOf(par.get(1).getRes_visit()));
+            Hora2.setText(par.get(0).getHora().toString());
+            
+            EquipoLocal3.setText(par.get(2).getLocal().getNombre());
+            ResultadoLocal3.setText(String.valueOf(par.get(2).getRes_local()));
+            EquipoVisitante3.setText(par.get(2).getVisitante().getNombre());
+            ResultadoVisitante3.setText(String.valueOf(par.get(2).getRes_visit()));
+            Hora3.setText(par.get(0).getHora().toString());
+            
+            EquipoLocal4.setText(par.get(3).getLocal().getNombre());
+            ResultadoLocal4.setText(String.valueOf(par.get(3).getRes_local()));
+            EquipoVisitante4.setText(par.get(3).getVisitante().getNombre());
+            ResultadoVisitante4.setText(String.valueOf(par.get(3).getRes_visit()));
+            Hora4.setText(par.get(0).getHora().toString());
+            
+            }
+        catch(Exception e)
+        {
+        
+        }
+    }     
+    
+    
     private void EquipoLocal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EquipoLocal4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_EquipoLocal4ActionPerformed
+
+    private void bAnterior1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAnterior1ActionPerformed
+        
+    }//GEN-LAST:event_bAnterior1ActionPerformed
+
+    private void bVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bVolverActionPerformed
+        ProyectoESport.volverPrincipalAdministrador(this);
+    }//GEN-LAST:event_bVolverActionPerformed
 
     /**
      * @param args the command line arguments
@@ -242,11 +329,11 @@ public class JornadasAdmin extends javax.swing.JFrame {
     private javax.swing.JTextField ResultadoVisitante2;
     private javax.swing.JTextField ResultadoVisitante3;
     private javax.swing.JTextField ResultadoVisitante4;
-    private javax.swing.JButton bAnterior;
-    private javax.swing.JButton bSalir;
+    private javax.swing.JButton bAnterior1;
     private javax.swing.JButton bSiguiente;
+    private javax.swing.JButton bVolver;
+    private javax.swing.JTextField jID;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

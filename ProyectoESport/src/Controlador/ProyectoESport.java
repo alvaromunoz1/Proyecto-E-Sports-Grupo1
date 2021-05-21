@@ -257,7 +257,6 @@ public class ProyectoESport {
     
     public static void VistaClasificaciones() 
     {
-        vp.setVisible(false);
         vc = new Clasificaciones();
         vc.setVisible(true);
     }
@@ -274,6 +273,13 @@ public class ProyectoESport {
         v.dispose();
         vp.setVisible(true);
     }
+        
+        
+        public static void volverAtras (JFrame v)
+    {
+        v.dispose();
+        vp.setVisible(true);
+    } 
     
     public static boolean identificar(String usuario,String contraseña) throws Exception{
         boolean usuarioValido = false;
@@ -651,13 +657,11 @@ public class ProyectoESport {
         return lista;
     }
     
-    public static String datosJornadaPorCalendario(int id) throws Exception
+    public static ArrayList<Jornada> seleccionarJornadasPorCalendario(int id) throws Exception
     {
-        String datos="";
         ArrayList<Jornada> lista = tj.seleccionarJornadasPorCalendario(id);
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        return lista;
     }
     
     public static Jornada seleccionarJornadaPorID(int id) throws Exception
@@ -1095,17 +1099,51 @@ public class ProyectoESport {
         }
     }    
 
-    public static boolean isAnterior() {
-        
-        if (posicion == 0)
-            return false;
-        return true;
-    }
+    public static void NumerosAleatorios(){
+        // Aqui establecemos la cantidad de elementos aleatorios que deseamos
+        int cantidad = 10;
+        // Esta variable se usará para llenar el arreglo en la posición correspondiente
+        int index = 0;
+        // Arreglo que almacenará los números aleatorios
+        int [] aleatorios = new int [cantidad];
+        // Nuestro primer bucle que se ejecutará hasta que hayamos llenado el arreglo
+        while(index < cantidad) {
+            // Variable que almacenará el número aleatorio propuesto
+            int propuesto = (int)(Math.random()*cantidad);
+            // Variable que indica si el número propuesto está repetido
+            // asumimos que aún no está repetido y la establecemos a false
+            boolean repetido = false;
+            //Segundo bucle que se ejecutará siempre que el número no esté repetido
+            while(!repetido) {
+                // Bucle que recorre el arreglo comparando el número propuesto con
+                // cada uno de los elementos del arreglo
+                for(int i=0; i<index; i++) {
+                    //realizamos la comparación
+                    if(propuesto == aleatorios[i]) {
+                        // si el número se repite, establecemos repetido=true
+                        // y salimos del bucle for (no es necesario seguir comparando)
+                        repetido = true;
+                        break;
+                    }
+                }
+                // verificamos el estado del valor repetido. Si es false, significa
+                // que hemos recorrido el array hasta la posición index sin encontrar
+                // coincidencias
+                if(!repetido) {
+                    // almacenamos el valor propuesto ya que no está repetido
+                    // incrementamos el índice
+                    aleatorios[index] = propuesto;
+                    index++;
+                }
+            }
 
-    public static boolean isSiguiente() {
-        if (posicion == jornadas.size()-1)
-            return false;
-        return true;
+        }
+        // mostramos los valores por pantalla
+        for (int i=0;i<aleatorios.length;i++){
+            System.out.print(aleatorios[i]+ " ");
+        }
+        // Inserta un salto de linea
+        System.out.println("");  
     }
     
    
