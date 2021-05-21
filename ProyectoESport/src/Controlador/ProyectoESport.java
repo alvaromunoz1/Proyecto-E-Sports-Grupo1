@@ -27,7 +27,7 @@ import javax.swing.JFrame;
 public class ProyectoESport {
 
     private static int posicion;
-    ArrayList<Jornada> jornadas;
+    private static ArrayList<Jornada> jornadas;
 
     private static TablaCalendario tc;
     private static TablaJornada tj;
