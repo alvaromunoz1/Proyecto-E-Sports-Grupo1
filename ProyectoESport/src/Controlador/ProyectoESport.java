@@ -112,7 +112,7 @@ public class ProyectoESport {
             
             
             vl = new Login();
-            vbd = new BorrarDueño();
+            
             vbe = new BorrarEqui();
             vbjor = new BorrarJornada();
             vbjug = new BorrarJug();
@@ -168,8 +168,8 @@ public class ProyectoESport {
     
     public static void VistaBorrarDueño() 
     {
-        vadmin.setVisible(true);
-        
+        vadmin.setVisible(false);
+        vbd = new BorrarDueño();
         vbd.setVisible(true);
     }    
     public static void VistaBorrarEquipo() 
@@ -262,6 +262,14 @@ public class ProyectoESport {
     public static void volverPrincipalAdministrador (JFrame v)
     {
         v.dispose();
+        vadmin.setVisible(true);
+    }
+    
+    
+        public static void volverPrincipalUsuario (JFrame v)
+    {
+        v.dispose();
+        vp.setVisible(true);
     }
     
     public static boolean identificar(String usuario,String contraseña) throws Exception{

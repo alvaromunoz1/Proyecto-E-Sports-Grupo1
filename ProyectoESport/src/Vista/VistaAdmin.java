@@ -61,6 +61,7 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu9 = new javax.swing.JMenu();
+        jMenu10 = new javax.swing.JMenu();
 
         jMenu1.setText("jMenu1");
 
@@ -252,10 +253,18 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenuItem3.setText("CREAR CALENDARIO");
         jMenu4.add(jMenuItem3);
 
+        jMenu9.setText("EMPAREJAMIENTOS");
+        jMenu4.add(jMenu9);
+
         jMenuBar1.add(jMenu4);
 
-        jMenu9.setText("EMPAREJAMIENTOS");
-        jMenuBar1.add(jMenu9);
+        jMenu10.setText("SALIR");
+        jMenu10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu10ActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(jMenu10);
 
         setJMenuBar(jMenuBar1);
 
@@ -345,6 +354,10 @@ public class VistaAdmin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jbUsuActionPerformed
 
+    private void jMenu10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu10ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -386,6 +399,7 @@ public class VistaAdmin extends javax.swing.JFrame {
     private javax.swing.JMenu jGeneral;
     private javax.swing.JMenuItem jIntroResult;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;

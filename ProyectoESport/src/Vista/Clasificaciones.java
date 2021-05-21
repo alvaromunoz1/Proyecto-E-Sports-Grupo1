@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import Controlador.ProyectoESport;
+
 /**
  *
  * @author 1gdaw03
@@ -132,39 +134,32 @@ public class Clasificaciones extends javax.swing.JFrame {
         PPV7 = new javax.swing.JTextField();
         PPV8 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        E1.setBackground(new java.awt.Color(255, 255, 255));
         E1.setBorder(null);
         getContentPane().add(E1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 270, 50));
 
-        E2.setBackground(new java.awt.Color(255, 255, 255));
         E2.setBorder(null);
         getContentPane().add(E2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 270, 50));
 
-        E3.setBackground(new java.awt.Color(255, 255, 255));
         E3.setBorder(null);
         getContentPane().add(E3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, 270, 50));
 
-        E4.setBackground(new java.awt.Color(255, 255, 255));
         E4.setBorder(null);
         getContentPane().add(E4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 270, 50));
 
-        E5.setBackground(new java.awt.Color(255, 255, 255));
         E5.setBorder(null);
         getContentPane().add(E5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 270, 50));
 
-        E6.setBackground(new java.awt.Color(255, 255, 255));
         E6.setBorder(null);
         getContentPane().add(E6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 500, 270, 50));
 
-        E7.setBackground(new java.awt.Color(255, 255, 255));
         E7.setBorder(null);
         getContentPane().add(E7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, 270, 50));
 
-        E8.setBackground(new java.awt.Color(255, 255, 255));
         E8.setBorder(null);
         getContentPane().add(E8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 640, 270, 50));
 
@@ -200,71 +195,54 @@ public class Clasificaciones extends javax.swing.JFrame {
         PT8.setBorder(null);
         getContentPane().add(PT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 640, 60, 50));
 
-        PJT1.setBackground(new java.awt.Color(255, 255, 255));
         PJT1.setBorder(null);
         getContentPane().add(PJT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 60, 50));
 
-        PJT2.setBackground(new java.awt.Color(255, 255, 255));
         PJT2.setBorder(null);
         getContentPane().add(PJT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 60, 60));
 
-        PJT3.setBackground(new java.awt.Color(255, 255, 255));
         PJT3.setBorder(null);
         getContentPane().add(PJT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 300, 60, 50));
 
-        PJT4.setBackground(new java.awt.Color(255, 255, 255));
         PJT4.setBorder(null);
         getContentPane().add(PJT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, 60, 50));
 
-        PJT5.setBackground(new java.awt.Color(255, 255, 255));
         PJT5.setBorder(null);
         getContentPane().add(PJT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, 60, 60));
 
-        PJT6.setBackground(new java.awt.Color(255, 255, 255));
         PJT6.setBorder(null);
         getContentPane().add(PJT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 60, 50));
 
-        PJT7.setBackground(new java.awt.Color(255, 255, 255));
         PJT7.setBorder(null);
         getContentPane().add(PJT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 570, 60, 50));
 
-        PJT8.setBackground(new java.awt.Color(255, 255, 255));
         PJT8.setBorder(null);
         getContentPane().add(PJT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 640, 60, 50));
 
-        PGT1.setBackground(new java.awt.Color(255, 255, 255));
         PGT1.setBorder(null);
         getContentPane().add(PGT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 60, 50));
 
-        PGT2.setBackground(new java.awt.Color(255, 255, 255));
         PGT2.setBorder(null);
         getContentPane().add(PGT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 60, 50));
 
-        PGT3.setBackground(new java.awt.Color(255, 255, 255));
         PGT3.setBorder(null);
         getContentPane().add(PGT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 60, 50));
 
-        PGT4.setBackground(new java.awt.Color(255, 255, 255));
         PGT4.setBorder(null);
         getContentPane().add(PGT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 370, 60, 50));
 
-        PGT5.setBackground(new java.awt.Color(255, 255, 255));
         PGT5.setBorder(null);
         getContentPane().add(PGT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 440, 60, 50));
 
-        PGT6.setBackground(new java.awt.Color(255, 255, 255));
         PGT6.setBorder(null);
         getContentPane().add(PGT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, 60, 50));
 
-        PGT7.setBackground(new java.awt.Color(255, 255, 255));
         PGT7.setBorder(null);
         getContentPane().add(PGT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 570, 60, 50));
 
-        PGT8.setBackground(new java.awt.Color(255, 255, 255));
         PGT8.setBorder(null);
         getContentPane().add(PGT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 640, 60, 50));
 
-        PPT1.setBackground(new java.awt.Color(255, 255, 255));
         PPT1.setBorder(null);
         PPT1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -273,31 +251,24 @@ public class Clasificaciones extends javax.swing.JFrame {
         });
         getContentPane().add(PPT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, 60, 50));
 
-        PPT2.setBackground(new java.awt.Color(255, 255, 255));
         PPT2.setBorder(null);
         getContentPane().add(PPT2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, 60, 50));
 
-        PPT3.setBackground(new java.awt.Color(255, 255, 255));
         PPT3.setBorder(null);
         getContentPane().add(PPT3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 300, 60, 50));
 
-        PPT4.setBackground(new java.awt.Color(255, 255, 255));
         PPT4.setBorder(null);
         getContentPane().add(PPT4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 370, 60, 50));
 
-        PPT5.setBackground(new java.awt.Color(255, 255, 255));
         PPT5.setBorder(null);
         getContentPane().add(PPT5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 440, 60, 50));
 
-        PPT6.setBackground(new java.awt.Color(255, 255, 255));
         PPT6.setBorder(null);
         getContentPane().add(PPT6, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 500, 60, 50));
 
-        PPT7.setBackground(new java.awt.Color(255, 255, 255));
         PPT7.setBorder(null);
         getContentPane().add(PPT7, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 570, 60, 50));
 
-        PPT8.setBackground(new java.awt.Color(255, 255, 255));
         PPT8.setBorder(null);
         getContentPane().add(PPT8, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 640, 60, 50));
 
@@ -333,99 +304,75 @@ public class Clasificaciones extends javax.swing.JFrame {
         PL8.setBorder(null);
         getContentPane().add(PL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 640, 60, 50));
 
-        PJL1.setBackground(new java.awt.Color(255, 255, 255));
         PJL1.setBorder(null);
         getContentPane().add(PJL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, 60, 50));
 
-        PJL2.setBackground(new java.awt.Color(255, 255, 255));
         PJL2.setBorder(null);
         getContentPane().add(PJL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 230, 60, 50));
 
-        PJL3.setBackground(new java.awt.Color(255, 255, 255));
         PJL3.setBorder(null);
         getContentPane().add(PJL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 300, 60, 50));
 
-        PJL4.setBackground(new java.awt.Color(255, 255, 255));
         PJL4.setBorder(null);
         getContentPane().add(PJL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 370, 60, 50));
 
-        PJL5.setBackground(new java.awt.Color(255, 255, 255));
         PJL5.setBorder(null);
         getContentPane().add(PJL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 440, 60, 50));
 
-        PJL6.setBackground(new java.awt.Color(255, 255, 255));
         PJL6.setBorder(null);
         getContentPane().add(PJL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 500, 60, 50));
 
-        PJL7.setBackground(new java.awt.Color(255, 255, 255));
         PJL7.setBorder(null);
         getContentPane().add(PJL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 570, 60, 50));
 
-        PJL8.setBackground(new java.awt.Color(255, 255, 255));
         PJL8.setBorder(null);
         getContentPane().add(PJL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 640, 60, 50));
 
-        PGL1.setBackground(new java.awt.Color(255, 255, 255));
         PGL1.setBorder(null);
         getContentPane().add(PGL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 170, 60, 50));
 
-        PGL2.setBackground(new java.awt.Color(255, 255, 255));
         PGL2.setBorder(null);
         getContentPane().add(PGL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 230, 60, 50));
 
-        PGL3.setBackground(new java.awt.Color(255, 255, 255));
         PGL3.setBorder(null);
         getContentPane().add(PGL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 300, 60, 50));
 
-        PGL4.setBackground(new java.awt.Color(255, 255, 255));
         PGL4.setBorder(null);
         getContentPane().add(PGL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 370, 60, 50));
 
-        PGL5.setBackground(new java.awt.Color(255, 255, 255));
         PGL5.setBorder(null);
         getContentPane().add(PGL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 430, 60, 50));
 
-        PGL6.setBackground(new java.awt.Color(255, 255, 255));
         PGL6.setBorder(null);
         getContentPane().add(PGL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 500, 60, 50));
 
-        PGL7.setBackground(new java.awt.Color(255, 255, 255));
         PGL7.setBorder(null);
         getContentPane().add(PGL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 570, 60, 50));
 
-        PGL8.setBackground(new java.awt.Color(255, 255, 255));
         PGL8.setBorder(null);
         getContentPane().add(PGL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 640, 60, 50));
 
-        PPL1.setBackground(new java.awt.Color(255, 255, 255));
         PPL1.setBorder(null);
         getContentPane().add(PPL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 170, 60, 50));
 
-        PPL2.setBackground(new java.awt.Color(255, 255, 255));
         PPL2.setBorder(null);
         getContentPane().add(PPL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 230, 60, 50));
 
-        PPL3.setBackground(new java.awt.Color(255, 255, 255));
         PPL3.setBorder(null);
         getContentPane().add(PPL3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 300, 60, 50));
 
-        PPL4.setBackground(new java.awt.Color(255, 255, 255));
         PPL4.setBorder(null);
         getContentPane().add(PPL4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 370, 60, 50));
 
-        PPL5.setBackground(new java.awt.Color(255, 255, 255));
         PPL5.setBorder(null);
         getContentPane().add(PPL5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 440, 60, 50));
 
-        PPL6.setBackground(new java.awt.Color(255, 255, 255));
         PPL6.setBorder(null);
         getContentPane().add(PPL6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 500, 60, 50));
 
-        PPL7.setBackground(new java.awt.Color(255, 255, 255));
         PPL7.setBorder(null);
         getContentPane().add(PPL7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 570, 60, 50));
 
-        PPL8.setBackground(new java.awt.Color(255, 255, 255));
         PPL8.setBorder(null);
         getContentPane().add(PPL8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 640, 60, 50));
 
@@ -461,104 +408,88 @@ public class Clasificaciones extends javax.swing.JFrame {
         PV8.setBorder(null);
         getContentPane().add(PV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 640, 60, 50));
 
-        PJV1.setBackground(new java.awt.Color(255, 255, 255));
         PJV1.setBorder(null);
         getContentPane().add(PJV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 170, 60, 50));
 
-        PJV2.setBackground(new java.awt.Color(255, 255, 255));
         PJV2.setBorder(null);
         getContentPane().add(PJV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 230, 60, 50));
 
-        PJV3.setBackground(new java.awt.Color(255, 255, 255));
         PJV3.setBorder(null);
         getContentPane().add(PJV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 300, 60, 50));
 
-        PJV4.setBackground(new java.awt.Color(255, 255, 255));
         PJV4.setBorder(null);
         getContentPane().add(PJV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 370, 60, 50));
 
-        PJV5.setBackground(new java.awt.Color(255, 255, 255));
         PJV5.setBorder(null);
         getContentPane().add(PJV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 440, 60, 50));
 
-        PJV6.setBackground(new java.awt.Color(255, 255, 255));
         PJV6.setBorder(null);
         getContentPane().add(PJV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 500, 60, 50));
 
-        PJV7.setBackground(new java.awt.Color(255, 255, 255));
         PJV7.setBorder(null);
         getContentPane().add(PJV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 570, 60, 50));
 
-        PJV8.setBackground(new java.awt.Color(255, 255, 255));
         PJV8.setBorder(null);
         getContentPane().add(PJV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 640, 60, 50));
 
-        PGV1.setBackground(new java.awt.Color(255, 255, 255));
         PGV1.setBorder(null);
         getContentPane().add(PGV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 170, 60, 50));
 
-        PGV2.setBackground(new java.awt.Color(255, 255, 255));
         PGV2.setBorder(null);
         getContentPane().add(PGV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 230, 60, 50));
 
-        PGV3.setBackground(new java.awt.Color(255, 255, 255));
         PGV3.setBorder(null);
         getContentPane().add(PGV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 300, 60, 50));
 
-        PGV4.setBackground(new java.awt.Color(255, 255, 255));
         PGV4.setBorder(null);
         getContentPane().add(PGV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 370, 60, 50));
 
-        PGV5.setBackground(new java.awt.Color(255, 255, 255));
         PGV5.setBorder(null);
         getContentPane().add(PGV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 440, 60, 50));
 
-        PGV6.setBackground(new java.awt.Color(255, 255, 255));
         PGV6.setBorder(null);
         getContentPane().add(PGV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 500, 60, 50));
 
-        PGV7.setBackground(new java.awt.Color(255, 255, 255));
         PGV7.setBorder(null);
         getContentPane().add(PGV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 570, 60, 50));
 
-        PGV8.setBackground(new java.awt.Color(255, 255, 255));
         PGV8.setBorder(null);
         getContentPane().add(PGV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 640, 60, 50));
 
-        PPV1.setBackground(new java.awt.Color(255, 255, 255));
         PPV1.setBorder(null);
         getContentPane().add(PPV1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 170, 60, 50));
 
-        PPV2.setBackground(new java.awt.Color(255, 255, 255));
         PPV2.setBorder(null);
         getContentPane().add(PPV2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 240, 60, 50));
 
-        PPV3.setBackground(new java.awt.Color(255, 255, 255));
         PPV3.setBorder(null);
         getContentPane().add(PPV3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 300, 60, 50));
 
-        PPV4.setBackground(new java.awt.Color(255, 255, 255));
         PPV4.setBorder(null);
         getContentPane().add(PPV4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 370, 60, 50));
 
-        PPV5.setBackground(new java.awt.Color(255, 255, 255));
         PPV5.setBorder(null);
         getContentPane().add(PPV5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 440, 60, 50));
 
-        PPV6.setBackground(new java.awt.Color(255, 255, 255));
         PPV6.setBorder(null);
         getContentPane().add(PPV6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 500, 60, 50));
 
-        PPV7.setBackground(new java.awt.Color(255, 255, 255));
         PPV7.setBorder(null);
         getContentPane().add(PPV7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 570, 60, 50));
 
-        PPV8.setBackground(new java.awt.Color(255, 255, 255));
         PPV8.setBorder(null);
         getContentPane().add(PPV8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 640, 60, 50));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Clasificacion.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, -1));
+
+        jButton1.setText("VOLVER");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -566,6 +497,10 @@ public class Clasificaciones extends javax.swing.JFrame {
     private void PPT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PPT1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PPT1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ProyectoESport.VistaPrincipalUsuario();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -707,6 +642,7 @@ public class Clasificaciones extends javax.swing.JFrame {
     private javax.swing.JTextField PV6;
     private javax.swing.JTextField PV7;
     private javax.swing.JTextField PV8;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
