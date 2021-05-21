@@ -27,6 +27,7 @@ import javax.swing.JFrame;
 public class ProyectoESport {
 
     private static int posicion;
+    ArrayList<Jornada> jornadas;
 
     private static TablaCalendario tc;
     private static TablaJornada tj;
@@ -1100,7 +1101,7 @@ public class ProyectoESport {
     }
 
     public static boolean isSiguiente() {
-        if (posicion == listaPersonas.size()-1)
+        if (posicion == jornadas.size()-1)
             return false;
         return true;
     }

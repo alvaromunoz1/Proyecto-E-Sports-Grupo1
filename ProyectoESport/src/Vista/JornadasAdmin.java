@@ -171,11 +171,8 @@ public class JornadasAdmin extends javax.swing.JFrame {
          if (ProyectoESport.isAnterior())
         {
             // objeto
-            String n=ProyectoESport.getAnteriorNombre();
-            Integer e = ProyectoESport.getEdad();
-            String p = ProyectoESport.getProfesion();
-            String t=ProyectoESport.getTelefono();
-            llenar(n,e,p,t);
+            String EL=ProyectoESport.getAnteriorEquipoLocal();
+            String EV=ProyectoESport.getAnteriorEquipoVisitante();
         }
         else
             JOptionPane.showMessageDialog(this, " No hay más Jornadas");
@@ -185,11 +182,8 @@ public class JornadasAdmin extends javax.swing.JFrame {
     private void bSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSiguienteActionPerformed
         if (ProyectoESport.isSiguiente())
         {
-            String n=ProyectoESport.getSiguienteNombre();
-            Integer e = ProyectoESport.getEdad();
-            String p = ProyectoESport.getProfesion();
-            String t=ProyectoESport.getTelefono();
-            llenar(n,e,p,t);
+            String EL=ProyectoESport.getSiguienteEquipoLocal();
+            String EV=ProyectoESport.getSiguienteEquipoVisitante();
         }
         else
             JOptionPane.showMessageDialog(this, " No hay más Jornadas");
