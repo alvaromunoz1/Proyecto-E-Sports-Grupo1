@@ -152,11 +152,33 @@ public class JornadasAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bAnteriorActionPerformed
+<<<<<<< HEAD
         
     }//GEN-LAST:event_bAnteriorActionPerformed
 
     private void bSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSiguienteActionPerformed
         
+=======
+         if (ProyectoESport.isAnterior())
+        {
+            // objeto
+            String EL=ProyectoESport.getAnteriorEquipoLocal();
+            String EV=ProyectoESport.getAnteriorEquipoVisitante();
+        }
+        else
+            JOptionPane.showMessageDialog(this, " No hay más Jornadas");
+    
+    }//GEN-LAST:event_bAnteriorActionPerformed
+
+    private void bSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSiguienteActionPerformed
+        if (ProyectoESport.isSiguiente())
+        {
+            String EL=ProyectoESport.getSiguienteEquipoLocal();
+            String EV=ProyectoESport.getSiguienteEquipoVisitante();
+        }
+        else
+            JOptionPane.showMessageDialog(this, " No hay más Jornadas");
+>>>>>>> main
     }//GEN-LAST:event_bSiguienteActionPerformed
 
     private void EquipoLocal4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EquipoLocal4ActionPerformed
