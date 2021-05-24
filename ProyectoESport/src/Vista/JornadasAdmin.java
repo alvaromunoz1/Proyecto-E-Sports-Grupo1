@@ -41,6 +41,15 @@ public class JornadasAdmin extends javax.swing.JFrame {
         Hora2.setEditable(false);
         Hora3.setEditable(false);
         Hora4.setEditable(false);
+        ResultadoLocal1.setEditable(false);
+        ResultadoLocal2.setEditable(false);
+        ResultadoLocal3.setEditable(false);
+        ResultadoLocal4.setEditable(false);
+        ResultadoVisitante1.setEditable(false);
+        ResultadoVisitante2.setEditable(false);
+        ResultadoVisitante3.setEditable(false);
+        ResultadoVisitante4.setEditable(false);
+        
         
         RellenarIterador();
                 

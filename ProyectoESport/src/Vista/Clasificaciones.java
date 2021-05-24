@@ -23,6 +23,111 @@ public class Clasificaciones extends javax.swing.JFrame {
     public Clasificaciones() {
         initComponents();
         rellenarDatos();
+        E1.setEditable(false);
+        E2.setEditable(false);
+        E3.setEditable(false);
+        E4.setEditable(false);
+        E5.setEditable(false);
+        E6.setEditable(false);
+        E7.setEditable(false);
+        E8.setEditable(false);        
+        PT1.setEditable(false);
+        PT2.setEditable(false);
+        PT3.setEditable(false);
+        PT4.setEditable(false);
+        PT5.setEditable(false);
+        PT6.setEditable(false);
+        PT7.setEditable(false);
+        PT8.setEditable(false);        
+        PJT1.setEditable(false);
+        PJT2.setEditable(false);
+        PJT3.setEditable(false);
+        PJT4.setEditable(false);
+        PJT5.setEditable(false);
+        PJT6.setEditable(false);
+        PJT7.setEditable(false);
+        PJT8.setEditable(false);        
+        PGT1.setEditable(false);
+        PGT2.setEditable(false);
+        PGT3.setEditable(false);
+        PGT4.setEditable(false);
+        PGT5.setEditable(false);
+        PGT6.setEditable(false);
+        PGT7.setEditable(false);
+        PGT8.setEditable(false);        
+        PPT1.setEditable(false);
+        PPT2.setEditable(false);
+        PPT3.setEditable(false);
+        PPT4.setEditable(false);
+        PPT5.setEditable(false);
+        PPT6.setEditable(false);
+        PPT7.setEditable(false);
+        PPT8.setEditable(false);        
+        PL1.setEditable(false);
+        PL2.setEditable(false);
+        PL3.setEditable(false);
+        PL4.setEditable(false);
+        PL5.setEditable(false);
+        PL6.setEditable(false);
+        PL7.setEditable(false);
+        PL8.setEditable(false);      
+        PJL1.setEditable(false);
+        PJL2.setEditable(false);
+        PJL3.setEditable(false);
+        PJL4.setEditable(false);
+        PJL5.setEditable(false);
+        PJL6.setEditable(false);
+        PJL7.setEditable(false);
+        PJL8.setEditable(false);       
+        PGL1.setEditable(false);
+        PGL2.setEditable(false);
+        PGL3.setEditable(false);
+        PGL4.setEditable(false);
+        PGL5.setEditable(false);
+        PGL6.setEditable(false);
+        PGL7.setEditable(false);
+        PGL8.setEditable(false);       
+        PV1.setEditable(false);
+        PV2.setEditable(false);
+        PV3.setEditable(false);
+        PV4.setEditable(false);
+        PV5.setEditable(false);
+        PV6.setEditable(false);
+        PV7.setEditable(false);
+        PV8.setEditable(false);       
+        PPL1.setEditable(false);
+        PPL2.setEditable(false);
+        PPL3.setEditable(false);
+        PPL4.setEditable(false);
+        PPL5.setEditable(false);
+        PPL6.setEditable(false);
+        PPL7.setEditable(false);
+        PPL8.setEditable(false);       
+        PJV1.setEditable(false);
+        PJV2.setEditable(false);
+        PJV3.setEditable(false);
+        PJV4.setEditable(false);
+        PJV5.setEditable(false);
+        PJV6.setEditable(false);
+        PJV7.setEditable(false);
+        PJV8.setEditable(false);       
+        PGV1.setEditable(false);
+        PGV2.setEditable(false);
+        PGV3.setEditable(false);
+        PGV4.setEditable(false);
+        PGV5.setEditable(false);
+        PGV6.setEditable(false);
+        PGV7.setEditable(false);
+        PGV8.setEditable(false);       
+        PPV1.setEditable(false);
+        PPV2.setEditable(false);
+        PPV3.setEditable(false);
+        PPV4.setEditable(false);
+        PPV5.setEditable(false);
+        PPV6.setEditable(false);
+        PPV7.setEditable(false);
+        PPV8.setEditable(false);
+        
     }
 
     /**
@@ -592,6 +697,49 @@ public class Clasificaciones extends javax.swing.JFrame {
             int cont4=0;
             int cont5=0;
             int cont6=0;
+            int cont7=0;
+            int cont8=0;
+            int cont9=0;
+            int cont10=0;
+            int cont11=0;
+            int cont12=0;
+            int cont13=0;
+            int cont14=0;
+            int cont15=0;
+            int cont16=0;
+            int cont17=0;
+            int cont18=0;
+            int cont19=0;
+            int cont20=0;
+            int cont21=0;
+            int cont22=0;
+            int cont23=0;
+            int cont24=0;
+            int cont25=0;
+            int cont26=0;
+            int cont27=0;
+            int cont28=0;
+            int cont29=0;
+            int cont30=0;
+            int cont31=0;
+            int cont32=0;
+            int cont33=0;
+            int cont34=0;
+            int cont35=0;
+            int cont36=0;
+            int cont37=0;
+            int cont38=0;
+            int cont39=0;
+            int cont40=0;
+            int cont41=0;
+            int cont42=0;
+            int cont43=0;
+            int cont44=0;
+            int cont45=0;
+            int cont46=0;
+            int cont47=0;
+            int cont48=0;
+            
             ArrayList<Equipo> lista = ProyectoESport.seleccionarPuntosPorEquipos();
             
             E1.setText(lista.get(0).getNombre());
@@ -623,113 +771,197 @@ public class Clasificaciones extends javax.swing.JFrame {
                     cont4 =cont4 + lista1.get(x).getRes_visit();
                 
                 if(lista2.get(x).getRes_local()<lista2.get(x).getRes_visit())
-                    cont5 =cont5 + lista1.get(x).getRes_visit();
+                    cont5 =cont5 + lista2.get(x).getRes_visit();
                 else
-                    cont6 =cont6 + lista1.get(x).getRes_local();
+                    cont6 =cont6 + lista2.get(x).getRes_local();
             }    
             PJL1.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(0).getId()).size()));
             PJV1.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(0).getId()).size()));
+            PL1.setText(String.valueOf(cont1));
+            PV1.setText(String.valueOf(cont2));
             PGL1.setText(String.valueOf(cont3));
             PPL1.setText(String.valueOf(cont4));
             PGV1.setText(String.valueOf(cont5));
             PPV1.setText(String.valueOf(cont6));
-            PL1.setText(String.valueOf(cont1));
-            PV1.setText(String.valueOf(cont2));
             
             ArrayList<Partido> lista3 = ProyectoESport.seleccionarResultadoPorLocal(lista.get(1).getId());
             ArrayList<Partido> lista4 = ProyectoESport.seleccionarResultadoPorVisitante(lista.get(1).getId());
             for(int x=0;x<ProyectoESport.seleccionarResultadoPorLocal(lista.get(1).getId()).size();x++)
             {
-                cont1 =cont1 + lista3.get(x).getRes_local();
-                cont2 =cont2 + lista4.get(x).getRes_visit();
-                if(lista1.get(x).getRes_local()>lista1.get(x).getRes_visit())
-                    cont3 =cont3 + lista1.get(x).getRes_local();
+                cont7 =cont7 + lista3.get(x).getRes_local();
+                cont8 =cont8 + lista4.get(x).getRes_visit();
+                if(lista3.get(x).getRes_local()>lista3.get(x).getRes_visit())
+                    cont9 =cont9 + lista3.get(x).getRes_local();
                 else
-                    cont4 =cont4 + lista1.get(x).getRes_visit();
+                    cont10 =cont10 + lista3.get(x).getRes_visit();
+                
+                if(lista4.get(x).getRes_local()<lista4.get(x).getRes_visit())
+                    cont11 =cont11 + lista4.get(x).getRes_visit();
+                else
+                    cont12 =cont12 + lista4.get(x).getRes_local();
             }    
             PJL2.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(1).getId()).size()));
-            PGL2.setText(String.valueOf(cont3));
-            PPL2.setText(String.valueOf(cont4));
-            PL2.setText(String.valueOf(cont1));
-            PV2.setText(String.valueOf(cont2));
+            PJV2.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(1).getId()).size()));
+            PL2.setText(String.valueOf(cont7));
+            PV2.setText(String.valueOf(cont8));
+            PGL2.setText(String.valueOf(cont9));
+            PPL2.setText(String.valueOf(cont10));
+            PGV2.setText(String.valueOf(cont11));
+            PPV2.setText(String.valueOf(cont12));
             
             ArrayList<Partido> lista5 = ProyectoESport.seleccionarResultadoPorLocal(lista.get(2).getId());
             ArrayList<Partido> lista6 = ProyectoESport.seleccionarResultadoPorVisitante(lista.get(2).getId());
             for(int x=0;x<ProyectoESport.seleccionarResultadoPorLocal(lista.get(2).getId()).size();x++)
             {
-                cont1 =cont1 + lista5.get(x).getRes_local();
-                cont2 =cont2 + lista6.get(x).getRes_visit();
+                cont13 =cont13 + lista5.get(x).getRes_local();
+                cont14 =cont14 + lista6.get(x).getRes_visit();
+                if(lista5.get(x).getRes_local()>lista5.get(x).getRes_visit())
+                    cont15 =cont15 + lista5.get(x).getRes_local();
+                else
+                    cont16 =cont16 + lista5.get(x).getRes_visit();
+                
+                if(lista6.get(x).getRes_local()<lista6.get(x).getRes_visit())
+                    cont17 =cont17 + lista6.get(x).getRes_visit();
+                else
+                    cont18 =cont18 + lista6.get(x).getRes_local();
             }    
             PJL3.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(2).getId()).size()));
-            PGL3.setText(String.valueOf(cont3));
-            PPL3.setText(String.valueOf(cont4));
-            PL3.setText(String.valueOf(cont1));
-            PV3.setText(String.valueOf(cont2));
+            PJV3.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(2).getId()).size()));
+            PL3.setText(String.valueOf(cont13));
+            PV3.setText(String.valueOf(cont14));
+            PGL3.setText(String.valueOf(cont15));
+            PPL3.setText(String.valueOf(cont16));
+            PGV3.setText(String.valueOf(cont17));
+            PPV3.setText(String.valueOf(cont18));
             
             ArrayList<Partido> lista7 = ProyectoESport.seleccionarResultadoPorLocal(lista.get(3).getId());
             ArrayList<Partido> lista8 = ProyectoESport.seleccionarResultadoPorVisitante(lista.get(3).getId());
             for(int x=0;x<ProyectoESport.seleccionarResultadoPorLocal(lista.get(3).getId()).size();x++)
             {
-                cont1 =cont1 + lista7.get(x).getRes_local();
-                cont2 =cont2 + lista8.get(x).getRes_visit();
+                cont19 =cont19 + lista7.get(x).getRes_local();
+                cont20 =cont20 + lista8.get(x).getRes_visit();
+                if(lista7.get(x).getRes_local()>lista7.get(x).getRes_visit())
+                    cont21 =cont21 + lista7.get(x).getRes_local();
+                else
+                    cont22 =cont22 + lista7.get(x).getRes_visit();
+                
+                if(lista8.get(x).getRes_local()<lista8.get(x).getRes_visit())
+                    cont23 =cont23 + lista8.get(x).getRes_visit();
+                else
+                    cont24 =cont24 + lista8.get(x).getRes_local();
             }    
             PJL4.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(3).getId()).size()));
-            PGL4.setText(String.valueOf(cont3));
-            PPL4.setText(String.valueOf(cont4));
-            PL4.setText(String.valueOf(cont1));
-            PV4.setText(String.valueOf(cont2));
+            PJV4.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(3).getId()).size()));
+            PL4.setText(String.valueOf(cont19));
+            PV4.setText(String.valueOf(cont20));
+            PGL4.setText(String.valueOf(cont21));
+            PPL4.setText(String.valueOf(cont22));
+            PGV4.setText(String.valueOf(cont23));
+            PPV4.setText(String.valueOf(cont24));
+            
             
             ArrayList<Partido> lista9 = ProyectoESport.seleccionarResultadoPorLocal(lista.get(4).getId());
             ArrayList<Partido> lista10 = ProyectoESport.seleccionarResultadoPorVisitante(lista.get(4).getId());
             for(int x=0;x<ProyectoESport.seleccionarResultadoPorLocal(lista.get(4).getId()).size();x++)
             {
-                cont1 =cont1 + lista9.get(x).getRes_local();
-                cont2 =cont2 + lista10.get(x).getRes_visit();
+                cont25 =cont25 + lista9.get(x).getRes_local();
+                cont26 =cont26 + lista10.get(x).getRes_visit();
+                if(lista9.get(x).getRes_local()>lista9.get(x).getRes_visit())
+                    cont27 =cont27 + lista9.get(x).getRes_local();
+                else
+                    cont28 =cont28 + lista9.get(x).getRes_visit();
+                
+                if(lista10.get(x).getRes_local()<lista10.get(x).getRes_visit())
+                    cont29 =cont29 + lista10.get(x).getRes_visit();
+                else
+                    cont30 =cont30 + lista10.get(x).getRes_local();
             }   
             PJL5.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(4).getId()).size()));
-            PGL5.setText(String.valueOf(cont3));
-            PPL5.setText(String.valueOf(cont4));
-            PL5.setText(String.valueOf(cont1));
-            PV5.setText(String.valueOf(cont2));
+            PJV5.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(4).getId()).size()));
+            PL5.setText(String.valueOf(cont25));
+            PV5.setText(String.valueOf(cont26));
+            PGL5.setText(String.valueOf(cont27));
+            PPL5.setText(String.valueOf(cont28));
+            PGV5.setText(String.valueOf(cont29));
+            PPV5.setText(String.valueOf(cont30));
+            
             
             ArrayList<Partido> lista11 = ProyectoESport.seleccionarResultadoPorLocal(lista.get(5).getId());
             ArrayList<Partido> lista12 = ProyectoESport.seleccionarResultadoPorVisitante(lista.get(5).getId());
             for(int x=0;x<ProyectoESport.seleccionarResultadoPorLocal(lista.get(5).getId()).size();x++)
             {
-                cont1 =cont1 + lista11.get(x).getRes_local();
-                cont2 =cont2 + lista12.get(x).getRes_visit();
+                cont31 =cont31 + lista11.get(x).getRes_local();
+                cont32 =cont32 + lista12.get(x).getRes_visit();
+                if(lista11.get(x).getRes_local()>lista11.get(x).getRes_visit())
+                    cont33 =cont33 + lista11.get(x).getRes_local();
+                else
+                    cont34 =cont34 + lista11.get(x).getRes_visit();
+                
+                if(lista12.get(x).getRes_local()<lista12.get(x).getRes_visit())
+                    cont35 =cont35 + lista12.get(x).getRes_visit();
+                else
+                    cont36 =cont36 + lista12.get(x).getRes_local();
             }   
             PJL6.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(5).getId()).size()));
-            PGL6.setText(String.valueOf(cont3));
-            PPL6.setText(String.valueOf(cont4));
-            PL6.setText(String.valueOf(cont1));
-            PV6.setText(String.valueOf(cont2));
+            PJV6.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(5).getId()).size()));
+            PL6.setText(String.valueOf(cont31));
+            PV6.setText(String.valueOf(cont32));
+            PGL6.setText(String.valueOf(cont33));
+            PPL6.setText(String.valueOf(cont34));
+            PGV6.setText(String.valueOf(cont35));
+            PPV6.setText(String.valueOf(cont36));
             
             ArrayList<Partido> lista13 = ProyectoESport.seleccionarResultadoPorLocal(lista.get(6).getId());
             ArrayList<Partido> lista14 = ProyectoESport.seleccionarResultadoPorVisitante(lista.get(6).getId());
             for(int x=0;x<ProyectoESport.seleccionarResultadoPorLocal(lista.get(6).getId()).size();x++)
             {
-                cont1 =cont1 + lista13.get(x).getRes_local();
-                cont2 =cont2 + lista14.get(x).getRes_visit();
+                cont37 =cont37 + lista13.get(x).getRes_local();
+                cont38 =cont38 + lista14.get(x).getRes_visit();
+                if(lista13.get(x).getRes_local()>lista13.get(x).getRes_visit())
+                    cont39 =cont39 + lista13.get(x).getRes_local();
+                else
+                    cont40 =cont40 + lista13.get(x).getRes_visit();
+                
+                if(lista14.get(x).getRes_local()<lista14.get(x).getRes_visit())
+                    cont41 =cont41 + lista14.get(x).getRes_visit();
+                else
+                    cont42 =cont42 + lista14.get(x).getRes_local();
             }    
             PJL7.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(6).getId()).size()));
-            PGL7.setText(String.valueOf(cont3));
-            PPL7.setText(String.valueOf(cont4));
-            PL7.setText(String.valueOf(cont1));
-            PV7.setText(String.valueOf(cont2));
+            PJV7.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(6).getId()).size()));
+            PL7.setText(String.valueOf(cont37));
+            PV7.setText(String.valueOf(cont38));
+            PGL7.setText(String.valueOf(cont39));
+            PPL7.setText(String.valueOf(cont40));
+            PGV7.setText(String.valueOf(cont41));
+            PPV7.setText(String.valueOf(cont42));
+            
             
             ArrayList<Partido> lista15 = ProyectoESport.seleccionarResultadoPorLocal(lista.get(7).getId());
             ArrayList<Partido> lista16 = ProyectoESport.seleccionarResultadoPorVisitante(lista.get(7).getId());
             for(int x=0;x<ProyectoESport.seleccionarResultadoPorLocal(lista.get(7).getId()).size();x++)
             {
-                cont1 =cont1 + lista15.get(x).getRes_local();
-                cont2 =cont2 + lista16.get(x).getRes_visit();
+                cont43 =cont43 + lista15.get(x).getRes_local();
+                cont44 =cont44 + lista16.get(x).getRes_visit();
+                if(lista15.get(x).getRes_local()>lista15.get(x).getRes_visit())
+                    cont45 =cont45 + lista15.get(x).getRes_local();
+                else
+                    cont46 =cont46 + lista15.get(x).getRes_visit();
+                
+                if(lista16.get(x).getRes_local()<lista16.get(x).getRes_visit())
+                    cont47 =cont47 + lista16.get(x).getRes_visit();
+                else
+                    cont48 =cont48 + lista16.get(x).getRes_local();
             } 
             PJL8.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorLocal(lista.get(7).getId()).size()));
-            PGL8.setText(String.valueOf(cont3));
-            PPL8.setText(String.valueOf(cont4));
-            PL8.setText(String.valueOf(cont1));
-            PV8.setText(String.valueOf(cont2));
+            PJV8.setText(String.valueOf(ProyectoESport.seleccionarResultadoPorVisitante(lista.get(7).getId()).size()));
+            PL8.setText(String.valueOf(cont43));
+            PV8.setText(String.valueOf(cont44));
+            PGL8.setText(String.valueOf(cont45));
+            PPL8.setText(String.valueOf(cont46));
+            PGV8.setText(String.valueOf(cont47));
+            PPV8.setText(String.valueOf(cont48));
+            
             
         }
         catch(Exception e)

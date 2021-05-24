@@ -81,12 +81,13 @@ public class ProyectoESport {
     private static VerUsuario vvu;
     private static JornadasUsu vjusu;
     private static JornadasAdmin vjadmin;
+    private static VistaCalendar vcc;
     
     
     public static void main(String[] args) {
     
         CrearTablas();
-        VistaPrincipalAdmin();
+        VistaPrincipalUsuario();
         
     }
     
@@ -121,13 +122,13 @@ public class ProyectoESport {
     
     public static void VistaPrincipalUsuario() 
     {
-        vl.dispose();
         vp = new PP();
         vp.setVisible(true);
     }
 
     public static void VistaPrincipalAdmin() 
     {
+        vl.dispose();
         vadmin = new VistaAdmin();
         vadmin.setVisible(true);
     }
@@ -279,6 +280,13 @@ public class ProyectoESport {
         vadmin.setVisible(false);
         vjadmin = new JornadasAdmin();
         vjadmin.setVisible(true);
+    }
+
+    public static void VistaCrearCal() 
+    {
+        vadmin.setVisible(false);
+        vcc = new VistaCalendar();
+        vcc.setVisible(true);
     }
     
     public static void VistaClasificaciones() 
@@ -1286,8 +1294,6 @@ public class ProyectoESport {
     
     public static void crearCalendario(int id, String nombre) throws Exception{
        
-        int num = te.seleccionarTodosLosEquipos().size();
-        int jor = ((num-1)*2);
         crearJornadas();
         tc.activarProcedimientoCalendario(id,nombre);
             

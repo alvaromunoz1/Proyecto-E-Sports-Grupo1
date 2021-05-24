@@ -6,6 +6,7 @@
 package Vista;
 
 import Controlador.ProyectoESport;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -295,9 +296,19 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenu4.add(jMenuItem2);
 
         jMenuItem3.setText("CREAR CALENDARIO");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem3);
 
         jMenu9.setText("EMPAREJAMIENTOS");
+        jMenu9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu9ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenu9);
 
         jMenuBar1.add(jMenu4);
@@ -423,6 +434,22 @@ public class VistaAdmin extends javax.swing.JFrame {
     private void jBorrarPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBorrarPartidoActionPerformed
         ProyectoESport.VistaBorrarPartido();
     }//GEN-LAST:event_jBorrarPartidoActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        ProyectoESport.VistaCrearCal();
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenu9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu9ActionPerformed
+       try
+        {
+            ProyectoESport.crearEmparejamientos();
+            JOptionPane.showMessageDialog(this,"El los equipos se han emparejado correctamente");
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null,e.getMessage());
+        }
+    }//GEN-LAST:event_jMenu9ActionPerformed
 
     /**
      * @param args the command line arguments

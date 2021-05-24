@@ -22,6 +22,26 @@ public class JornadasUsu extends javax.swing.JFrame {
     
     public JornadasUsu() {
         initComponents();
+        EquipoLocal1.setEditable(false);
+        EquipoLocal2.setEditable(false);
+        EquipoLocal3.setEditable(false);
+        EquipoLocal4.setEditable(false);
+        EquipoVisitante1.setEditable(false);
+        EquipoVisitante2.setEditable(false);
+        EquipoVisitante3.setEditable(false);
+        EquipoVisitante4.setEditable(false);
+        Hora1.setEditable(false);
+        Hora2.setEditable(false);
+        Hora3.setEditable(false);
+        Hora4.setEditable(false);
+        ResultadoLocal1.setEditable(false);
+        ResultadoLocal2.setEditable(false);
+        ResultadoLocal3.setEditable(false);
+        ResultadoLocal4.setEditable(false);
+        ResultadoVisitante1.setEditable(false);
+        ResultadoVisitante2.setEditable(false);
+        ResultadoVisitante3.setEditable(false);
+        ResultadoVisitante4.setEditable(false);
     }
 
     /**
