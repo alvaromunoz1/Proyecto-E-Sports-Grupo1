@@ -234,4 +234,27 @@ public class TablaEquipo {
            return null;
     }
     
+    public ArrayList<Equipo>  seleccionarPuntosPorEquipos() 
+            throws Exception
+    {
+        bd.conectar();
+        
+        ArrayList<Equipo> lista = new ArrayList();
+        String plantilla = "SELECT Puntos FROM Equipo GROUP BY Punutos;";
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
+        ResultSet resultado = ps.executeQuery();
+
+       while(resultado.next())
+       {
+                Equipo e = new Equipo();
+                
+                e.setPuntos(resultado.getInt("Puntos"));
+                
+                lista.add(e);
+       }
+       bd.desconectar();
+       return lista;
+    }    
+    
+    
 }

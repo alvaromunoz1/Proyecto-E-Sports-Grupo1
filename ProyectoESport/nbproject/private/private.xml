@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-<<<<<<< Updated upstream
-=======
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/JornadasAdmin.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/VerEqui.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Controlador/ProyectoESport.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/IntroJornada.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/ModeloUML/Calendario.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitKraken/Proyecto-E-Sports-Grupo1/ProyectoESport/src/ModeloDB/TablaEquipo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitKraken/Proyecto-E-Sports-Grupo1/ProyectoESport/src/ModeloDB/TablaPartido.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitKraken/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/Clasificaciones.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitKraken/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Controlador/ProyectoESport.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitKraken/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/VerEqui.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitKraken/Proyecto-E-Sports-Grupo1/ProyectoESport/src/ModeloDB/TablaCalendario.java</file>
         </group>
     </open-files>
->>>>>>> Stashed changes
 </project-private>

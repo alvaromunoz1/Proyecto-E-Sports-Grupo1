@@ -41,6 +41,21 @@ public class TablaCalendario {
         bd.desconectar();
     }
      
+     public void activarProcedimientoCalendario(int id, String nombre) throws Exception
+    {
+        bd.conectar();
+        
+        String plantilla = "EXECUTE CrearCalendario(?,?);";
+        PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
+        ps.setInt(1, id);
+        ps.setString(2, nombre);;
+        
+        ps.execute();
+        
+        ps.close();
+        
+        bd.desconectar();
+    }    
      
      public void actualizar(Calendario c) throws Exception
     {

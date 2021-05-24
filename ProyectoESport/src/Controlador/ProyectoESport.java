@@ -9,11 +9,14 @@ package Controlador;
 import ModeloDB.*;
 import ModeloUML.*;
 import Vista.*;
+import java.sql.Array;
 import java.sql.Date;
 import java.sql.Time;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 
@@ -278,7 +281,6 @@ public class ProyectoESport {
         public static void volverAtras (JFrame v)
     {
         v.dispose();
-        vp.setVisible(true);
     } 
     
     public static boolean identificar(String usuario,String contraseña) throws Exception{
@@ -704,7 +706,7 @@ public class ProyectoESport {
     
     public static Partido seleccionarUnPartido(int id) throws Exception
     {
-        p = tp.seleccionarUnPartido(id);
+        p = tp.seleccionarUnPartidoSinResultado(id);
 
         return p;
     }
@@ -747,11 +749,11 @@ public class ProyectoESport {
         return e;
     }
     
-    public static Equipo seleccionarPuntosDeUnEquipo(int id) throws Exception
+    public static ArrayList<Equipo> seleccionarPuntosPorEquipos() throws Exception
     {
-        e = te.seleccionarPuntosPorEquipo(id);
-
-        return e;
+        ArrayList<Equipo> lista = te.seleccionarPuntosPorEquipos();
+        
+        return lista;
     }
     
         public static String datosTodosLasPersonas() throws Exception
@@ -763,6 +765,20 @@ public class ProyectoESport {
         return datos;
     }
     
+
+        public static ArrayList<Partido> seleccionarResultadoPorLocal(int id) throws Exception
+    {
+        ArrayList<Partido> lista = tp.seleccionarResultadoComoLocal(id);
+
+        return lista;
+    }
+
+        public static ArrayList<Partido> seleccionarResultadoPorVisitante(int id) throws Exception
+    {
+        ArrayList<Partido> lista = tp.seleccionarResultadoComoVisitante(id);
+
+        return lista;
+    }
         
     public static String datosPersonasPorEquipo(int id) throws Exception
     {
@@ -1099,51 +1115,168 @@ public class ProyectoESport {
         }
     }    
 
-    public static void NumerosAleatorios(){
-        // Aqui establecemos la cantidad de elementos aleatorios que deseamos
-        int cantidad = 10;
-        // Esta variable se usará para llenar el arreglo en la posición correspondiente
-        int index = 0;
-        // Arreglo que almacenará los números aleatorios
-        int [] aleatorios = new int [cantidad];
-        // Nuestro primer bucle que se ejecutará hasta que hayamos llenado el arreglo
-        while(index < cantidad) {
-            // Variable que almacenará el número aleatorio propuesto
-            int propuesto = (int)(Math.random()*cantidad);
-            // Variable que indica si el número propuesto está repetido
-            // asumimos que aún no está repetido y la establecemos a false
-            boolean repetido = false;
-            //Segundo bucle que se ejecutará siempre que el número no esté repetido
-            while(!repetido) {
-                // Bucle que recorre el arreglo comparando el número propuesto con
-                // cada uno de los elementos del arreglo
-                for(int i=0; i<index; i++) {
-                    //realizamos la comparación
-                    if(propuesto == aleatorios[i]) {
-                        // si el número se repite, establecemos repetido=true
-                        // y salimos del bucle for (no es necesario seguir comparando)
-                        repetido = true;
-                        break;
-                    }
-                }
-                // verificamos el estado del valor repetido. Si es false, significa
-                // que hemos recorrido el array hasta la posición index sin encontrar
-                // coincidencias
-                if(!repetido) {
-                    // almacenamos el valor propuesto ya que no está repetido
-                    // incrementamos el índice
-                    aleatorios[index] = propuesto;
-                    index++;
-                }
-            }
-
+    public static int[] NumeroAleatorio(){
+    try
+        {
+        
+        int n=te.seleccionarTodosLosEquipos().size();
+        int k=n;
+        int[] numeros=new int[n];
+        int[] resultado=new int[n];
+        Random rnd=new Random();
+        int res;
+        
+        
+        //se rellena una matriz ordenada del 1 al 31(1..n)
+        for(int i=0;i<n;i++){
+            numeros[i]=i+1;
         }
-        // mostramos los valores por pantalla
-        for (int i=0;i<aleatorios.length;i++){
-            System.out.print(aleatorios[i]+ " ");
+        
+        for(int i=0;i<n;i++){
+            res=rnd.nextInt(k);            
+            resultado[i]=numeros[res];
+            numeros[res]=numeros[k-1];
+            k--;
+            
         }
-        // Inserta un salto de linea
-        System.out.println("");  
+        
+        return resultado;
+        }
+        catch(Exception e)
+        {
+            return null;
+        }
+    }  
+    
+    public static void llenarPartidosJornada1(int p,int j,int[] alea) throws Exception{
+       
+        Partido p1 = new Partido();
+        Partido p2 = new Partido();
+        Partido p3 = new Partido();
+        Partido p4 = new Partido();
+        
+        int[] num=new int[8];
+        num=alea;
+        
+        p1.setId(100+p);
+        p1.setNombre(te.seleccionarUnEquipo(num[0]).getNombre() + " VS" + te.seleccionarUnEquipo(num[1]).getNombre());
+        p1.getLocal().setId(num[0]);
+        p1.getVisitante().setId(num[1]);
+        p1.setId_jornada(1+j);
+        
+        p2.setId(101+p);
+        p2.setNombre(te.seleccionarUnEquipo(num[2]).getNombre() + " VS" + te.seleccionarUnEquipo(num[3]).getNombre());
+        p2.getLocal().setId(num[2]);
+        p2.getVisitante().setId(num[3]);
+        p2.setId_jornada(1+j);
+        
+        p3.setId(102+p);
+        p3.setNombre(te.seleccionarUnEquipo(num[4]).getNombre() + " VS" + te.seleccionarUnEquipo(num[5]).getNombre());
+        p3.getLocal().setId(num[4]);
+        p3.getVisitante().setId(num[5]);
+        p3.setId_jornada(1+j);
+        
+        p4.setId(103+p);
+        p4.setNombre(te.seleccionarUnEquipo(num[6]).getNombre() + " VS" + te.seleccionarUnEquipo(num[7]).getNombre());
+        p4.getLocal().setId(num[6]);
+        p4.getVisitante().setId(num[7]);
+        p4.setId_jornada(1+j);
+        
+        tp.emparejarEquipos(p1);
+        tp.emparejarEquipos(p2);
+        tp.emparejarEquipos(p3);
+        tp.emparejarEquipos(p4);
+            
+    } 
+    
+    public static void crearEmparejamientos() throws Exception{
+       
+        int idpar=0;
+        int idjor=0;
+        
+        llenarPartidosJornada1(idpar,idjor,NumeroAleatorio());
+        
+        for(int x=0;x<tj.seleccionarTodo().size();x++)
+        {
+            idpar=idpar+4;
+            idjor=idjor+1;
+            
+            int[] alea=new int[8];
+            while(numerosRepe(alea,x+1))
+                alea=NumeroAleatorio();
+                
+            llenarPartidosJornada1(idpar,idjor,alea);
+            
+        }          
+            
+    }     
+    
+    public static boolean numerosRepe(int[] alea,int id) throws Exception{
+        
+        int[] alea1= new int[8];
+        
+            alea1[0]=tp.seleccionarPartidosPorJornada(id).get(0).getLocal().getId();
+            alea1[1]=tp.seleccionarPartidosPorJornada(id).get(0).getVisitante().getId();
+            alea1[2]=tp.seleccionarPartidosPorJornada(id).get(1).getLocal().getId();
+            alea1[3]=tp.seleccionarPartidosPorJornada(id).get(1).getVisitante().getId();
+            alea1[4]=tp.seleccionarPartidosPorJornada(id).get(2).getLocal().getId();
+            alea1[5]=tp.seleccionarPartidosPorJornada(id).get(2).getVisitante().getId();
+            alea1[6]=tp.seleccionarPartidosPorJornada(id).get(3).getLocal().getId();
+            alea1[7]=tp.seleccionarPartidosPorJornada(id).get(3).getVisitante().getId();     
+        
+            if(Arrays.equals(alea,alea1))
+                return true;
+            return false;
+    }    
+    
+    public static void crearJornadas() throws Exception{
+       
+        int num = te.seleccionarTodosLosEquipos().size();
+        int todoj = (num-1)*2;
+        int todop = ((num-1)*2)*4;
+        int id=0;
+        Partido p1 = new Partido();
+        Partido p2 = new Partido();
+        Partido p3 = new Partido();
+        Partido p4 = new Partido();
+        
+        for(int x=0;x<todoj;x++)
+        {
+            id=x+1;
+            j.setId(id);
+            j.setNombre("JORNADA"+id);
+            java.util.Date fecha = null;
+            j.setFecha(fecha);
+            tj.insertar(j);
+        }    
+            
+        for(int x=0;x<todop;x++)
+        {
+            id=100+x;
+            
+            p1.setId(id);
+            
+            tp.insertarPartidoSoloID(p);
+        } 
+           
+    }    
+    
+    public static void crearCalendario(int id, String nombre) throws Exception{
+       
+        int num = te.seleccionarTodosLosEquipos().size();
+        int jor = ((num-1)*2);
+        crearJornadas();
+        tc.activarProcedimientoCalendario(id,nombre);
+            
+    }    
+    
+    
+    
+    
+    
+    
+    
+    
     }
     
    
@@ -1157,4 +1290,4 @@ public class ProyectoESport {
 
 
     
-}
+
