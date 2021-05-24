@@ -68,6 +68,8 @@ public class ProyectoESport {
     private static IntroEqui vie;
     private static IntroResult vir;
     private static IntroUsuario viu;
+    private static IntroJornada vij;
+    private static IntroPartido vip;
     private static ModDueño vmd;
     private static ModEqui vme;
     private static ModJug vmjug;
@@ -78,12 +80,13 @@ public class ProyectoESport {
     private static VerJug vvjug;
     private static VerUsuario vvu;
     private static JornadasUsu vjusu;
+    private static JornadasAdmin vjadmin;
     
     
     public static void main(String[] args) {
     
         CrearTablas();
-        VistaLogin();
+        VistaPrincipalAdmin();
         
     }
     
@@ -100,7 +103,7 @@ public class ProyectoESport {
             ta = new TablaAsistente();
             tentre = new TablaEntrenador();
             tjug = new TablaJugador();
-            
+            tu = new TablaUsuario();
             
         }
         catch (Exception e)
@@ -125,7 +128,6 @@ public class ProyectoESport {
 
     public static void VistaPrincipalAdmin() 
     {
-        vl.dispose();
         vadmin = new VistaAdmin();
         vadmin.setVisible(true);
     }
@@ -226,6 +228,20 @@ public class ProyectoESport {
         vmu = new ModUsuario();
         vmu.setVisible(true);
     } 
+    public static void VistaIntroJornada() 
+    {
+        vadmin.setVisible(false);
+        vij = new IntroJornada();
+        vij.setVisible(true);
+    }
+
+    public static void VistaIntroPartido() 
+    {
+        vadmin.setVisible(false);
+        vip = new IntroPartido();
+        vip.setVisible(true);
+    }
+    
     public static void VistaVerDueño() 
     {
         vadmin.setVisible(false);
@@ -257,6 +273,13 @@ public class ProyectoESport {
         vjusu = new JornadasUsu();
         vjusu.setVisible(true);
     }    
+
+    public static void VistaJornadaAdmin() 
+    {
+        vadmin.setVisible(false);
+        vjadmin = new JornadasAdmin();
+        vjadmin.setVisible(true);
+    }
     
     public static void VistaClasificaciones() 
     {

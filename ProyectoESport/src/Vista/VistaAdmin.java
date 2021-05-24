@@ -31,8 +31,10 @@ public class VistaAdmin extends javax.swing.JFrame {
 
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
+        JSalir = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jClasificacion = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jIntroResult = new javax.swing.JMenuItem();
         jVerResult = new javax.swing.JMenuItem();
@@ -63,7 +65,6 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu9 = new javax.swing.JMenu();
-        jSalir = new javax.swing.JMenu();
 
         jMenu1.setText("jMenu1");
 
@@ -71,12 +72,28 @@ public class VistaAdmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        JSalir.setText("SALIR");
+        JSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JSalirActionPerformed(evt);
+            }
+        });
+
         jClasificacion.setText("CLASIFICACION");
         jClasificacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jClasificacionActionPerformed(evt);
             }
         });
+
+        jMenuItem4.setText("IR");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jClasificacion.add(jMenuItem4);
+
         jMenuBar1.add(jClasificacion);
 
         jMenu5.setText("JORNADAS");
@@ -90,12 +107,27 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenu5.add(jIntroResult);
 
         jVerResult.setText("VER TODAS");
+        jVerResult.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jVerResultActionPerformed(evt);
+            }
+        });
         jMenu5.add(jVerResult);
 
         jAñadirPartido.setText("AÑADIR PARTIDO");
+        jAñadirPartido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jAñadirPartidoActionPerformed(evt);
+            }
+        });
         jMenu5.add(jAñadirPartido);
 
         jBorrarPartido.setText("BORRAR PARTIDO");
+        jBorrarPartido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBorrarPartidoActionPerformed(evt);
+            }
+        });
         jMenu5.add(jBorrarPartido);
 
         jMenuBar1.add(jMenu5);
@@ -247,9 +279,19 @@ public class VistaAdmin extends javax.swing.JFrame {
         jMenu4.setText("CALENDARIO");
 
         jMenuItem1.setText("AÑADIR JORNADA");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem1);
 
         jMenuItem2.setText("BORRAR JORNADA");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem2);
 
         jMenuItem3.setText("CREAR CALENDARIO");
@@ -260,25 +302,23 @@ public class VistaAdmin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu4);
 
-        jSalir.setText("SALIR");
-        jSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSalirActionPerformed(evt);
-            }
-        });
-        jMenuBar1.add(jSalir);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 998, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(743, Short.MAX_VALUE)
+                .addComponent(JSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(132, 132, 132))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 643, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(365, Short.MAX_VALUE)
+                .addComponent(JSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(229, 229, 229))
         );
 
         pack();
@@ -356,9 +396,33 @@ public class VistaAdmin extends javax.swing.JFrame {
         ProyectoESport.VistaBorrarUsuario();
     }//GEN-LAST:event_jbUsuActionPerformed
 
-    private void jSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSalirActionPerformed
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        ProyectoESport.VistaClasificaciones();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void JSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JSalirActionPerformed
         ProyectoESport.SalirPrograma();
-    }//GEN-LAST:event_jSalirActionPerformed
+    }//GEN-LAST:event_JSalirActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        ProyectoESport.VistaIntroJornada();
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        ProyectoESport.VistaBorrarJornada();
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jVerResultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jVerResultActionPerformed
+        ProyectoESport.VistaJornadaAdmin();
+    }//GEN-LAST:event_jVerResultActionPerformed
+
+    private void jAñadirPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAñadirPartidoActionPerformed
+        ProyectoESport.VistaIntroPartido();
+    }//GEN-LAST:event_jAñadirPartidoActionPerformed
+
+    private void jBorrarPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBorrarPartidoActionPerformed
+        ProyectoESport.VistaBorrarPartido();
+    }//GEN-LAST:event_jBorrarPartidoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -396,6 +460,7 @@ public class VistaAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JSalir;
     private javax.swing.JMenuItem jAñadirPartido;
     private javax.swing.JMenuItem jBorrarPartido;
     private javax.swing.JMenu jClasificacion;
@@ -413,7 +478,7 @@ public class VistaAdmin extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenu jSalir;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jVerResult;
     private javax.swing.JMenuItem jbDue;
     private javax.swing.JMenuItem jbEki;
