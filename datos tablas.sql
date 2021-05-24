@@ -106,3 +106,6 @@ insert into Jugador values(37, 'Controlador, Control de multitudes');
 insert into Jugador values(38, 'Duelista, Entry');
 insert into Jugador values(39, 'Centinela, Control de multitudes, Reconocimiento');
 insert into Jugador values(40, 'Centinela, Apoyo, Capitan');
+
+
+insert into Usuarios values(01, 'Imanol', 'ima123', 'A');
