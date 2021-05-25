@@ -28,6 +28,11 @@ Revisar insert y delete
 revisar tablas
 Revisar creacion calendarios
 */
+
+/*
+Eliminar autoincrementales
+*/
+
 /**
  *
  * @author Imanol Urquijo
