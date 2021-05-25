@@ -216,7 +216,7 @@ public class VerJug extends javax.swing.JFrame {
   
     private boolean validarID() throws Exception{
         
-        ArrayList<Persona> per = ProyectoESport.seleccionarIDdeTodasLasPersonas();
+        ArrayList<Persona> per = ProyectoESport.datosTodosLasPersonas();
         int i = Integer.parseInt(jID.getText());
         for(int x = 0; x < per.size(); x++)
             if (i == per.get(x).getId())

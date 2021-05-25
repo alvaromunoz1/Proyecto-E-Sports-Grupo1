@@ -147,7 +147,7 @@ public class BorrarEqui extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try
         {
-            int id = Integer.parseInt(jCombo.getSelectedItem().toString());
+            int id = jCombo.getSelectedIndex();
             ProyectoESport.borrarEquipo(id);
             JOptionPane.showMessageDialog(this,"El equipo ha sido dado de baja correctamente");
             ProyectoESport.volverPrincipalAdministrador(this);

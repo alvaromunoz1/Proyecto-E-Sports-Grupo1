@@ -32,13 +32,13 @@ public class TablaPersona {
     {
         bd.conectar();
         
-        String plantilla = "INSERT INTO Personas VALUES (?,?,?,?);";
+        String plantilla = "INSERT INTO Personas VALUES (?,?,?,?,?);";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, p.getId());
         ps.setString(2,p.getNombre());
         ps.setString(3, p.getNick());
         ps.setDouble(4, p.getSueldo());
-        ps.setInt(4, p.getEquipo().getId());
+        ps.setInt(5, p.getEquipo().getId());
       
         int n = ps.executeUpdate();
         ps.close();
@@ -148,7 +148,7 @@ public class TablaPersona {
         bd.conectar();
         
         ArrayList<Persona> lista = new ArrayList();
-        String plantilla = "SELECT * FROM Personas;";
+        String plantilla = "SELECT * FROM Personas";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ResultSet resultado = ps.executeQuery();
 

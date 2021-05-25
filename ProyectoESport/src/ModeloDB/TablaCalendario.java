@@ -79,7 +79,7 @@ public class TablaCalendario {
     {
         bd.conectar();
         
-        String plantilla = "DELET FROM Calendario WHERE ID=?;";
+        String plantilla = "DELETE FROM Calendario WHERE ID=?;";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, c.getId());
       

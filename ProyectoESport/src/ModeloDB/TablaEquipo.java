@@ -28,7 +28,7 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "INSERT INTO Equipo VALUES (?,?,?,?,?);";
+        String plantilla = "INSERT INTO equipo VALUES (?,?,?,?);";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, e.getId());
         ps.setString(2,e.getNombre());
@@ -89,7 +89,7 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "DELETE FROM Equipo WHERE ID=?;";
+        String plantilla = "DELETE FROM Equipo WHERE ID=?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, e.getId());
       
@@ -107,7 +107,7 @@ public class TablaEquipo {
         
         ArrayList<Equipo> lista = new ArrayList();
       
-        String plantilla = "SELECT * FROM Equipo;";
+        String plantilla = "SELECT * FROM Equipo";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
        
         ResultSet resultado = ps.executeQuery();
@@ -134,7 +134,7 @@ public class TablaEquipo {
         bd.conectar();
         
         ArrayList<Equipo> lista = new ArrayList();
-        String plantilla = "SELECT * FROM Equipo WHERE ID_Calendario=?;";
+        String plantilla = "SELECT * FROM Equipo WHERE ID_Calendario=?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ResultSet resultado = ps.executeQuery();
 
@@ -158,7 +158,7 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "SELECT * FROM Equipo WHERE ID=?;";
+        String plantilla = "SELECT * FROM Equipo WHERE ID=?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
@@ -187,7 +187,7 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "SELECT * FROM Equipo WHERE ID=?;";
+        String plantilla = "SELECT * FROM Equipo WHERE ID=?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
@@ -215,7 +215,7 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "SELECT Puntos FROM Equipo WHERE ID=?;";
+        String plantilla = "SELECT Puntos FROM Equipo WHERE ID=?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
@@ -240,7 +240,7 @@ public class TablaEquipo {
         bd.conectar();
         
         ArrayList<Equipo> lista = new ArrayList();
-        String plantilla = "SELECT Puntos FROM Equipo GROUP BY Punutos;";
+        String plantilla = "SELECT Puntos FROM Equipo GROUP BY Punutos";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ResultSet resultado = ps.executeQuery();
 

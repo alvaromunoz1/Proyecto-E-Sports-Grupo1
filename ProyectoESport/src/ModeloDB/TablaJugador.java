@@ -101,11 +101,11 @@ public class TablaJugador {
     }
     
     
-    public Jugador  seleccionarUnJugador(int id) throws Exception
+   public Jugador  seleccionarUnJugador(int id) throws Exception
     {
         bd.conectar();
         
-        String plantilla = "SELECT * FROM Jugador WHERE IDJ=?;";
+        String plantilla = "SELECT * FROM persona WHERE ID=?";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        
@@ -123,13 +123,13 @@ public class TablaJugador {
        }
        else
            return null;
-    }    
+    }     
         
    public Jugador  seleccionarUnJugador_Persona(int id) throws Exception
     {
         bd.conectar();
         
-        String plantilla = "SELECT * FROM Jugador WHERE IDJ=?;";
+        String plantilla = "SELECT * FROM Jugador WHERE ID=?;";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, id);
        

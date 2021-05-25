@@ -199,7 +199,7 @@ public class ModEqui extends javax.swing.JFrame {
   
     private boolean validarID() throws Exception{
         
-        ArrayList<Persona> per = ProyectoESport.seleccionarIDdeTodasLasPersonas();
+        ArrayList<Equipo> per = ProyectoESport.datosTodosLosEquipos();
         int i = Integer.parseInt(jID.getText());
         for(int x = 0; x < per.size(); x++)
             if (i == per.get(x).getId())

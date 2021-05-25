@@ -787,13 +787,11 @@ public class ProyectoESport {
         return lista;
     }
     
-        public static String datosTodosLasPersonas() throws Exception
+        public static ArrayList<Persona> datosTodosLasPersonas() throws Exception
     {
-        String datos="";
         ArrayList<Persona> lista = tper.seleccionarTodosLasPersonas();
-        for(int x = 0; x < lista.size(); x++)
-            datos+= lista.get(x).toString();
-        return datos;
+
+        return lista;
     }
     
 
