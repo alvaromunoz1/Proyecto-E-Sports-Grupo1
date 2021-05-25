@@ -22,6 +22,7 @@ public class JornadasUsu extends javax.swing.JFrame {
     
     public JornadasUsu() {
         initComponents();
+        RellenarDatos();
         EquipoLocal1.setEditable(false);
         EquipoLocal2.setEditable(false);
         EquipoLocal3.setEditable(false);

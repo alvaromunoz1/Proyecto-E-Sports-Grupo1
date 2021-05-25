@@ -21,10 +21,10 @@ public class BaseDatos {
     
    public void conectar(){
        try{
-            Class.forName("oracle.jdbc.OracleDriver");
+            Class.forName("oracle.jdbc.driver.OracleDriver");
 
             String bd="eqdaw01";
-            String url = "jdbc:oracle:thin:@SrvOracle:1521:eqdaw01"+bd;
+            String url = "jdbc:oracle:thin:@SrvOracle:1521:orcl"+bd;
             String login="eqdaw01";
             String password = "eqdaw01";
             conexion = DriverManager.getConnection(url,login,password);

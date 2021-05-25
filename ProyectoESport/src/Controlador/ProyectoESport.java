@@ -87,7 +87,7 @@ public class ProyectoESport {
     public static void main(String[] args) {
     
         CrearTablas();
-        VistaPrincipalUsuario();
+        VistaPrincipalAdmin();
         
     }
     
@@ -122,13 +122,13 @@ public class ProyectoESport {
     
     public static void VistaPrincipalUsuario() 
     {
+        vl.dispose();
         vp = new PP();
         vp.setVisible(true);
     }
 
     public static void VistaPrincipalAdmin() 
     {
-        vl.dispose();
         vadmin = new VistaAdmin();
         vadmin.setVisible(true);
     }
