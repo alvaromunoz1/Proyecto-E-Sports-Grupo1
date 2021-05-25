@@ -28,7 +28,7 @@ public class TablaEquipo {
     {
         bd.conectar();
         
-        String plantilla = "INSERT INTO equipo VALUES (?,?,?,?);";
+        String plantilla = "INSERT INTO equipo VALUES (?,?,?,?,?);";
         PreparedStatement ps = bd.getCon().prepareStatement(plantilla);
         ps.setInt(1, e.getId());
         ps.setString(2,e.getNombre());

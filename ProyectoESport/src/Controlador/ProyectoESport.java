@@ -9,10 +9,7 @@ package Controlador;
 import ModeloDB.*;
 import ModeloUML.*;
 import Vista.*;
-import java.sql.Array;
 import java.sql.Date;
-import java.sql.Time;
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,17 +17,23 @@ import java.util.Random;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 
+/*Errores:
+ora-00933
+ora-02292
+posible crasheo al borrar.
+*/
 
-
+/*Revisiones:
+Revisar insert y delete
+revisar tablas
+Revisar creacion calendarios
+*/
 /**
  *
  * @author Imanol Urquijo
  * Desde linea 1 hasta 1080
  */
 public class ProyectoESport {
-
-    private static int posicion;
-    private static ArrayList<Jornada> jornadas;
 
     private static TablaCalendario tc;
     private static TablaJornada tj;
@@ -1296,25 +1299,6 @@ public class ProyectoESport {
         tc.activarProcedimientoCalendario(id,nombre);
             
     }    
+       
+}
     
-    
-    
-    
-    
-    
-    
-    
-    }
-    
-   
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-

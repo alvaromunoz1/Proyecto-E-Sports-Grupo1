@@ -3,17 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/ModeloDB/TablaJugador.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/ModeloDB/TablaEquipo.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/Controlador/ProyectoESport.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/Vista/ModEqui.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/Vista/BorrarEqui.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/Vista/VerEqui.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/ModeloDB/BaseDatos.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/ModeloDB/TablaPersona.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/ModeloDB/TablaDueño.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/Vista/VerJug.java</file>
-            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/ProyectoESport/src/Vista/IntroDueño.java</file>
+            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/ModeloDB/TablaEquipo.java</file>
+            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/BorrarEqui.java</file>
+            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/IntroEqui.java</file>
+            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/VistaCalendar.java</file>
+            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Vista/ModEqui.java</file>
+            <file>file:/C:/Users/1gdaw03/Desktop/proyecto/Proyecto-E-Sports-Grupo1/ProyectoESport/src/Controlador/ProyectoESport.java</file>
         </group>
     </open-files>
 </project-private>
