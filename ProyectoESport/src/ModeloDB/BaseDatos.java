@@ -26,7 +26,7 @@ public class BaseDatos {
             String bd="[eqdaw01 on EQDAW01]";
             String login="eqdaw01";
             String password = "eqdaw01";
-            String url = "jdbc:oracle:thin:@172.20.225.114:1521:orcl";
+            String url = "jdbc:oracle:thin:@SrvOracle:1521:orcl";
             conexion = DriverManager.getConnection(url,login,password);
  
             if (conexion==null){

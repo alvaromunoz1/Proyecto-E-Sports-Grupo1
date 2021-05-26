@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -245,6 +245,7 @@ public class Clasificaciones extends javax.swing.JFrame {
         PPV8 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         bVolver = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -681,6 +682,9 @@ public class Clasificaciones extends javax.swing.JFrame {
         });
         getContentPane().add(bVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 50));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vista/Clasificacion.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1114,6 +1118,7 @@ public class Clasificaciones extends javax.swing.JFrame {
     private javax.swing.JTextField PV7;
     private javax.swing.JTextField PV8;
     private javax.swing.JButton bVolver;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

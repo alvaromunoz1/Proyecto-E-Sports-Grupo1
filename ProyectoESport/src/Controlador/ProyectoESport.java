@@ -20,7 +20,6 @@ import javax.swing.JFrame;
 /*Errores:
 ora-00933
 ora-02292
-posible crasheo al borrar.
 */
 
 /*Revisiones:
@@ -95,7 +94,7 @@ public class ProyectoESport {
     public static void main(String[] args) {
     
         CrearTablas();
-        VistaPrincipalAdmin();
+        VistaLogin();
         
     }
     
@@ -137,6 +136,7 @@ public class ProyectoESport {
 
     public static void VistaPrincipalAdmin() 
     {
+        vl.dispose();
         vadmin = new VistaAdmin();
         vadmin.setVisible(true);
     }
